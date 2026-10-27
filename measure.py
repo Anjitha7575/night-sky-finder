@@ -58,6 +58,13 @@ def straightness(points):
     direct = np.hypot(last["x"] - first["x"], last["y"] - first["y"])
     return float(round(direct / walked, 2))
 
+def blink_detect(points):
+    if len(points) < 2:
+        return None
+    span = points[-1]["frame"] - points[0]["frame"] + 1
+    seen_ratio = round(len(points) / span, 2)
+    return {"seen_ratio": seen_ratio, "blinking": seen_ratio < 0.5}
+    
 for f in sorted(Path("data/sample").glob("*.mp4")):
     pts = track(f, gap=1)
-    print(f"{f.name[:30]}  frames: {len(pts):3}  speed: {speed(pts):4}  straight: {straightness(pts)}")
+    print(f"{f.name[:30]}  speed: {speed(pts):4}  straight: {straightness(pts)}  blink: {blink_detect(pts)}")
