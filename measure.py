@@ -1,0 +1,63 @@
+import cv2
+import numpy as np
+from pathlib import Path
+
+
+def track(path, threshold=40, gap=1):
+    video = cv2.VideoCapture(str(path))
+    history = []
+    frame_no = 0
+    points = []
+
+    while True:
+        ok, frame = video.read()
+        if not ok:
+            break
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        history.append(gray)
+
+        if len(history) > gap:
+            old = history[-gap - 1]
+            brighter = cv2.subtract(gray, old)
+            ys, xs = np.where(brighter > threshold)
+            if len(xs) > 0:
+                points.append({
+                    "frame": frame_no,
+                    "x": float(round(xs.mean(), 1)),
+                    "y": float(round(ys.mean(), 1)),
+                    "brightness": float(round(gray[ys, xs].mean(), 1)),
+                })
+
+        if len(history) > gap + 1:
+            history.pop(0)
+
+        frame_no += 1
+
+    video.release()
+    return points
+
+
+def speed(points):
+    if len(points) < 2:
+        return 0
+    total = 0
+    for a, b in zip(points, points[1:]):
+        total += np.hypot(b["x"] - a["x"], b["y"] - a["y"])
+    frames = points[-1]["frame"] - points[0]["frame"]
+    return float(round(total / frames, 2))
+
+def straightness(points):
+    if len(points) < 3:
+        return None
+    walked = 0
+    for a, b in zip(points, points[1:]):
+        walked += np.hypot(b["x"] - a["x"], b["y"] - a["y"])
+    if walked == 0:
+        return None
+    first, last = points[0], points[-1]
+    direct = np.hypot(last["x"] - first["x"], last["y"] - first["y"])
+    return float(round(direct / walked, 2))
+
+for f in sorted(Path("data/sample").glob("*.mp4")):
+    pts = track(f, gap=1)
+    print(f"{f.name[:30]}  frames: {len(pts):3}  speed: {speed(pts):4}  straight: {straightness(pts)}")
