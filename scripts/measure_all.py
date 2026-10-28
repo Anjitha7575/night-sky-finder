@@ -1,9 +1,23 @@
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from skyfinder.measure import track, speed, straightness, blink_detect
+import cv2
 
-for f in sorted(Path("data/sample").glob("*.mp4")):
-    pts = track(f, gap=1)
-    print(f"{f.name[:30]}  speed: {speed(pts):4}  straight: {straightness(pts)}  blink: {blink_detect(pts)}")
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from skyfinder.measure import measure
+
+TYPES = {".mp4", ".avi", ".mov", ".gif", ".jpg", ".jpeg", ".png"}
+out = Path("data/images")
+out.mkdir(parents=True, exist_ok=True)
+
+for f in sorted(Path("data/sample").rglob("*")):
+    if f.suffix.lower() not in TYPES:
+        continue
+    r = measure(f)
+    img = r.pop("image", None)
+    if img is not None:
+        cv2.imwrite(str(out / (f.stem + ".png")), img)
+    print(f.name[:32])
+    for k, v in r.items():
+        if k != "file":
+            print(f"    {k}: {v}")
