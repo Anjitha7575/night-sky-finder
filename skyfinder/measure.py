@@ -64,7 +64,25 @@ def blink_detect(points):
     span = points[-1]["frame"] - points[0]["frame"] + 1
     seen_ratio = round(len(points) / span, 2)
     return {"seen_ratio": seen_ratio, "blinking": seen_ratio < 0.5}
+
+def combined_image(path, scale=4):
+    video = cv2.VideoCapture(str(path))
+    first = None
+    stack = None
+    while True:
+        ok, frame = video.read()
+        if not ok:
+            break
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        if first is None:
+            first = gray
+            stack = np.zeros_like(gray)
+            continue
+        diff = cv2.subtract(gray, first)
+        stack = np.maximum(stack, diff)
+    video.release()
+    if stack is None:
+        return None
+    stack = cv2.normalize(stack, None, 0, 255, cv2.NORM_MINMAX)
+    return cv2.resize(stack, None, fx=scale, fy=scale, interpolation=cv2.INTER_NEAREST)
     
-for f in sorted(Path("data/sample").glob("*.mp4")):
-    pts = track(f, gap=1)
-    print(f"{f.name[:30]}  speed: {speed(pts):4}  straight: {straightness(pts)}  blink: {blink_detect(pts)}")
