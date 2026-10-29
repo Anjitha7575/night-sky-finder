@@ -15,6 +15,7 @@ for f in sorted(Path("data/sample").rglob("*")):
         continue
     r = measure(f)
     img = r.pop("image", None)
+    r.pop("preview", None)
     if img is not None:
         cv2.imwrite(str(out / (f.stem + ".png")), img)
     print(f.name[:32])

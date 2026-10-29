@@ -17,6 +17,7 @@ class Verdict(BaseModel):
     confidence: Literal["high", "medium", "low"]
     reason: str
     next_step: Literal["none", "watch_video", "ask_human"]
+    key_clue: str = ""  # the one clue that decided it (filled by the agent)
     source: Literal["mock", "meta"] = "mock"
 
 

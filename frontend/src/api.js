@@ -20,3 +20,15 @@ export const analyzeUpload = (file) => {
   form.append("file", file);
   return request("/api/analyze", { method: "POST", body: form });
 };
+
+export const sampleFileUrl = (name) =>
+  `${BASE}/api/samples/file?name=${encodeURIComponent(name)}`;
+
+export const measureSample = (name) =>
+  request(`/api/samples/measure?name=${encodeURIComponent(name)}`, { method: "POST" });
+
+export const investigateSample = (name) =>
+  request(`/api/samples/investigate?name=${encodeURIComponent(name)}`, { method: "POST" });
+
+export const classifySample = (name) =>
+  request(`/api/samples/classify?name=${encodeURIComponent(name)}`, { method: "POST" });

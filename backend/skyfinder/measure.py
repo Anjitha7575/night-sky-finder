@@ -47,22 +47,31 @@ def read_frames(path, max_frames=300, max_side=1024):
     return frames, fps, input_type
 
 
-def track(frames, threshold=40, gap=1, flash_share=0.2, min_area=3, edge=0.03):
+def track(frames, threshold=40, gap=1, flash_share=0.2, min_area=3, edge=0.03, flicker_share=0.1):
     points = []
     flash_frames = []
-    if not frames:
+    if len(frames) <= gap:
         return points, flash_frames
     h, w = frames[0].shape
     mask = np.zeros((h, w), dtype=np.uint8)
     eh, ew = int(h * edge), int(w * edge)
     mask[eh:h - eh, ew:w - ew] = 1
 
+    changes = []
     for i in range(gap, len(frames)):
         brighter = cv2.subtract(frames[i], frames[i - gap])
-        changed = (brighter > threshold).astype(np.uint8) * mask
-        if changed.mean() > flash_share:
+        changes.append((brighter > threshold).astype(np.uint8) * mask)
+
+    flash = {i for i, c in zip(range(gap, len(frames)), changes) if c.mean() > flash_share}
+    counts = sum(c for i, c in zip(range(gap, len(frames)), changes) if i not in flash)
+    limit = max(3, flicker_share * len(changes))
+    steady = (counts <= limit).astype(np.uint8)
+
+    for i, changed in zip(range(gap, len(frames)), changes):
+        if i in flash:
             flash_frames.append(i)
             continue
+        changed = changed * steady
         n, labels, stats, _ = cv2.connectedComponentsWithStats(changed)
         if n < 2:
             continue
@@ -85,7 +94,7 @@ def longest_track(points, max_jump):
         if tracks:
             last = tracks[-1][-1]
             jump = np.hypot(p["x"] - last["x"], p["y"] - last["y"])
-            if jump <= max_jump * (p["frame"] - last["frame"]):
+            if jump <= max_jump:
                 tracks[-1].append(p)
                 continue
         tracks.append([p])
@@ -149,6 +158,19 @@ def combined_image(frames, skip=(), out_side=512):
     return cv2.resize(stack, None, fx=scale, fy=scale, interpolation=cv2.INTER_NEAREST)
 
 
+def preview_image(frames, flash_frames=(), out_side=512):
+    if not frames:
+        return None
+    if flash_frames:
+        img = frames[flash_frames[0]]
+    else:
+        img = np.max(np.stack(frames), axis=0)
+    h, w = img.shape
+    scale = out_side / max(h, w)
+    interp = cv2.INTER_CUBIC if scale > 1 else cv2.INTER_AREA
+    return cv2.resize(img, None, fx=scale, fy=scale, interpolation=interp)
+
+
 def measure(path):
     frames, fps, input_type = read_frames(path)
     if not frames:
@@ -166,8 +188,10 @@ def measure(path):
             "blink": None,
             "visible_sec": None,
             "flash_frames": [],
+            "points": [],
             "note": "single image: movement unknown",
             "image": combined_image(frames),
+            "preview": preview_image(frames),
         })
         return result
 
@@ -195,7 +219,9 @@ def measure(path):
         "blink": blink_detect(points),
         "visible_sec": visible,
         "flash_frames": flash_frames,
+        "points": points,  # the tracked path, used by the AI's tools
         "note": "; ".join(notes) or None,
         "image": combined_image(frames, skip=set(flash_frames)),
+        "preview": preview_image(frames, flash_frames),
     })
     return result

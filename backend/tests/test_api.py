@@ -33,6 +33,7 @@ def test_analyze_upload(tmp_path, monkeypatch):
     assert body["verdict"]["source"] == "mock"
     assert body["measured"]["camera"]["fps"] == 25.0
     assert body["image_png_base64"]
+    assert body["preview_png_base64"]
 
 
 def test_rejects_wrong_type():
@@ -53,3 +54,35 @@ def test_list_and_analyze_sample(tmp_path, monkeypatch):
     assert client.get("/api/samples").json() == ["dot.avi"]
     r = client.post("/api/samples/analyze", params={"name": "dot.avi"})
     assert r.status_code == 200 and r.json()["file"] == "dot.avi"
+
+
+def test_sample_file_download(tmp_path, monkeypatch):
+    monkeypatch.setattr(api, "SAMPLES", tmp_path)
+    make_video(tmp_path / "dot.avi")
+    r = client.get("/api/samples/file", params={"name": "dot.avi"})
+    assert r.status_code == 200 and len(r.content) > 0
+    assert client.get("/api/samples/file", params={"name": "../secret"}).status_code == 404
+
+
+def test_measure_then_classify(tmp_path, monkeypatch):
+    monkeypatch.setenv("AI_MODE", "mock")
+    monkeypatch.setattr(api, "SAMPLES", tmp_path)
+    make_video(tmp_path / "dot.avi")
+    m = client.post("/api/samples/measure", params={"name": "dot.avi"})
+    assert m.status_code == 200
+    assert m.json()["measured"]["camera"]["fps"] == 25.0
+    assert m.json()["image_png_base64"]
+    c = client.post("/api/samples/classify", params={"name": "dot.avi"})
+    assert c.status_code == 200 and c.json()["verdict"]["category"] == "meteor"
+
+
+def test_investigate_sample(tmp_path, monkeypatch):
+    monkeypatch.setenv("AI_MODE", "mock")
+    monkeypatch.setattr(api, "SAMPLES", tmp_path)
+    make_video(tmp_path / "dot2.avi")
+    r = client.post("/api/samples/investigate", params={"name": "dot2.avi"})
+    assert r.status_code == 200
+    body = r.json()
+    assert body["verdict"]["category"] == "meteor"
+    assert body["steps"][0]["tool"] == "first_look"
+    assert body["steps"][0]["image_png_base64"]
