@@ -1,0 +1,493 @@
+{
+ "how": "frames",
+ "tokens": {
+  "input": 51848,
+  "output": 14073
+ },
+ "rows": [
+  {
+   "file": "goskysentinel/m20260930_054402_157.mp4",
+   "expert": null,
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No distinct streak or moving point seen, only diffuse cloudy structures with bright moon on left.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3275,
+    "output": 792
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short 0.67s straight streak seen in most frames with variable brightness, typical of a brief meteor rather than a long blinking plane or steady satellite.",
+    "next_step": "none",
+    "key_clue": "0.67s straight streak high seen ratio",
+    "source": "meta"
+   },
+   "ours_checks": 4
+  },
+  {
+   "file": "goskysentinel/m20261006_042529_143.mp4",
+   "expert": null,
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Very faint diffuse smudge drifts slowly below center, no bright streak or blinking lights.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3275,
+    "output": 567
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "goskysentinel/m20261013_102705_813.mp4",
+   "expert": null,
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Brief point brightens then fades in place with no trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3275,
+    "output": 428
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "goskysentinel/m20261016_072159_856.mp4",
+   "expert": null,
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible in these dark all-sky frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3275,
+    "output": 429
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "goskysentinel/m20261023_115820_083.mp4",
+   "expert": null,
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "faint point appears in single frame only with no track across frames",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3275,
+    "output": 484
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "goskysentinel/m20261025_100814_206.mp4",
+   "expert": null,
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames appear nearly identical with no distinct moving streak or point visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3275,
+    "output": 395
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Very short 0.2s straight streak seen in every frame with quick brighten then fade. Speed and straightness match a faint fast meteor.",
+    "next_step": "none",
+    "key_clue": "0.2s straight fade",
+    "source": "meta"
+   },
+   "ours_checks": 4
+  },
+  {
+   "file": "goskysentinel/m20261028_090049_463.mp4",
+   "expert": null,
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "All 8 frames appear static with no clear moving streak or point.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3275,
+    "output": 516
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short 0.7s straight track seen in every frame with brightness flare near the end. Duration and steady straight motion fit a faint meteor better than a plane or satellite.",
+    "next_step": "none",
+    "key_clue": "0.7s straight flare track",
+    "source": "meta"
+   },
+   "ours_checks": 4
+  },
+  {
+   "file": "meteor__2019_02_27_07_52_46_000_010006-trim0789-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint small point visible across several frames moving slowly and steadily.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 727
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "meteor__2019_12_13_04_06_02_000_010004-trim355-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Brief point light in upper right for 3-4 frames then vanishes with little motion, no streak or track.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 805
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "meteor__2019_12_15_04_55_13_000_010004-trim403-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Bright point with luminous trail moves quickly across 3 frames then vanishes.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 453
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "meteor__2019_12_15_05_11_07_000_010001-trim106-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Small point moves quickly across dark sky in ~4 frames then disappears.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 676
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "meteor__2019_12_15_05_11_14_000_010004-trim191-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small faint point moves steadily downward across several frames with no trail or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 476
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "non_meteor__2021_04_21_19_27_00_000_010320-trim-0201-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No distinct streak or point source, only diffuse bright and dark patches slowly changing shape like clouds.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 817
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Image shows only faint scattered specks with no clear path, and code found no moving object.",
+    "next_step": "ask_human",
+    "key_clue": "no clear path and no detection",
+    "source": "meta"
+   },
+   "ours_checks": 4
+  },
+  {
+   "file": "non_meteor__2021_04_22_22_48_00_000_010319-trim-0519-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Two steady points fade and disappear in order, not moving, consistent with cloud obscuring stars.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 588
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "non_meteor__2021_04_22_23_40_01_000_010319-trim-0748-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are extremely dark with only faint dots and no clear trail or shape.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 626
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "non_meteor__2021_04_22_23_40_01_000_010320-trim-0539-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Point moves steadily across dark sky and one frame shows a bright head with faint trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 1523
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "non_meteor__2021_04_22_23_50_00_000_010319-trim-1387-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "high",
+    "reason": "Small point of light moves steadily in a straight line across frames with constant brightness.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 536
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "zenodo/Gcam11-teleferico-PNteide-CAN-2016-11-05 - 22-34-22.gif",
+   "expert": null,
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Single-frame bright bloom at upper edge with no visible streak or track.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 4851,
+    "output": 498
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "zenodo/Gcam13-IAC-OT-PNteide-CAN-2016-11-05 - 22-57-17.gif",
+   "expert": null,
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Frames are nearly black with only very faint diffuse brightening drifting in upper-right, no clear meteor streak or plane flashes.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 4851,
+    "output": 839
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "zenodo/Gcam3-teleferico-PNteide-CAN-2016-05-04 - 02-35-47.gif",
+   "expert": null,
+   "alone": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Short bright streak appears in only one frame then vanishes, typical of a meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3387,
+    "output": 269
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "zenodo/Gcam3-teleferico-PNteide-CAN-2016-05-06 - 04-20-13.gif",
+   "expert": null,
+   "alone": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Brief bright streak appears in one frame only and vanishes, typical of meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3387,
+    "output": 393
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "zenodo/Gcam3-teleferico-PNteide-CAN-2016-11-05 - 21-40-44.gif",
+   "expert": null,
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Sudden diffuse bright spot appears at left horizon in final frame with no streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3387,
+    "output": 469
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "zenodo/Gcam3-teleferico-PNteide-CAN-2016-11-05 - 23-38-18.gif",
+   "expert": null,
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Single-frame diffuse brightening on right horizon, no moving streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3387,
+    "output": 480
+   },
+   "ours": null,
+   "ours_checks": null
+  },
+  {
+   "file": "zenodo/Gcam3-teleferico-PNteide-CAN-2016-11-06 - 04-19-04.gif",
+   "expert": null,
+   "alone": {
+    "category": "flash",
+    "confidence": "high",
+    "reason": "Brief bright illumination above lower-left horizon in one frame then fades, no moving track.",
+    "next_step": "none",
+    "key_clue": "",
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 3387,
+    "output": 287
+   },
+   "ours": null,
+   "ours_checks": null
+  }
+ ]
+}

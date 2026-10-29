@@ -79,7 +79,6 @@ def test_measure_then_classify(tmp_path, monkeypatch):
 def test_investigate_sample(tmp_path, monkeypatch):
     monkeypatch.setenv("AI_MODE", "mock")
     monkeypatch.setattr(api, "SAMPLES", tmp_path)
-    monkeypatch.setattr(api, "ANSWERS_FILE", tmp_path / "answers.json")
     make_video(tmp_path / "dot2.avi")
     r = client.post("/api/samples/investigate", params={"name": "dot2.avi"})
     assert r.status_code == 200
@@ -87,19 +86,3 @@ def test_investigate_sample(tmp_path, monkeypatch):
     assert body["verdict"]["category"] == "meteor"
     assert body["steps"][0]["tool"] == "first_look"
     assert body["steps"][0]["image_png_base64"]
-
-
-def test_answer_is_saved_and_reused(tmp_path, monkeypatch):
-    monkeypatch.setenv("AI_MODE", "mock")
-    monkeypatch.setattr(api, "SAMPLES", tmp_path)
-    monkeypatch.setattr(api, "ANSWERS_FILE", tmp_path / "answers.json")
-    make_video(tmp_path / "dot3.avi")
-    first = client.post("/api/samples/investigate", params={"name": "dot3.avi"}).json()
-    assert "mock:dot3.avi" in api.load_answers()
-
-    calls = []
-    monkeypatch.setattr(api, "investigate", lambda *a, **k: calls.append(1))
-    client.post("/api/samples/measure", params={"name": "dot3.avi"})  # a page refresh
-    again = client.post("/api/samples/investigate", params={"name": "dot3.avi"}).json()
-    assert calls == []  # the AI was not asked again
-    assert again["verdict"] == first["verdict"]

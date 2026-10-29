@@ -1,5 +1,4 @@
 import base64
-import json
 import os
 import tempfile
 from pathlib import Path
@@ -37,22 +36,6 @@ def to_b64(image):
 
 
 _measured = {}
-
-# Saved AI answers per sample, kept in a file, so each clip is paid for only once,
-# even after a page refresh or a backend restart. Delete the file to ask the AI again.
-ANSWERS_FILE = Path(os.getenv("ANSWERS_FILE", "data/answers.json"))
-
-
-def load_answers():
-    try:
-        return json.loads(ANSWERS_FILE.read_text())
-    except (OSError, ValueError):
-        return {}
-
-
-def save_answers(answers):
-    ANSWERS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    ANSWERS_FILE.write_text(json.dumps(answers, indent=1))
 
 
 def measured_payload(result, name):
@@ -126,25 +109,18 @@ def classify_sample(name: str):
 
 @app.post("/api/samples/investigate")
 def investigate_sample(name: str):
-    mode = os.getenv("AI_MODE", "mock")
-    key = f"{mode}:{name}"  # test-mode answers never hide real Muse Spark answers
-    answers = load_answers()
-    if key not in answers:
-        path = sample_path(name)
-        result = _measured.get(name)
-        if result is None:
-            result = measure(path)
-            _measured[name] = result
-        answer = investigate(path, result)
-        answers[key] = {
-            "file": name,
-            "verdict": answer["verdict"].model_dump(),
-            "steps": answer["steps"],
-            "usage": answer.get("usage"),
-        }
-        if not answer["verdict"].reason.startswith("The AI check failed"):
-            save_answers(answers)  # don't save failures, so they are retried next time
-    return answers[key]
+    path = sample_path(name)
+    result = _measured.get(name)
+    if result is None:
+        result = measure(path)
+        _measured[name] = result
+    answer = investigate(path, result)  # always a fresh AI check; the browser keeps answers until refresh
+    return {
+        "file": name,
+        "verdict": answer["verdict"].model_dump(),
+        "steps": answer["steps"],
+        "usage": answer.get("usage"),
+    }
 
 
 @app.get("/api/samples/file")
