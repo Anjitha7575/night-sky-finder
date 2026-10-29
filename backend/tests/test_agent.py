@@ -53,19 +53,24 @@ def test_mock_agent_checks_horizon(tmp_path):
 
 # ---- Muse Spark loop, tested with a fake API (no key, no money) ----
 
-class FakeCall:
+class FakeItem:
+    """Looks like one item in resp.output (a tool request)."""
+
     def __init__(self, name, why):
-        self.id = "call_1"
-        self.function = type("F", (), {"name": name, "arguments": '{"why": "%s"}' % why})()
-
-
-class FakeMessage:
-    def __init__(self, content=None, tool_calls=None):
-        self.content = content
-        self.tool_calls = tool_calls
+        self.type = "function_call"
+        self.call_id = "call_1"
+        self.name = name
+        self.arguments = '{"why": "%s"}' % why
 
     def model_dump(self, exclude_none=True):
-        return {"role": "assistant", "content": self.content or ""}
+        return {"type": self.type, "call_id": self.call_id, "name": self.name, "arguments": self.arguments}
+
+
+class FakeResponse:
+    def __init__(self, output=(), text=""):
+        self.output = list(output)
+        self.output_text = text
+        self.usage = type("U", (), {"input_tokens": 100, "output_tokens": 20})()
 
 
 class FakeClient:
@@ -73,17 +78,16 @@ class FakeClient:
 
     def __init__(self, **kwargs):
         self.replies = [
-            FakeMessage(tool_calls=[FakeCall("where_in_sky", "Is it near the horizon?")]),
-            FakeMessage(content='{"category": "meteor", "confidence": "high", "reason": "Short and straight.",'
-                                ' "next_step": "none", "key_clue": "near the horizon"}'),
+            FakeResponse(output=[FakeItem("where_in_sky", "Is it near the horizon?")]),
+            FakeResponse(text='{"category": "meteor", "confidence": "high", "reason": "Short and straight.",'
+                              ' "next_step": "none", "key_clue": "near the horizon"}'),
         ]
         self.seen = []
-        self.chat = type("C", (), {"completions": self})()
+        self.responses = self
 
     def create(self, **kwargs):
         self.seen.append(kwargs)
-        msg = self.replies.pop(0)
-        return type("R", (), {"choices": [type("Ch", (), {"message": msg})()]})()
+        return self.replies.pop(0)
 
 
 def test_meta_agent_loop(tmp_path, monkeypatch):
@@ -96,3 +100,4 @@ def test_meta_agent_loop(tmp_path, monkeypatch):
     assert answer["verdict"].category == "meteor"
     assert answer["verdict"].source == "meta"
     assert answer["verdict"].key_clue == "near the horizon"
+    assert answer["usage"] == {"calls": 2, "input_tokens": 200, "output_tokens": 40}

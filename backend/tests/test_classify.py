@@ -1,6 +1,6 @@
 import numpy as np
 
-from skyfinder.classify import Verdict, build_messages, classify, describe, parse_reply
+from skyfinder.classify import Verdict, build_input, classify, describe, parse_reply
 
 
 def fake_result(**extra):
@@ -49,9 +49,9 @@ def test_parse_bad_reply_is_safe():
 
 
 def test_prompt_has_image_and_numbers():
-    msgs = build_messages(fake_result())
-    parts = msgs[1]["content"]
-    assert parts[1]["image_url"]["url"].startswith("data:image/png;base64,")
+    items = build_input(fake_result())
+    parts = items[0]["content"]
+    assert parts[1]["image_url"].startswith("data:image/png;base64,")
     assert "120.0 %" in parts[0]["text"]
 
 

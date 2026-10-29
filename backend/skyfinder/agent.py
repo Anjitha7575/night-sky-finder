@@ -10,7 +10,7 @@ import os
 
 import cv2
 
-from skyfinder.classify import GUIDE, Verdict, build_messages, classify, describe, mock_classify, parse_reply
+from skyfinder.classify import GUIDE, Verdict, build_input, classify, describe, mock_classify, parse_reply
 from skyfinder.tools import TOOLS, run_tool
 
 MAX_STEPS = 3
@@ -23,17 +23,16 @@ You can ask for more evidence before you answer, using the tools.
 - In each tool call, fill "why" with one short sentence: what you hope to learn.
 In your final JSON also add "key_clue": the one clue that decided your answer, in a few words."""
 
+# tool menu in the /v1/responses format
 TOOL_SPECS = [
     {
         "type": "function",
-        "function": {
-            "name": name,
-            "description": description,
-            "parameters": {
-                "type": "object",
-                "properties": {"why": {"type": "string", "description": "One short sentence: what you hope this check tells you."}},
-                "required": ["why"],
-            },
+        "name": name,
+        "description": description,
+        "parameters": {
+            "type": "object",
+            "properties": {"why": {"type": "string", "description": "One short sentence: what you hope this check tells you."}},
+            "required": ["why"],
         },
     }
     for name, (_, _, description) in TOOLS.items()
@@ -95,45 +94,51 @@ def meta_investigate(path, result, model=None, effort=None):
     from openai import OpenAI
 
     client = OpenAI(base_url="https://api.meta.ai/v1", api_key=os.getenv("META_API_KEY"))
-    messages = build_messages(result)
-    messages[0]["content"] = AGENT_GUIDE
+    items = build_input(result)  # the whole conversation so far, sent each round
     steps = [first_look(result)]
+    usage = {"calls": 0, "input_tokens": 0, "output_tokens": 0}
 
     for round_no in range(MAX_STEPS + 1):
         last = round_no == MAX_STEPS  # last round: no more tools, must answer
-        resp = client.chat.completions.create(
+        resp = client.responses.create(
             model=model or os.getenv("META_MODEL", "muse-spark-1.3"),
-            messages=messages,
+            instructions=AGENT_GUIDE,
+            input=items,
             tools=TOOL_SPECS,
             tool_choice="none" if last else "auto",
-            reasoning_effort=effort or os.getenv("META_EFFORT", "low"),
+            reasoning={"effort": effort or os.getenv("META_EFFORT", "low")},
         )
-        msg = resp.choices[0].message
-        if not msg.tool_calls:
-            return {"steps": steps, "verdict": parse_reply(msg.content or "", "meta")}
+        usage["calls"] += 1
+        if getattr(resp, "usage", None):
+            usage["input_tokens"] += resp.usage.input_tokens or 0
+            usage["output_tokens"] += resp.usage.output_tokens or 0
 
-        messages.append(msg.model_dump(exclude_none=True))
-        images = []
-        for call in msg.tool_calls:
-            name = call.function.name
+        calls = [o for o in resp.output if o.type == "function_call"]
+        if not calls:
+            return {"steps": steps, "verdict": parse_reply(resp.output_text or "", "meta"), "usage": usage}
+
+        # keep everything the model said (its thinking + tool requests) in the conversation
+        items += [o.model_dump(exclude_none=True) for o in resp.output]
+        pictures = []
+        for call in calls:
             try:
-                why = json.loads(call.function.arguments or "{}").get("why", "")
+                why = json.loads(call.arguments or "{}").get("why", "")
             except ValueError:
                 why = ""
-            step, out = tool_step(name, why, path, result)
+            step, out = tool_step(call.name, why, path, result)
             steps.append(step)
-            messages.append({"role": "tool", "tool_call_id": call.id, "content": out["text"]})
+            items.append({"type": "function_call_output", "call_id": call.call_id, "output": out["text"]})
             if step["image_png_base64"]:
-                images.append((step["title"], step["image_png_base64"]))
-        # tool messages carry text only, so pictures go in one user message after them
-        if images:
+                pictures.append((step["title"], step["image_png_base64"]))
+        # tool outputs carry text only, so pictures go in one user message after them
+        if pictures:
             content = []
-            for title, b64 in images:
-                content.append({"type": "text", "text": f"Picture from: {title}"})
-                content.append({"type": "image_url", "image_url": {"url": "data:image/png;base64," + b64}})
-            messages.append({"role": "user", "content": content})
+            for title, b64 in pictures:
+                content.append({"type": "input_text", "text": f"Picture from: {title}"})
+                content.append({"type": "input_image", "image_url": "data:image/png;base64," + b64})
+            items.append({"role": "user", "content": content})
 
-    return {"steps": steps, "verdict": parse_reply("", "meta")}
+    return {"steps": steps, "verdict": parse_reply("", "meta"), "usage": usage}
 
 
 def investigate(path, result, mode=None):

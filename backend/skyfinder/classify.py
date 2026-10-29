@@ -73,15 +73,16 @@ def describe(result):
     return "\n".join(lines)
 
 
-def build_messages(result):
+def build_input(result):
+    """The first message for Meta's /v1/responses API: text + the combined image.
+    The GUIDE goes separately, as "instructions"."""
     ok, png = cv2.imencode(".png", result["image"])
     image_url = "data:image/png;base64," + base64.b64encode(png.tobytes()).decode()
     text = "Attached: one combined image.\nMeasurements:\n" + describe(result)
     return [
-        {"role": "system", "content": GUIDE},
         {"role": "user", "content": [
-            {"type": "text", "text": text},
-            {"type": "image_url", "image_url": {"url": image_url}},
+            {"type": "input_text", "text": text},
+            {"type": "input_image", "image_url": image_url},
         ]},
     ]
 
@@ -130,12 +131,13 @@ def meta_classify(result, model=None, effort=None):
     from openai import OpenAI
 
     client = OpenAI(base_url="https://api.meta.ai/v1", api_key=os.getenv("META_API_KEY"))
-    resp = client.chat.completions.create(
+    resp = client.responses.create(
         model=model or os.getenv("META_MODEL", "muse-spark-1.3"),
-        messages=build_messages(result),
-        reasoning_effort=effort or os.getenv("META_EFFORT", "low"),
+        instructions=GUIDE,
+        input=build_input(result),
+        reasoning={"effort": effort or os.getenv("META_EFFORT", "low")},
     )
-    return parse_reply(resp.choices[0].message.content or "", "meta")
+    return parse_reply(resp.output_text or "", "meta")
 
 
 def classify(result, mode=None):
