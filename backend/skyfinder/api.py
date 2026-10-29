@@ -71,12 +71,22 @@ def health():
     return {"status": "ok", "ai_mode": os.getenv("AI_MODE", "mock")}
 
 
+FIRST = "first_look"  # hand-picked clips, shown first, in the order of first_look/order.txt
+
+
 @app.get("/api/samples")
 def list_samples():
     if not SAMPLES.exists():
         return []
-    files = [f for f in sorted(SAMPLES.rglob("*")) if f.suffix.lower() in ALLOWED]
-    return [str(f.relative_to(SAMPLES)) for f in files]
+    files = [str(f.relative_to(SAMPLES)) for f in sorted(SAMPLES.rglob("*")) if f.suffix.lower() in ALLOWED]
+    first = [f for f in files if f.startswith(FIRST + "/")]
+    order_file = SAMPLES / FIRST / "order.txt"
+    if order_file.exists():
+        wanted = [line.strip() for line in order_file.read_text().splitlines() if line.strip()]
+        rank = {name: i for i, name in enumerate(wanted)}
+        # listed clips in order.txt order; any not listed go after them
+        first.sort(key=lambda f: rank.get(f.split("/", 1)[1], len(wanted)))
+    return first + [f for f in files if not f.startswith(FIRST + "/")]
 
 
 def sample_path(name):

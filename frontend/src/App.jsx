@@ -7,6 +7,7 @@ import Player from "./components/Player";
 import EventPanel from "./components/EventPanel";
 import Timeline from "./components/Timeline";
 import HowItWorks from "./components/HowItWorks";
+import Credit from "./components/Credit";
 
 const newestFirst = (a, b) => (b.info.sortKey || "").localeCompare(a.info.sortKey || "");
 
@@ -38,9 +39,14 @@ export default function App() {
     getHealth().then(setHealth).catch(() => setHealth({ status: "down" }));
     getSamples()
       .then((names) => {
-        const list = names
-          .map((name) => ({ id: name, name, info: describeName(name), status: "idle" }))
-          .sort(newestFirst);
+        const all = names.map((name) => ({ id: name, name, info: describeName(name), status: "idle" }));
+        // 1st: the newest recording, always. Then the hand-picked "first_look" clips in
+        // the backend's order (order.txt). Then the rest, newest first.
+        const newest = [...all].sort(newestFirst)[0];
+        const others = all.filter((i) => i !== newest);
+        const first = others.filter((i) => i.name.startsWith("first_look/"));
+        const rest = others.filter((i) => !i.name.startsWith("first_look/")).sort(newestFirst);
+        const list = newest ? [newest, ...first, ...rest] : [];
         setItems(list);
         if (list.length) {
           setSelected(list[0].id);
@@ -115,10 +121,13 @@ export default function App() {
       </header>
 
       <section className="intro">
+        <div className="intro__box">
         <p>
           Sky cameras capture anything that moves. Night Sky Finder measures each clip and uses AI to identify
           meteors, planes, satellites and clouds, so owners don't have to review hundreds by hand.
         </p>
+        </div>
+        <Credit />
       </section>
 
       <div className="app">
@@ -128,12 +137,12 @@ export default function App() {
           items={items}
           selected={selected}
           onSelect={select}
+          onUpload={() => fileInput.current?.click()}
           tools={
             <>
               <span className={`mode${isMeta ? " mode--live" : ""}`}>
                 {health?.status === "down" ? "Backend offline" : isMeta ? "AI: Meta Muse Spark" : "Test mode: simple rules"}
               </span>
-              <button className="ghost" onClick={() => fileInput.current?.click()}>+ Check your own video</button>
               <input
                 ref={fileInput}
                 type="file"

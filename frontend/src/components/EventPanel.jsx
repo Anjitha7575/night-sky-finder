@@ -73,7 +73,8 @@ export default function EventPanel({ item, index, aiMode, onRetry }) {
   const steps = item.steps || [];
   const cat = v ? categoryOf(v.category) : null;
   const image = item.measured?.image_png_base64;
-  const agrees = v && info.expert && (info.expert === "meteor") === (v.category === "meteor");
+  const sure = v && v.category !== "unsure";
+  const agrees = sure && info.expert && (info.expert === "meteor") === (v.category === "meteor");
   const isMeta = (v?.source || aiMode) === "meta";
 
   return (
@@ -127,8 +128,8 @@ export default function EventPanel({ item, index, aiMode, onRetry }) {
               </p>
             )}
             {info.expert && (
-              <p className={`explain__expert ${agrees ? "good" : "bad"}`}>
-                Experts say: {info.expert}. {agrees ? "The AI agrees ✓" : "The AI got this one wrong."}
+              <p className={`explain__expert ${!sure ? "" : agrees ? "good" : "bad"}`}>
+                Experts say: {info.expert}. {!sure ? "The AI was not sure." : agrees ? "The AI agrees ✓" : "The AI got this one wrong."}
               </p>
             )}
           </div>

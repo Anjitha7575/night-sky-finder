@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { sampleFileUrl } from "../api";
-import { Play } from "./Icons";
+import { Play, Upload } from "./Icons";
 
 const fmt = (sec) => {
   if (sec == null || !isFinite(sec)) return null;
@@ -21,7 +21,7 @@ function Card({ item, newest, on, onSelect }) {
   const src = srcOf(item);
 
   return (
-    <button className={`vcard${on ? " vcard--on" : ""}`} onClick={() => onSelect(item.id)}>
+    <button className={`vcard${on ? " vcard--on" : ""}`} data-id={item.id} onClick={() => onSelect(item.id)}>
       <span className="vcard__pic">
         {isVideo(item.name) ? (
           <video src={`${src}#t=0.5`} muted preload="metadata" onLoadedMetadata={(e) => setDuration(e.target.duration)} />
@@ -45,8 +45,21 @@ function Card({ item, newest, on, onSelect }) {
   );
 }
 
-export default function VideoLibrary({ items, selected, onSelect, tools }) {
-  const newestId = items.find((i) => !i.upload && i.info.sortKey)?.id;
+// fixed tile on the left: always visible, never scrolls away
+function UploadTile({ onUpload }) {
+  return (
+    <button className="uptile" onClick={onUpload} title="MP4, GIF or photo, up to 50 MB">
+      <span className="uptile__icon"><Upload /></span>
+      <b>Check your<br />own video</b>
+    </button>
+  );
+}
+
+export default function VideoLibrary({ items, selected, onSelect, onUpload, tools }) {
+  // the newest recording gets the "Newest" tag, wherever it sits in the list
+  const newestId = items
+    .filter((i) => !i.upload && i.info.sortKey)
+    .reduce((best, i) => (!best || i.info.sortKey > best.info.sortKey ? i : best), null)?.id;
   const track = useRef(null);
   const [edge, setEdge] = useState({ start: true, end: false });
 
@@ -56,6 +69,18 @@ export default function VideoLibrary({ items, selected, onSelect, tools }) {
     setEdge({ start: el.scrollLeft < 4, end: el.scrollLeft + el.clientWidth >= el.scrollWidth - 4 });
   }
   useEffect(onScroll, [items.length]);
+
+  // bring the selected card into view (e.g. a new upload is added at the start)
+  useEffect(() => {
+    const el = track.current;
+    const card = el?.querySelector(`[data-id="${CSS.escape(String(selected))}"]`);
+    if (!el || !card) return;
+    const left = card.offsetLeft - el.offsetLeft;
+    const right = left + card.offsetWidth;
+    if (left < el.scrollLeft || right > el.scrollLeft + el.clientWidth) {
+      el.scrollTo({ left: Math.max(0, left - 4), behavior: "smooth" });
+    }
+  }, [selected, items.length]);
 
   // move by one "page" of cards
   const slide = (dir) => track.current?.scrollBy({ left: dir * track.current.clientWidth * 0.9, behavior: "smooth" });
@@ -68,6 +93,8 @@ export default function VideoLibrary({ items, selected, onSelect, tools }) {
         </div>
         <div className="tools">{tools}</div>
       </div>
+      <div className="library">
+        <UploadTile onUpload={onUpload} />
       <div className="carousel">
         <button className="carousel__btn carousel__btn--prev" onClick={() => slide(-1)} disabled={edge.start} aria-label="Previous videos">‹</button>
         <div className="vlist" ref={track} onScroll={onScroll}>
@@ -76,6 +103,7 @@ export default function VideoLibrary({ items, selected, onSelect, tools }) {
           ))}
         </div>
         <button className="carousel__btn carousel__btn--next" onClick={() => slide(1)} disabled={edge.end} aria-label="More videos">›</button>
+      </div>
       </div>
     </section>
   );

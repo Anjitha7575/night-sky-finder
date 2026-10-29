@@ -86,6 +86,7 @@ class FakeClient:
         self.responses = self
 
     def create(self, **kwargs):
+        assert kwargs["tool_choice"] == "auto"  # the only value Meta accepts
         self.seen.append(kwargs)
         return self.replies.pop(0)
 
@@ -101,3 +102,22 @@ def test_meta_agent_loop(tmp_path, monkeypatch):
     assert answer["verdict"].source == "meta"
     assert answer["verdict"].key_clue == "near the horizon"
     assert answer["usage"] == {"calls": 2, "input_tokens": 200, "output_tokens": 40}
+
+
+class GreedyClient(FakeClient):
+    """Keeps asking for tools 5 times before answering."""
+
+    def __init__(self, **kwargs):
+        super().__init__()
+        answer = self.replies[1]
+        self.replies = [FakeResponse(output=[FakeItem("zoom_in", "more?")]) for _ in range(4)] + [answer]
+
+
+def test_meta_agent_stops_after_max_steps(tmp_path, monkeypatch):
+    import openai
+    monkeypatch.setattr(openai, "OpenAI", GreedyClient)
+    path = make_video(tmp_path / "low.avi", (150, 20), (2, 1.2))
+    answer = investigate(path, measure(path), mode="meta")
+    assert len(answer["steps"]) == 1 + 3  # first look + at most 3 checks
+    assert answer["verdict"].category == "meteor"
+    assert answer["usage"]["calls"] == 5

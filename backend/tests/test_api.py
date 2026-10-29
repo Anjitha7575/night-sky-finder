@@ -86,3 +86,15 @@ def test_investigate_sample(tmp_path, monkeypatch):
     assert body["verdict"]["category"] == "meteor"
     assert body["steps"][0]["tool"] == "first_look"
     assert body["steps"][0]["image_png_base64"]
+
+
+def test_first_look_order(tmp_path, monkeypatch):
+    monkeypatch.setattr(api, "SAMPLES", tmp_path)
+    (tmp_path / "first_look").mkdir()
+    (tmp_path / "more").mkdir()
+    for name in ["first_look/a.avi", "first_look/b.avi", "first_look/c.avi", "more/z.avi"]:
+        make_video(tmp_path / name)
+    (tmp_path / "first_look" / "order.txt").write_text("c.avi\na.avi\n")
+    assert client.get("/api/samples").json() == [
+        "first_look/c.avi", "first_look/a.avi", "first_look/b.avi", "more/z.avi",
+    ]

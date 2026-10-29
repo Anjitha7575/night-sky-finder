@@ -98,14 +98,16 @@ def meta_investigate(path, result, model=None, effort=None):
     steps = [first_look(result)]
     usage = {"calls": 0, "input_tokens": 0, "output_tokens": 0}
 
-    for round_no in range(MAX_STEPS + 1):
-        last = round_no == MAX_STEPS  # last round: no more tools, must answer
+    # Meta only accepts tool_choice="auto", so we can't forbid tools in the last round.
+    # Instead, once the limit is reached, tool requests get "no more checks, answer now".
+    for round_no in range(MAX_STEPS + 2):
+        over = round_no >= MAX_STEPS
         resp = client.responses.create(
             model=model or os.getenv("META_MODEL", "muse-spark-1.3"),
             instructions=AGENT_GUIDE,
             input=items,
             tools=TOOL_SPECS,
-            tool_choice="none" if last else "auto",
+            tool_choice="auto",
             reasoning={"effort": effort or os.getenv("META_EFFORT", "low")},
         )
         usage["calls"] += 1
@@ -121,6 +123,10 @@ def meta_investigate(path, result, model=None, effort=None):
         items += [o.model_dump(exclude_none=True) for o in resp.output]
         pictures = []
         for call in calls:
+            if over:
+                items.append({"type": "function_call_output", "call_id": call.call_id,
+                              "output": "No more checks allowed. Reply now with the final JSON only."})
+                continue
             try:
                 why = json.loads(call.arguments or "{}").get("why", "")
             except ValueError:
