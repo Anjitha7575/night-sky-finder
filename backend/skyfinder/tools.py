@@ -78,10 +78,11 @@ def brightness_curve(path, result):
     pts = [(int(i * (W - 10) / (len(values) - 1)) + 5, int(H - 10 - (v - lo) / (hi - lo) * (H - 20)))
            for i, v in enumerate(values)]
     cv2.polylines(chart, [np.array(pts, np.int32)], False, 255, 2)
-    return {
-        "text": f"Brightness over {len(values)} sightings: {shape} (min {values.min():.0f}, max {values.max():.0f} of 255).",
-        "image": chart,
-    }
+    text = f"Brightness over {len(values)} sightings: {shape} (min {values.min():.0f}, max {values.max():.0f} of 255)."
+    if values.max() >= 240:
+        text += (" Warning: it reaches almost the maximum (255), so the object may be too bright to measure;"
+                 " a flat curve here does not prove steady brightness.")
+    return {"text": text, "image": chart}
 
 
 def where_in_sky(path, result):

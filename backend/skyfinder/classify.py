@@ -28,9 +28,10 @@ What you get:
 - Measurements made by code from the video (when it is a video or GIF), and a short camera description.
 
 How objects usually look (compare speeds only within the same camera):
-- meteor: very fast, straight, seen for about a second or less, often brightens then fades. A fast meteor can look like a row of evenly spaced dots, because it jumps more than its own size between frames; it is still seen in almost every frame.
+- meteor: fast, straight, usually seen for about a second or less, often brightens then fades. A fast meteor can look like a row of evenly spaced dots, because it jumps more than its own size between frames; it is still seen in almost every frame.
+- fireball (answer "meteor"): a very bright meteor. It can last several seconds (2 to 10 s), often has a glowing head with a tail, flares or breaks into pieces, and can light up the sky. Do not rule out a meteor just because it lasts a few seconds if it is very bright and flares.
 - plane: slow, straight, seen for several seconds, lights blink, so the path is a dotted line with gaps in time (low seen ratio).
-- satellite: slow, straight, steady brightness, seen in almost every frame, no blinking.
+- satellite: slow, straight, steady brightness, seen in almost every frame, no blinking, no tail. Usually crosses for much longer than a fireball. A satellite flare is a smooth brightening and fading of a small point, with no tail.
 - bird or insect: curved or wavy path, often blurry, can be near the camera and look big.
 - cloud: large soft patches, no clear point or line, changes slowly.
 - flash: most of the sky lights up at once for a very short time (lightning, very bright fireball flash, or camera glitch).
@@ -70,6 +71,9 @@ def describe(result):
         ]
     if result.get("note"):
         lines.append(f"note: {result['note']}")
+        if "faint object" in result["note"]:
+            lines.append("so: gaps in the path (a low seen ratio) come from our measuring on a bright sky, "
+                         "not from blinking lights")
     return "\n".join(lines)
 
 

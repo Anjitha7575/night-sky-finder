@@ -74,3 +74,47 @@ def test_single_photo(tmp_path):
     assert r["input_type"] == "image"
     assert r["speed_px_per_frame"] is None
     assert "single image" in r["note"]
+
+def test_long_video_is_read_to_the_end(tmp_path):
+    # 400 frames, object only near the end: with max_frames=300 it used to be cut off
+    path = tmp_path / "long.avi"
+    writer = cv2.VideoWriter(str(path), cv2.VideoWriter_fourcc(*"MJPG"), 25, (200, 100))
+    for i in range(400):
+        frame = np.zeros((100, 200, 3), dtype=np.uint8)
+        if 350 <= i < 380:
+            cv2.circle(frame, (10 + (i - 350) * 6, 50), 3, (255, 255, 255), -1)
+        writer.write(frame)
+    writer.release()
+    r = measure(path)
+    assert r["camera"]["fps"] == 12.5  # every 2nd frame kept, so time per frame doubles
+    assert r["visible_sec"] == pytest.approx(30 / 25, abs=0.2)
+
+
+def test_faint_object_on_bright_sky(tmp_path):
+    # grey sky (150) and an object only 30 brighter: below the normal threshold of 40
+    path = tmp_path / "faint.avi"
+    writer = cv2.VideoWriter(str(path), cv2.VideoWriter_fourcc(*"MJPG"), 25, (200, 100))
+    for i in range(30):
+        frame = np.full((100, 200, 3), 150, dtype=np.uint8)
+        cv2.circle(frame, (10 + i * 6, 50), 3, (180, 180, 180), -1)
+        writer.write(frame)
+    writer.release()
+    r = measure(path)
+    assert r["straightness"] == pytest.approx(1.0, abs=0.05)
+    assert "lower threshold" in r["note"]
+
+
+def test_sky_slowly_lights_up(tmp_path):
+    # a dot moves, then the whole sky brightens step by step (each step < 40, total > 40)
+    path = tmp_path / "glow.avi"
+    writer = cv2.VideoWriter(str(path), cv2.VideoWriter_fourcc(*"MJPG"), 25, (200, 100))
+    for i in range(40):
+        sky = 20 + max(0, i - 30) * 15  # frames 31..39 get brighter and brighter
+        frame = np.full((100, 200, 3), min(sky, 255), dtype=np.uint8)
+        if i < 30:
+            cv2.circle(frame, (10 + i * 6, 50), 3, (255, 255, 255), -1)
+        writer.write(frame)
+    writer.release()
+    r = measure(path)
+    assert "whole sky got brighter" in r["note"]
+    assert r["flash_frames"] == []  # not a sudden one-frame flash

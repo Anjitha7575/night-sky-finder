@@ -121,3 +121,16 @@ def test_meta_agent_stops_after_max_steps(tmp_path, monkeypatch):
     assert len(answer["steps"]) == 1 + 3  # first look + at most 3 checks
     assert answer["verdict"].category == "meteor"
     assert answer["usage"]["calls"] == 5
+
+
+def test_brightness_tool_warns_when_too_bright():
+    points = [{"frame": i, "x": i, "y": 0, "brightness": b} for i, b in enumerate([230, 250, 252, 251, 249])]
+    out = run_tool("brightness_curve", None, {"points": points})
+    assert "too bright to measure" in out["text"]
+
+
+def test_video_is_read_once(tmp_path):
+    from skyfinder import measure as m
+    path = make_video(tmp_path / "dot.avi", (40, 100), (6, 0))
+    first = m.read_frames(path)
+    assert m.read_frames(path) is first  # second read comes from memory

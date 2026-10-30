@@ -58,3 +58,7 @@ def test_prompt_has_image_and_numbers():
 def test_photo_prompt_has_no_speed():
     text = describe(fake_result(input_type="image", note="single image: movement unknown"))
     assert "speed" not in text and "single image" in text
+
+def test_faint_note_explains_gaps():
+    text = describe(fake_result(note="faint object against a bright sky: found with a lower threshold"))
+    assert "not from blinking" in text
