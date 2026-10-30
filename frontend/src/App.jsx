@@ -8,6 +8,7 @@ import EventPanel from "./components/EventPanel";
 import Timeline from "./components/Timeline";
 import HowItWorks from "./components/HowItWorks";
 import Credit from "./components/Credit";
+import Results from "./components/Results";
 
 const newestFirst = (a, b) => (b.info.sortKey || "").localeCompare(a.info.sortKey || "");
 
@@ -17,6 +18,7 @@ export default function App() {
   const [selected, setSelected] = useState(null);
   const [busy, setBusy] = useState(false);
   const [showHow, setShowHow] = useState(true);
+  const [tab, setTab] = useState("live");
   const [error, setError] = useState("");
   const fileInput = useRef(null);
 
@@ -107,6 +109,10 @@ export default function App() {
             <p>Let AI check your sky camera clips</p>
           </div>
         </div>
+        <div className="tabs" role="tablist">
+          <button role="tab" aria-selected={tab === "live"} onClick={() => setTab("live")}>Live demo</button>
+          <button role="tab" aria-selected={tab === "results"} onClick={() => setTab("results")}>Results</button>
+        </div>
         <div className="top__right">
           <p className="tagline">
             Automatically filters hundreds of sky clips
@@ -130,7 +136,13 @@ export default function App() {
         <Credit />
       </section>
 
-      <div className="app">
+      {tab === "results" && (
+        <div className="app app--results">
+          <Results />
+        </div>
+      )}
+
+      <div className="app" hidden={tab !== "live"}>
         {showHow && <HowItWorks />}
 
         <VideoLibrary
