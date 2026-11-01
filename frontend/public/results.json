@@ -1,5 +1,5 @@
 {
- "tested": "30 Oct 2026",
+ "tested": "02 Nov 2026",
  "model": "muse-spark-1.3",
  "groups": [
   {
@@ -766,14 +766,14 @@
     [
      "non_meteor__2021_04_28_20_49_01_000_010353-trim-1146-crop-360p1.mp4",
      "not meteor",
-     "insect",
+     "bird",
      "cloud",
      "flash"
     ],
     [
      "non_meteor__2021_04_28_20_53_00_000_010353-trim-0598-crop-360p1.mp4",
      "not meteor",
-     "cloud",
+     "bird",
      "cloud",
      "cloud"
     ],
@@ -857,14 +857,14 @@
     [
      "non_meteor__2021_04_29_18_48_00_000_010359-trim-1381-crop-360p1.mp4",
      "not meteor",
-     "insect",
+     "cloud",
      "insect",
      "insect"
     ],
     [
      "non_meteor__2021_04_29_18_52_00_000_010323-trim-1258-crop-360p1.mp4",
      "not meteor",
-     "not_sky",
+     "insect",
      "unsure",
      "unsure"
     ],
@@ -934,14 +934,14 @@
     [
      "non_meteor__2021_04_29_19_41_01_000_010360-trim-0660-crop-360p1.mp4",
      "not meteor",
-     "insect",
+     "bird",
      "insect",
      "cloud"
     ],
     [
      "non_meteor__2021_04_29_19_42_01_000_010359-trim-0759-crop-360p1.mp4",
      "not meteor",
-     "insect",
+     "bird",
      "insect",
      "insect"
     ],
@@ -1067,7 +1067,7 @@
     [
      "non_meteor__2021_04_30_21_15_00_000_010359-trim-0815-crop-360p1.mp4",
      "not meteor",
-     "insect",
+     "bird",
      "unsure",
      "insect"
     ],
@@ -1116,7 +1116,7 @@
     [
      "non_meteor__2021_05_01_21_40_00_000_010359-trim-1274-crop-360p1.mp4",
      "not meteor",
-     "insect",
+     "bird",
      "not_sky",
      "unsure"
     ],
@@ -1144,7 +1144,7 @@
     [
      "non_meteor__2021_05_01_22_49_00_000_010351-trim-0053-crop-360p1.mp4",
      "not meteor",
-     "cloud",
+     "bird",
      "cloud",
      "cloud"
     ],
@@ -1214,14 +1214,14 @@
     [
      "non_meteor__2021_05_02_02_29_00_000_010357-trim-1162-crop-360p1.mp4",
      "not meteor",
-     "cloud",
+     "bird",
      "cloud",
      "cloud"
     ],
     [
      "non_meteor__2021_05_02_02_36_01_000_010073-trim-1108-crop-360p1.mp4",
      "not meteor",
-     "bird",
+     "cloud",
      "unsure",
      "cloud"
     ],
@@ -1242,7 +1242,7 @@
     [
      "non_meteor__2021_05_02_19_50_01_000_010349-trim-1118-crop-360p1.mp4",
      "not meteor",
-     "flash",
+     "bird",
      "cloud",
      "flash"
     ],
@@ -1408,12 +1408,12 @@
      "cloud"
     ]
    ],
-   "cost_per_clip": 0.0115
+   "cost_per_clip": 0.0114
   },
   {
    "id": "allsky7",
    "title": "Named by the AllSky7 network",
-   "who": "Fresh clips from allsky7.net, named by the network team",
+   "who": "Clips from allsky7.net, named by the network team. Some of these clips also helped us tune the code, so this is not a blind test",
    "rows": [
     [
      "2025_11_02_19_41_00_000_012544_trim350_wm.mp4",
@@ -1425,7 +1425,7 @@
     [
      "2025_11_06_20_16_01_000_010123_trim275_wm.mp4",
      "meteor",
-     "bird",
+     "insect",
      "unsure",
      "flash"
     ],
@@ -1523,7 +1523,7 @@
     [
      "AMS34_20230226_195947_2.mp4",
      "meteor",
-     "bird",
+     "meteor",
      "meteor",
      "meteor"
     ],
@@ -1642,7 +1642,7 @@
     [
      "AMS77_Cam3.mp4",
      "not meteor",
-     "plane",
+     "insect",
      "cloud",
      "cloud"
     ]

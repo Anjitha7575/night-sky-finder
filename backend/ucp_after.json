@@ -1,0 +1,1843 @@
+{
+ "meteor__2019_12_15_05_14_14_000_010004-trim1072-crop-360p.mp4": {
+  "speed_pct_per_sec": 96.9,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2020_02_08_09_17_32_000_010003-trim993-crop-360p.mp4": {
+  "speed_pct_per_sec": 79.2,
+  "straightness": 1.0,
+  "visible_sec": 0.6,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_05_05_08_51_41_000_010003-trim-0348-crop-360p.mp4": {
+  "speed_pct_per_sec": 106.7,
+  "straightness": 1.0,
+  "visible_sec": 0.56,
+  "blink": {
+   "seen_ratio": 0.93,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_05_12_06_16_38_000_010006-trim-0098-crop-360p.mp4": {
+  "speed_pct_per_sec": 70.6,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_07_20_02_14_39_000_010006-trim-0199-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2020_07_30_08_50_31_000_010005-trim-0531-crop-360p.mp4": {
+  "speed_pct_per_sec": 133.7,
+  "straightness": 1.0,
+  "visible_sec": 0.36,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_08_01_08_52_38_000_010006-trim-0824-crop-360p.mp4": {
+  "speed_pct_per_sec": 86.2,
+  "straightness": 0.99,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_08_09_06_34_40_000_010006-trim-1018-crop-360p.mp4": {
+  "speed_pct_per_sec": 101.5,
+  "straightness": null,
+  "visible_sec": 0.08,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2020_08_09_08_59_14_000_010001-trim-1129-crop-360p.mp4": {
+  "speed_pct_per_sec": 111.4,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_08_09_08_59_19_000_010002-trim-1023-crop-360p.mp4": {
+  "speed_pct_per_sec": 99.0,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_08_17_02_13_25_000_010002-trim-0024-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2020_08_24_06_59_25_000_010002-trim-0487-crop-360p.mp4": {
+  "speed_pct_per_sec": 31.1,
+  "straightness": 0.98,
+  "visible_sec": 0.4,
+  "blink": {
+   "seen_ratio": 0.9,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_09_13_08_02_31_000_010005-trim-0609-crop-360p.mp4": {
+  "speed_pct_per_sec": 91.7,
+  "straightness": 1.0,
+  "visible_sec": 0.12,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_09_13_08_31_22_000_010003-trim-0225-crop-360p.mp4": {
+  "speed_pct_per_sec": 110.1,
+  "straightness": 1.0,
+  "visible_sec": 0.12,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_09_17_03_34_20_000_010005-trim-0109-crop-360p.mp4": {
+  "speed_pct_per_sec": 70.6,
+  "straightness": 1.0,
+  "visible_sec": 1.0,
+  "blink": {
+   "seen_ratio": 0.84,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_10_03_03_00_20_000_010001-trim-0532-crop-360p.mp4": {
+  "speed_pct_per_sec": 35.9,
+  "straightness": 0.98,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_11_03_04_22_00_000_010005-trim-0157-crop-360p.mp4": {
+  "speed_pct_per_sec": 90.8,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_11_04_08_41_00_000_010005-trim-0810-crop-360p.mp4": {
+  "speed_pct_per_sec": 59.7,
+  "straightness": 1.0,
+  "visible_sec": 0.68,
+  "blink": {
+   "seen_ratio": 0.82,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_11_29_03_08_01_000_010002-trim-1421-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2020_12_03_10_18_01_000_010002-trim-1092-crop-360p.mp4": {
+  "speed_pct_per_sec": 153.4,
+  "straightness": 1.0,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2020_12_03_10_39_01_000_010001-trim-0336-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_02_14_00_12_01_000_010076-trim-0638-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_02_14_02_31_01_000_010075-trim-0642-crop-360p.mp4": {
+  "speed_pct_per_sec": 144.3,
+  "straightness": 1.0,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_02_14_02_45_00_000_010074-trim-0735-crop-360p.mp4": {
+  "speed_pct_per_sec": 46.6,
+  "straightness": 1.0,
+  "visible_sec": 0.56,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_02_21_04_17_00_000_010351-trim-0734-crop-360p.mp4": {
+  "speed_pct_per_sec": 48.4,
+  "straightness": 1.0,
+  "visible_sec": 0.16,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_02_21_04_42_00_000_010349-trim-1096-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_02_22_02_36_01_000_010318-trim-0700-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_02_22_02_46_01_000_010097-trim-0118-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_02_22_03_10_01_000_010352-trim-0815-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_02_23_04_45_01_000_010077-trim-0000-crop-360p.mp4": {
+  "speed_pct_per_sec": 44.9,
+  "straightness": null,
+  "visible_sec": 0.12,
+  "blink": {
+   "seen_ratio": 0.67,
+   "blinking": false
+  },
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_02_24_17_46_01_000_010097-trim-0355-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_02_25_04_41_00_000_010355-trim-0670-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_02_28_23_15_01_000_010351-trim-0031-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_03_08_02_21_00_000_010074-trim-0781-crop-360p.mp4": {
+  "speed_pct_per_sec": 65.0,
+  "straightness": 1.0,
+  "visible_sec": 0.36,
+  "blink": {
+   "seen_ratio": 0.89,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_03_12_02_14_00_000_010354-trim-1101-crop-360p.mp4": {
+  "speed_pct_per_sec": 13.8,
+  "straightness": 0.96,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_03_24_22_45_00_000_010317-trim-0767-crop-360p.mp4": {
+  "speed_pct_per_sec": 16.2,
+  "straightness": 0.99,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 0.67,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_03_25_03_27_01_000_010074-trim-0092-crop-360p.mp4": {
+  "speed_pct_per_sec": 50.9,
+  "straightness": 0.98,
+  "visible_sec": 0.28,
+  "blink": {
+   "seen_ratio": 0.86,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_03_26_20_36_00_000_010078-trim-0008-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_03_26_21_26_01_000_010073-trim-1160-crop-360p.mp4": {
+  "speed_pct_per_sec": 23.0,
+  "straightness": 1.0,
+  "visible_sec": 0.96,
+  "blink": {
+   "seen_ratio": 0.5,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_03_29_19_07_00_000_010319-trim-0917-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_03_30_01_08_00_000_010351-trim-0487-crop-360p.mp4": {
+  "speed_pct_per_sec": 14.6,
+  "straightness": 0.99,
+  "visible_sec": 1.04,
+  "blink": {
+   "seen_ratio": 0.69,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_03_30_01_21_00_000_010315-trim-1094-crop-360p.mp4": {
+  "speed_pct_per_sec": 33.3,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_03_30_20_24_00_000_010076-trim-0244-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_03_30_20_47_01_000_010078-trim-0774-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_03_30_20_49_01_000_010079-trim-1326-crop-360p.mp4": {
+  "speed_pct_per_sec": 17.3,
+  "straightness": 0.99,
+  "visible_sec": 2.4,
+  "blink": {
+   "seen_ratio": 0.43,
+   "blinking": true
+  },
+  "note": null
+ },
+ "meteor__2021_03_30_20_54_01_000_010079-trim-0848-crop-360p.mp4": {
+  "speed_pct_per_sec": 53.1,
+  "straightness": 1.0,
+  "visible_sec": 0.56,
+  "blink": {
+   "seen_ratio": 0.93,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_03_31_20_52_01_000_010079-trim-0918-crop-360p.mp4": {
+  "speed_pct_per_sec": 36.5,
+  "straightness": 0.99,
+  "visible_sec": 0.6,
+  "blink": {
+   "seen_ratio": 0.8,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_03_31_21_29_01_000_010355-trim-0182-crop-360p.mp4": {
+  "speed_pct_per_sec": 32.5,
+  "straightness": 1.0,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 0.83,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_03_31_22_12_01_000_010354-trim-0000-crop-360p.mp4": {
+  "speed_pct_per_sec": 21.2,
+  "straightness": 0.99,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_01_02_02_00_000_010355-trim-0659-crop-360p.mp4": {
+  "speed_pct_per_sec": 37.9,
+  "straightness": 1.0,
+  "visible_sec": 0.36,
+  "blink": {
+   "seen_ratio": 0.67,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_01_22_46_01_000_010351-trim-0939-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_04_02_00_17_01_000_010351-trim-0071-crop-360p.mp4": {
+  "speed_pct_per_sec": 11.3,
+  "straightness": 0.99,
+  "visible_sec": 0.44,
+  "blink": {
+   "seen_ratio": 0.91,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_04_02_00_44_00_000_010073-trim-0972-crop-360p.mp4": {
+  "speed_pct_per_sec": 50.1,
+  "straightness": 0.98,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 0.88,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_05_00_12_01_000_010355-trim-0901-crop-360p.mp4": {
+  "speed_pct_per_sec": 14.8,
+  "straightness": 0.99,
+  "visible_sec": 0.44,
+  "blink": {
+   "seen_ratio": 0.82,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_04_05_21_30_01_000_010320-trim-0234-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_04_06_00_27_00_000_010078-trim-1422-crop-360p.mp4": {
+  "speed_pct_per_sec": 141.3,
+  "straightness": null,
+  "visible_sec": 0.12,
+  "blink": {
+   "seen_ratio": 0.67,
+   "blinking": false
+  },
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_04_06_01_28_01_000_010354-trim-1065-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_04_08_23_40_01_000_010315-trim-0422-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_04_08_23_54_00_000_010349-trim-0687-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_04_09_00_14_00_000_010079-trim-0757-crop-360p.mp4": {
+  "speed_pct_per_sec": 45.2,
+  "straightness": 0.97,
+  "visible_sec": 0.68,
+  "blink": {
+   "seen_ratio": 0.94,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_09_00_42_00_000_010355-trim-0226-crop-360p.mp4": {
+  "speed_pct_per_sec": 69.6,
+  "straightness": 1.0,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_09_00_42_01_000_010352-trim-0199-crop-360p.mp4": {
+  "speed_pct_per_sec": 57.7,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_09_00_43_00_000_010355-trim-0701-crop-360p.mp4": {
+  "speed_pct_per_sec": 27.9,
+  "straightness": 0.99,
+  "visible_sec": 0.12,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_09_22_47_00_000_010320-trim-0481-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_04_12_23_03_00_000_010091-trim-0875-crop-360p.mp4": {
+  "speed_pct_per_sec": 69.8,
+  "straightness": 1.0,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 0.5,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_13_19_28_00_000_010314-trim-0469-crop-360p.mp4": {
+  "speed_pct_per_sec": 4.6,
+  "straightness": 0.96,
+  "visible_sec": 4.2,
+  "blink": {
+   "seen_ratio": 0.96,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_14_00_51_00_000_010318-trim-0689-crop-360p.mp4": {
+  "speed_pct_per_sec": 21.0,
+  "straightness": 0.98,
+  "visible_sec": 0.28,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_04_14_00_51_00_000_010319-trim-0683-crop-360p.mp4": {
+  "speed_pct_per_sec": 32.0,
+  "straightness": null,
+  "visible_sec": 0.08,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_04_14_00_55_00_000_010320-trim-0488-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_04_23_00_37_00_000_010075-trim-0584-crop-360p.mp4": {
+  "speed_pct_per_sec": 48.6,
+  "straightness": null,
+  "visible_sec": 0.08,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_04_23_01_03_01_000_010320-trim-0000-crop-360p.mp4": {
+  "speed_pct_per_sec": 60.0,
+  "straightness": 1.0,
+  "visible_sec": 0.28,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_23_02_14_01_000_010315-trim-0453-crop-360p.mp4": {
+  "speed_pct_per_sec": 41.5,
+  "straightness": 1.0,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_23_02_27_01_000_010076-trim-0750-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_04_23_23_20_00_000_010075-trim-1390-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_04_23_23_39_00_000_010073-trim-0680-crop-360p.mp4": {
+  "speed_pct_per_sec": 24.8,
+  "straightness": 1.0,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 0.62,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_24_02_46_00_000_010320-trim-0011-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_04_24_21_02_01_000_010078-trim-1289-crop-360p.mp4": {
+  "speed_pct_per_sec": 18.6,
+  "straightness": 0.52,
+  "visible_sec": 0.48,
+  "blink": {
+   "seen_ratio": 0.67,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_04_24_23_51_01_000_010079-trim-1342-crop-360p.mp4": {
+  "speed_pct_per_sec": 43.4,
+  "straightness": 1.0,
+  "visible_sec": 0.28,
+  "blink": {
+   "seen_ratio": 0.71,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_04_26_02_13_00_000_010095-trim-0525-crop-360p.mp4": {
+  "speed_pct_per_sec": 45.2,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_27_21_14_01_000_010078-trim-1034-crop-360p.mp4": {
+  "speed_pct_per_sec": 12.3,
+  "straightness": 0.99,
+  "visible_sec": 0.76,
+  "blink": {
+   "seen_ratio": 0.89,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_04_27_22_32_00_000_010320-trim-0066-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_05_02_20_13_01_000_010315-trim-0354-crop-360p.mp4": {
+  "speed_pct_per_sec": 13.5,
+  "straightness": 0.98,
+  "visible_sec": 0.72,
+  "blink": {
+   "seen_ratio": 0.89,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_05_02_20_58_00_000_010318-trim-0688-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_05_02_20_58_01_000_010316-trim-1186-crop-360p.mp4": {
+  "speed_pct_per_sec": 15.2,
+  "straightness": 0.98,
+  "visible_sec": 0.36,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_05_02_21_20_01_000_010078-trim-0363-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_05_02_22_34_01_000_010317-trim-0992-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "meteor__2021_05_02_22_35_01_000_010320-trim-0085-crop-360p.mp4": {
+  "speed_pct_per_sec": 20.1,
+  "straightness": 1.0,
+  "visible_sec": 0.72,
+  "blink": {
+   "seen_ratio": 0.44,
+   "blinking": true
+  },
+  "note": null
+ },
+ "meteor__2021_05_03_00_32_00_000_010317-trim-0886-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_05_03_21_36_01_000_010314-trim-0004-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "meteor__2021_05_04_01_52_01_000_010075-trim-1226-crop-360p.mp4": {
+  "speed_pct_per_sec": 29.4,
+  "straightness": 1.0,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_05_04_02_20_01_000_010079-trim-0767-crop-360p.mp4": {
+  "speed_pct_per_sec": 49.7,
+  "straightness": 1.0,
+  "visible_sec": 0.28,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_05_07_21_09_00_000_010076-trim-0396-crop-360p.mp4": {
+  "speed_pct_per_sec": 14.4,
+  "straightness": 1.0,
+  "visible_sec": 0.36,
+  "blink": {
+   "seen_ratio": 0.56,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_05_07_22_59_00_000_010320-trim-0000-crop-360p.mp4": {
+  "speed_pct_per_sec": 18.9,
+  "straightness": 0.99,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 0.75,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_05_07_23_38_01_000_010352-trim-0767-crop-360p.mp4": {
+  "speed_pct_per_sec": 22.4,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_05_07_23_44_00_000_010314-trim-0276-crop-360p.mp4": {
+  "speed_pct_per_sec": 20.6,
+  "straightness": 0.99,
+  "visible_sec": 0.36,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_05_07_23_50_01_000_010349-trim-0553-crop-360p.mp4": {
+  "speed_pct_per_sec": 37.6,
+  "straightness": 1.0,
+  "visible_sec": 0.12,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_05_08_00_12_01_000_010354-trim-0143-crop-360p.mp4": {
+  "speed_pct_per_sec": 28.0,
+  "straightness": 1.0,
+  "visible_sec": 0.4,
+  "blink": {
+   "seen_ratio": 0.7,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "meteor__2021_05_08_00_33_00_000_010073-trim-1112-crop-360p.mp4": {
+  "speed_pct_per_sec": 21.5,
+  "straightness": 1.0,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_06_01_20_49_00_000_010320-trim-0890-crop-360p.mp4": {
+  "speed_pct_per_sec": 24.5,
+  "straightness": 1.0,
+  "visible_sec": 0.52,
+  "blink": {
+   "seen_ratio": 0.85,
+   "blinking": false
+  },
+  "note": null
+ },
+ "meteor__2021_06_01_21_05_00_000_010320-trim-0574-crop-360p.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_04_23_20_20_01_000_010318-trim-0602-crop-360p1.mp4": {
+  "speed_pct_per_sec": 7.7,
+  "straightness": 0.99,
+  "visible_sec": 2.52,
+  "blink": {
+   "seen_ratio": 0.08,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_23_21_07_01_000_010319-trim-0913-crop-360p1.mp4": {
+  "speed_pct_per_sec": 9.9,
+  "straightness": 0.92,
+  "visible_sec": 5.04,
+  "blink": {
+   "seen_ratio": 0.08,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_23_21_17_01_000_010319-trim-0707-crop-360p1.mp4": {
+  "speed_pct_per_sec": 8.3,
+  "straightness": 0.99,
+  "visible_sec": 1.08,
+  "blink": {
+   "seen_ratio": 0.33,
+   "blinking": true
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_26_23_30_00_000_010319-trim-0771-crop-360p1.mp4": {
+  "speed_pct_per_sec": 5.3,
+  "straightness": 0.99,
+  "visible_sec": 3.56,
+  "blink": {
+   "seen_ratio": 0.06,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_27_02_28_01_000_010320-trim-0321-crop-360p1.mp4": {
+  "speed_pct_per_sec": 5.3,
+  "straightness": 1.0,
+  "visible_sec": 3.76,
+  "blink": {
+   "seen_ratio": 0.05,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_27_23_29_01_000_010320-trim-0145-crop-360p1.mp4": {
+  "speed_pct_per_sec": 6.8,
+  "straightness": 1.0,
+  "visible_sec": 3.28,
+  "blink": {
+   "seen_ratio": 0.12,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_27_23_32_00_000_010320-trim-0654-crop-360p1.mp4": {
+  "speed_pct_per_sec": 3.7,
+  "straightness": 0.94,
+  "visible_sec": 7.28,
+  "blink": {
+   "seen_ratio": 0.26,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_28_00_58_01_000_010319-trim-0899-crop-360p1.mp4": {
+  "speed_pct_per_sec": 4.4,
+  "straightness": 0.98,
+  "visible_sec": 3.76,
+  "blink": {
+   "seen_ratio": 0.12,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_28_20_49_01_000_010353-trim-1146-crop-360p1.mp4": {
+  "speed_pct_per_sec": 102.0,
+  "straightness": 0.41,
+  "visible_sec": 0.44,
+  "blink": {
+   "seen_ratio": 0.82,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_28_20_53_00_000_010353-trim-0598-crop-360p1.mp4": {
+  "speed_pct_per_sec": 66.5,
+  "straightness": 0.22,
+  "visible_sec": 0.56,
+  "blink": {
+   "seen_ratio": 0.79,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_28_21_12_00_000_010351-trim-0321-crop-360p1.mp4": {
+  "speed_pct_per_sec": 98.1,
+  "straightness": 0.05,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 0.75,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_28_21_14_01_000_010353-trim-0647-crop-360p1.mp4": {
+  "speed_pct_per_sec": 12.2,
+  "straightness": 0.62,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_28_21_46_01_000_010351-trim-0098-crop-360p1.mp4": {
+  "speed_pct_per_sec": 12.0,
+  "straightness": 0.58,
+  "visible_sec": 1.88,
+  "blink": {
+   "seen_ratio": 0.09,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_28_22_08_01_000_010351-trim-0272-crop-360p1.mp4": {
+  "speed_pct_per_sec": 27.1,
+  "straightness": 0.16,
+  "visible_sec": 0.76,
+  "blink": {
+   "seen_ratio": 0.37,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_28_22_13_01_000_010351-trim-0000-crop-360p1.mp4": {
+  "speed_pct_per_sec": 5.3,
+  "straightness": 0.38,
+  "visible_sec": 1.64,
+  "blink": {
+   "seen_ratio": 0.12,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_00_01_01_000_010077-trim-0000-crop-360p1.mp4": {
+  "speed_pct_per_sec": 62.1,
+  "straightness": 0.92,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_01_32_00_000_010344-trim-0000-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "non_meteor__2021_04_29_02_29_00_000_010349-trim-0268-crop-360p1.mp4": {
+  "speed_pct_per_sec": 18.7,
+  "straightness": 0.61,
+  "visible_sec": 1.08,
+  "blink": {
+   "seen_ratio": 0.59,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_02_29_00_000_010349-trim-0959-crop-360p1.mp4": {
+  "speed_pct_per_sec": 88.0,
+  "straightness": 0.71,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_29_03_42_01_000_010323-trim-0070-crop-360p1.mp4": {
+  "speed_pct_per_sec": 24.6,
+  "straightness": 0.18,
+  "visible_sec": 0.88,
+  "blink": {
+   "seen_ratio": 0.64,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_29_03_49_01_000_010323-trim-0828-crop-360p1.mp4": {
+  "speed_pct_per_sec": 12.1,
+  "straightness": 0.49,
+  "visible_sec": 0.72,
+  "blink": {
+   "seen_ratio": 0.72,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_29_18_48_00_000_010359-trim-1381-crop-360p1.mp4": {
+  "speed_pct_per_sec": 18.0,
+  "straightness": 0.03,
+  "visible_sec": 1.8,
+  "blink": {
+   "seen_ratio": 0.31,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_18_52_00_000_010323-trim-1258-crop-360p1.mp4": {
+  "speed_pct_per_sec": 39.0,
+  "straightness": 0.33,
+  "visible_sec": 0.76,
+  "blink": {
+   "seen_ratio": 0.47,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_18_52_01_000_010358-trim-0538-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_04_29_18_55_00_000_010337-trim-0329-crop-360p1.mp4": {
+  "speed_pct_per_sec": 25.6,
+  "straightness": 1.0,
+  "visible_sec": 0.72,
+  "blink": {
+   "seen_ratio": 0.5,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_29_18_59_00_000_010359-trim-1376-crop-360p1.mp4": {
+  "speed_pct_per_sec": 95.6,
+  "straightness": 0.11,
+  "visible_sec": 0.68,
+  "blink": {
+   "seen_ratio": 0.88,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_19_00_00_000_010359-trim-0531-crop-360p1.mp4": {
+  "speed_pct_per_sec": 72.4,
+  "straightness": 0.32,
+  "visible_sec": 0.72,
+  "blink": {
+   "seen_ratio": 0.83,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_19_06_00_000_010357-trim-0007-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_04_29_19_14_01_000_010359-trim-0039-crop-360p1.mp4": {
+  "speed_pct_per_sec": 11.1,
+  "straightness": 0.39,
+  "visible_sec": 0.36,
+  "blink": {
+   "seen_ratio": 0.56,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_29_19_32_01_000_010326-trim-1240-crop-360p1.mp4": {
+  "speed_pct_per_sec": 4.5,
+  "straightness": 0.98,
+  "visible_sec": 5.48,
+  "blink": {
+   "seen_ratio": 0.09,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_19_33_01_000_010360-trim-1240-crop-360p1.mp4": {
+  "speed_pct_per_sec": 62.7,
+  "straightness": 0.79,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_19_34_01_000_010359-trim-0184-crop-360p1.mp4": {
+  "speed_pct_per_sec": 103.2,
+  "straightness": 0.14,
+  "visible_sec": 0.2,
+  "blink": {
+   "seen_ratio": 0.8,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_19_41_01_000_010360-trim-0660-crop-360p1.mp4": {
+  "speed_pct_per_sec": 11.1,
+  "straightness": 0.45,
+  "visible_sec": 3.0,
+  "blink": {
+   "seen_ratio": 0.16,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_19_42_01_000_010359-trim-0759-crop-360p1.mp4": {
+  "speed_pct_per_sec": 36.3,
+  "straightness": 0.17,
+  "visible_sec": 0.4,
+  "blink": {
+   "seen_ratio": 0.7,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_19_52_01_000_010358-trim-0154-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_04_29_19_53_00_000_010359-trim-0192-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_04_29_20_05_00_000_010359-trim-0930-crop-360p1.mp4": {
+  "speed_pct_per_sec": 0.6,
+  "straightness": 0.57,
+  "visible_sec": 1.68,
+  "blink": {
+   "seen_ratio": 0.07,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_20_06_01_000_010358-trim-1167-crop-360p1.mp4": {
+  "speed_pct_per_sec": 123.0,
+  "straightness": 0.28,
+  "visible_sec": 0.4,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_20_07_01_000_010323-trim-0237-crop-360p1.mp4": {
+  "speed_pct_per_sec": 30.2,
+  "straightness": 0.03,
+  "visible_sec": 0.52,
+  "blink": {
+   "seen_ratio": 0.69,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_29_20_15_01_000_010323-trim-0918-crop-360p1.mp4": {
+  "speed_pct_per_sec": 43.7,
+  "straightness": 0.23,
+  "visible_sec": 0.44,
+  "blink": {
+   "seen_ratio": 0.64,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_20_28_00_000_010360-trim-0138-crop-360p1.mp4": {
+  "speed_pct_per_sec": 11.4,
+  "straightness": 0.83,
+  "visible_sec": 2.36,
+  "blink": {
+   "seen_ratio": 0.12,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_20_37_00_000_010320-trim-0837-crop-360p1.mp4": {
+  "speed_pct_per_sec": 7.1,
+  "straightness": 0.75,
+  "visible_sec": 2.64,
+  "blink": {
+   "seen_ratio": 0.65,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_29_21_18_01_000_010340-trim-1302-crop-360p1.mp4": {
+  "speed_pct_per_sec": 3.8,
+  "straightness": 0.99,
+  "visible_sec": 3.32,
+  "blink": {
+   "seen_ratio": 0.11,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_22_09_01_000_010073-trim-1129-crop-360p1.mp4": {
+  "speed_pct_per_sec": 5.1,
+  "straightness": 0.21,
+  "visible_sec": 0.56,
+  "blink": {
+   "seen_ratio": 0.21,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_22_11_00_000_010347-trim-0136-crop-360p1.mp4": {
+  "speed_pct_per_sec": 2.7,
+  "straightness": 0.98,
+  "visible_sec": 3.08,
+  "blink": {
+   "seen_ratio": 0.12,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_29_22_51_00_000_010362-trim-0529-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_04_30_00_38_00_000_010357-trim-1283-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_04_30_00_39_01_000_010359-trim-1349-crop-360p1.mp4": {
+  "speed_pct_per_sec": 10.2,
+  "straightness": 0.57,
+  "visible_sec": 0.92,
+  "blink": {
+   "seen_ratio": 0.43,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_30_00_49_01_000_010358-trim-0000-crop-360p1.mp4": {
+  "speed_pct_per_sec": 25.6,
+  "straightness": 0.44,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 0.62,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_30_20_36_01_000_010358-trim-1288-crop-360p1.mp4": {
+  "speed_pct_per_sec": 12.0,
+  "straightness": 0.63,
+  "visible_sec": 0.52,
+  "blink": {
+   "seen_ratio": 0.46,
+   "blinking": true
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_04_30_20_58_01_000_010358-trim-0590-crop-360p1.mp4": {
+  "speed_pct_per_sec": 15.3,
+  "straightness": 0.78,
+  "visible_sec": 1.92,
+  "blink": {
+   "seen_ratio": 0.15,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_04_30_21_15_00_000_010359-trim-0815-crop-360p1.mp4": {
+  "speed_pct_per_sec": 106.1,
+  "straightness": 0.59,
+  "visible_sec": 0.44,
+  "blink": {
+   "seen_ratio": 0.82,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_18_53_00_000_010078-trim-1396-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_01_19_07_00_000_010349-trim-1351-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "non_meteor__2021_05_01_20_41_00_000_010343-trim-1115-crop-360p1.mp4": {
+  "speed_pct_per_sec": 84.1,
+  "straightness": 0.52,
+  "visible_sec": 0.4,
+  "blink": {
+   "seen_ratio": 0.7,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_20_46_01_000_010349-trim-0030-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_01_20_47_01_000_010073-trim-0399-crop-360p1.mp4": {
+  "speed_pct_per_sec": 18.3,
+  "straightness": 0.3,
+  "visible_sec": 1.44,
+  "blink": {
+   "seen_ratio": 0.17,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_21_03_00_000_010353-trim-0479-crop-360p1.mp4": {
+  "speed_pct_per_sec": 38.3,
+  "straightness": 0.35,
+  "visible_sec": 1.44,
+  "blink": {
+   "seen_ratio": 0.36,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_21_40_00_000_010359-trim-1274-crop-360p1.mp4": {
+  "speed_pct_per_sec": 104.4,
+  "straightness": 0.47,
+  "visible_sec": 0.36,
+  "blink": {
+   "seen_ratio": 0.67,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_21_45_01_000_010353-trim-0953-crop-360p1.mp4": {
+  "speed_pct_per_sec": 28.1,
+  "straightness": 0.07,
+  "visible_sec": 1.72,
+  "blink": {
+   "seen_ratio": 0.28,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_22_08_00_000_010359-trim-0876-crop-360p1.mp4": {
+  "speed_pct_per_sec": 26.6,
+  "straightness": 0.95,
+  "visible_sec": 0.16,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_22_19_00_000_010362-trim-1254-crop-360p1.mp4": {
+  "speed_pct_per_sec": 5.1,
+  "straightness": 0.87,
+  "visible_sec": 0.96,
+  "blink": {
+   "seen_ratio": 0.29,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_22_49_00_000_010351-trim-0053-crop-360p1.mp4": {
+  "speed_pct_per_sec": 20.1,
+  "straightness": 0.49,
+  "visible_sec": 1.32,
+  "blink": {
+   "seen_ratio": 0.24,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_01_22_59_00_000_010073-trim-0840-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "non_meteor__2021_05_01_23_01_01_000_010073-trim-0382-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_01_23_21_01_000_010359-trim-0948-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_01_23_22_00_000_010342-trim-0945-crop-360p1.mp4": {
+  "speed_pct_per_sec": 8.8,
+  "straightness": null,
+  "visible_sec": 0.52,
+  "blink": {
+   "seen_ratio": 0.15,
+   "blinking": true
+  },
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "non_meteor__2021_05_02_00_01_00_000_010344-trim-0175-crop-360p1.mp4": {
+  "speed_pct_per_sec": 9.2,
+  "straightness": 0.35,
+  "visible_sec": 1.4,
+  "blink": {
+   "seen_ratio": 0.26,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_02_00_02_01_000_010359-trim-1257-crop-360p1.mp4": {
+  "speed_pct_per_sec": 44.9,
+  "straightness": 0.48,
+  "visible_sec": 0.44,
+  "blink": {
+   "seen_ratio": 0.64,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_02_01_37_01_000_010073-trim-1274-crop-360p1.mp4": {
+  "speed_pct_per_sec": 18.4,
+  "straightness": 0.3,
+  "visible_sec": 0.56,
+  "blink": {
+   "seen_ratio": 0.43,
+   "blinking": true
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_05_02_01_55_00_000_010344-trim-0000-crop-360p1.mp4": {
+  "speed_pct_per_sec": 4.3,
+  "straightness": 0.6,
+  "visible_sec": 1.84,
+  "blink": {
+   "seen_ratio": 0.2,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_02_01_55_00_000_010361-trim-0102-crop-360p1.mp4": {
+  "speed_pct_per_sec": 25.1,
+  "straightness": 0.67,
+  "visible_sec": 0.44,
+  "blink": {
+   "seen_ratio": 0.45,
+   "blinking": true
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_05_02_02_29_00_000_010357-trim-1162-crop-360p1.mp4": {
+  "speed_pct_per_sec": 16.3,
+  "straightness": 0.38,
+  "visible_sec": 1.44,
+  "blink": {
+   "seen_ratio": 0.28,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_02_02_36_01_000_010073-trim-1108-crop-360p1.mp4": {
+  "speed_pct_per_sec": 15.3,
+  "straightness": 0.21,
+  "visible_sec": 0.92,
+  "blink": {
+   "seen_ratio": 0.3,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_02_02_59_00_000_010362-trim-0421-crop-360p1.mp4": {
+  "speed_pct_per_sec": 14.3,
+  "straightness": 0.3,
+  "visible_sec": 2.04,
+  "blink": {
+   "seen_ratio": 0.14,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_02_03_00_00_000_010359-trim-1104-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_02_19_50_01_000_010349-trim-1118-crop-360p1.mp4": {
+  "speed_pct_per_sec": 5.7,
+  "straightness": 0.73,
+  "visible_sec": 1.44,
+  "blink": {
+   "seen_ratio": 0.31,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_03_01_21_01_000_010359-trim-0388-crop-360p1.mp4": {
+  "speed_pct_per_sec": 5.2,
+  "straightness": 0.91,
+  "visible_sec": 2.12,
+  "blink": {
+   "seen_ratio": 0.09,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_03_19_51_00_000_010323-trim-0880-crop-360p1.mp4": {
+  "speed_pct_per_sec": 34.3,
+  "straightness": 0.34,
+  "visible_sec": 0.24,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_05_03_19_51_00_000_010351-trim-0412-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_03_20_28_00_000_010323-trim-0911-crop-360p1.mp4": {
+  "speed_pct_per_sec": 20.7,
+  "straightness": 0.35,
+  "visible_sec": 0.92,
+  "blink": {
+   "seen_ratio": 0.3,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_03_21_45_01_000_010323-trim-0506-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_03_22_38_00_000_010323-trim-0082-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_04_18_55_01_000_010096-trim-0437-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": null,
+  "blink": null,
+  "note": "no moving object found"
+ },
+ "non_meteor__2021_05_04_19_40_01_000_010323-trim-0517-crop-360p1.mp4": {
+  "speed_pct_per_sec": 9.0,
+  "straightness": 0.46,
+  "visible_sec": 0.44,
+  "blink": {
+   "seen_ratio": 0.73,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_05_04_20_11_00_000_010323-trim-0356-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "non_meteor__2021_05_04_20_57_00_000_010079-trim-1103-crop-360p1.mp4": {
+  "speed_pct_per_sec": 4.5,
+  "straightness": 0.97,
+  "visible_sec": 3.16,
+  "blink": {
+   "seen_ratio": 0.09,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_04_21_38_01_000_010349-trim-1408-crop-360p1.mp4": {
+  "speed_pct_per_sec": 8.9,
+  "straightness": 0.76,
+  "visible_sec": 2.04,
+  "blink": {
+   "seen_ratio": 0.1,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_04_23_48_00_000_010125-trim-0081-crop-360p1.mp4": {
+  "speed_pct_per_sec": 31.1,
+  "straightness": 0.23,
+  "visible_sec": 1.04,
+  "blink": {
+   "seen_ratio": 0.35,
+   "blinking": true
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_05_05_00_03_00_000_010350-trim-0335-crop-360p1.mp4": {
+  "speed_pct_per_sec": 97.0,
+  "straightness": null,
+  "visible_sec": 0.08,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "non_meteor__2021_05_05_00_41_00_000_010355-trim-0726-crop-360p1.mp4": {
+  "speed_pct_per_sec": 9.3,
+  "straightness": 0.39,
+  "visible_sec": 0.72,
+  "blink": {
+   "seen_ratio": 0.28,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_05_02_52_00_000_010352-trim-0388-crop-360p1.mp4": {
+  "speed_pct_per_sec": 45.3,
+  "straightness": 0.15,
+  "visible_sec": 0.32,
+  "blink": {
+   "seen_ratio": 0.75,
+   "blinking": false
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_05_05_02_56_00_000_010335-trim-0631-crop-360p1.mp4": {
+  "speed_pct_per_sec": 34.5,
+  "straightness": 0.15,
+  "visible_sec": 0.56,
+  "blink": {
+   "seen_ratio": 0.43,
+   "blinking": true
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_05_05_03_06_01_000_010073-trim-0951-crop-360p1.mp4": {
+  "speed_pct_per_sec": 41.5,
+  "straightness": 0.15,
+  "visible_sec": 1.72,
+  "blink": {
+   "seen_ratio": 0.4,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_05_23_14_01_000_010351-trim-0000-crop-360p1.mp4": {
+  "speed_pct_per_sec": 18.3,
+  "straightness": 0.18,
+  "visible_sec": 1.64,
+  "blink": {
+   "seen_ratio": 0.27,
+   "blinking": true
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_06_20_36_00_000_010346-trim-0918-crop-360p1.mp4": {
+  "speed_pct_per_sec": null,
+  "straightness": null,
+  "visible_sec": 0.04,
+  "blink": null,
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "non_meteor__2021_05_06_21_12_01_000_010654-trim-1386-crop-360p1.mp4": {
+  "speed_pct_per_sec": 24.2,
+  "straightness": 0.5,
+  "visible_sec": 0.6,
+  "blink": {
+   "seen_ratio": 0.53,
+   "blinking": false
+  },
+  "note": null
+ },
+ "non_meteor__2021_05_07_00_44_01_000_010121-trim-0857-crop-360p1.mp4": {
+  "speed_pct_per_sec": 347.1,
+  "straightness": null,
+  "visible_sec": 0.08,
+  "blink": {
+   "seen_ratio": 1.0,
+   "blinking": false
+  },
+  "note": "object seen in fewer than 3 frames: numbers are not reliable"
+ },
+ "non_meteor__2021_05_09_19_00_00_000_010651-trim-0943-crop-360p1.mp4": {
+  "speed_pct_per_sec": 20.6,
+  "straightness": 0.23,
+  "visible_sec": 0.96,
+  "blink": {
+   "seen_ratio": 0.42,
+   "blinking": true
+  },
+  "note": "faint object against a bright sky: found with a lower threshold"
+ },
+ "non_meteor__2021_05_09_19_22_00_000_010654-trim-1050-crop-360p1.mp4": {
+  "speed_pct_per_sec": 48.5,
+  "straightness": 0.3,
+  "visible_sec": 0.8,
+  "blink": {
+   "seen_ratio": 0.25,
+   "blinking": true
+  },
+  "note": null
+ }
+}

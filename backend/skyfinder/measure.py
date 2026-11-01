@@ -119,15 +119,35 @@ def sky_glow_frames(frames, threshold=40, share=0.2, samples=60):
     return [i for i, f in enumerate(frames) if (cv2.subtract(f, normal_sky) > threshold).mean() > share]
 
 
-def longest_track(points, max_jump):
+def off_course(track, p, min_step, settle=5):
+    """True when a steady path (5+ points) suddenly jumps much further than its usual step,
+    or jumps backwards: usually a second object (e.g. the next satellite in a train) or noise."""
+    if len(track) < settle:
+        return False
+    recent = track[-10:]
+    steps = [np.hypot(b["x"] - a["x"], b["y"] - a["y"]) / max(1, b["frame"] - a["frame"])
+             for a, b in zip(recent, recent[1:])]
+    usual = float(np.median(steps))
+    last = track[-1]
+    dx, dy = p["x"] - last["x"], p["y"] - last["y"]
+    distance = np.hypot(dx, dy)
+    jump = distance / max(1, p["frame"] - last["frame"])
+    going_back = dx * (last["x"] - recent[0]["x"]) + dy * (last["y"] - recent[0]["y"]) < 0
+    return jump > max(5 * usual, min_step) or (going_back and distance > max(2 * usual, min_step / 2))
+
+
+def longest_track(points, max_jump, min_step=0, max_gap=5):
     tracks = []
     for p in points:
         if tracks:
-            last = tracks[-1][-1]
+            t = tracks[-1]
+            last = t[-1]
             jump = np.hypot(p["x"] - last["x"], p["y"] - last["y"])
-            if jump <= max_jump:
-                tracks[-1].append(p)
+            if jump <= max_jump and not off_course(t, p, min_step):
+                t.append(p)
                 continue
+            if len(t) >= 5 and p["frame"] - last["frame"] <= max_gap:
+                continue  # a stray point while a steady path is going on: skip it
         tracks.append([p])
     return max(tracks, key=len) if tracks else []
 
@@ -258,7 +278,7 @@ def measure(path):
 
     diag = (w ** 2 + h ** 2) ** 0.5
     raw_points, flash_frames = track(frames)
-    points = longest_track(raw_points, max_jump=0.15 * diag)
+    points = longest_track(raw_points, max_jump=0.15 * diag, min_step=0.02 * diag)
     faint = False
     if len(points) < 5:
         # bright (e.g. twilight) sky: the object is only a little brighter than the sky,

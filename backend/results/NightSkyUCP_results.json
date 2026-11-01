@@ -1,5 +1,5 @@
 {
- "how": "video",
+ "how": "frames",
  "folder": "data/nightskyucp_test",
  "rows": [
   {
@@ -3584,20 +3584,21 @@
     "output": 569
    },
    "ours": {
-    "category": "insect",
+    "category": "bird",
     "confidence": "low",
-    "reason": "Very low straightness (0.29) with fast short flight (0.32s) does not match straight meteor or plane. Curved blurry motion near camera fits insect or bird.",
-    "next_step": "ask_human",
-    "key_clue": "very curved short path",
-    "also": "bird",
+    "reason": "Short fast motion with low straightness 0.41 and curved blurry bands, not a straight meteor streak. Large soft shape in single frame suggests nearby animal.",
+    "next_step": "none",
+    "key_clue": "curved blurry path low straightness",
+    "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 6,
+   "ours_checks": 5,
    "ours_tokens": {
     "calls": 4,
-    "input_tokens": 11423,
-    "output_tokens": 2355
-   }
+    "input_tokens": 10771,
+    "output_tokens": 1304
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_28_20_53_00_000_010353-trim-0598-crop-360p1.mp4",
@@ -3617,20 +3618,21 @@
     "output": 480
    },
    "ours": {
-    "category": "cloud",
+    "category": "bird",
     "confidence": "medium",
-    "reason": "Large soft white edge fills bottom of frames and slowly morphs, not a small point. Low straightness and blotchy stacked path match drifting cloud edge.",
+    "reason": "Very low straightness 0.22 with wavy blurry shape and irregular brightness, not a straight meteor streak. Short 0.56s near-camera motion looks like flapping wings.",
     "next_step": "none",
-    "key_clue": "large soft morphing edge not a point",
-    "also": null,
+    "key_clue": "curved blurry wavy path",
+    "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 3,
+   "ours_checks": 4,
    "ours_tokens": {
-    "calls": 2,
-    "input_tokens": 5022,
-    "output_tokens": 769
-   }
+    "calls": 3,
+    "input_tokens": 7752,
+    "output_tokens": 986
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_28_21_12_00_000_010351-trim-0321-crop-360p1.mp4",
@@ -3651,10 +3653,10 @@
    },
    "ours": {
     "category": "bird",
-    "confidence": "medium",
-    "reason": "Very low straightness (0.13) with curved blurry shape that changes form between frames like flapping wings, visible only 0.2s. Not straight like meteor.",
+    "confidence": "low",
+    "reason": "Very low straightness 0.05 with short 0.32s blurry extended shape, not a straight meteor or satellite.",
     "next_step": "none",
-    "key_clue": "curved flapping blurry shape",
+    "key_clue": "curved blurry near-camera shape",
     "also": "insect",
     "source": "meta"
    },
@@ -3662,8 +3664,9 @@
    "ours_tokens": {
     "calls": 3,
     "input_tokens": 7744,
-    "output_tokens": 883
-   }
+    "output_tokens": 1004
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_28_21_14_01_000_010353-trim-0647-crop-360p1.mp4",
@@ -3751,18 +3754,19 @@
    "ours": {
     "category": "insect",
     "confidence": "low",
-    "reason": "Path is very curved with low straightness and the frame shows a large blurry bright shape close to the camera.",
-    "next_step": "ask_human",
-    "key_clue": "very curved path with big blurry shape",
+    "reason": "Very curved path with low straightness and large blurry close-up shape filling the frame, typical of a near-camera insect.",
+    "next_step": "none",
+    "key_clue": "curved path plus huge blurry close object",
     "also": "bird",
     "source": "meta"
    },
-   "ours_checks": 5,
+   "ours_checks": 3,
    "ours_tokens": {
-    "calls": 3,
-    "input_tokens": 8211,
-    "output_tokens": 1583
-   }
+    "calls": 2,
+    "input_tokens": 5028,
+    "output_tokens": 919
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_28_22_13_01_000_010351-trim-0000-crop-360p1.mp4",
@@ -3883,18 +3887,19 @@
    "ours": {
     "category": "bird",
     "confidence": "low",
-    "reason": "Short 0.64s curved track with low straightness 0.58, blurry dark blob moving against bright clouds in image 2, not a straight meteor streak.",
-    "next_step": "watch_video",
-    "key_clue": "curved blurry motion against clouds",
-    "also": "cloud",
+    "reason": "Dark spot moves slightly against bright clouds over ~1s with curved path (straightness 0.61) and gaps in detection. Shape in frames looks like a small silhouette, not a straight meteor or plane streak.",
+    "next_step": "none",
+    "key_clue": "curved dark spot against clouds",
+    "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 5,
+   "ours_checks": 3,
    "ours_tokens": {
-    "calls": 3,
-    "input_tokens": 8114,
-    "output_tokens": 1690
-   }
+    "calls": 2,
+    "input_tokens": 5023,
+    "output_tokens": 911
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_02_29_00_000_010349-trim-0959-crop-360p1.mp4",
@@ -4013,20 +4018,21 @@
     "output": 1074
    },
    "ours": {
-    "category": "insect",
+    "category": "cloud",
     "confidence": "low",
-    "reason": "Large blurry white shape filling edge of frame, very curved track with low straightness, not a straight sky object.",
-    "next_step": "ask_human",
-    "key_clue": "big blurry near-camera shape",
-    "also": "bird",
+    "reason": "Large soft bright mass on edge, not a point line. Very low straightness and patchy detection fits slow cloud.",
+    "next_step": "none",
+    "key_clue": "large diffuse bright edge, not a point",
+    "also": null,
     "source": "meta"
    },
-   "ours_checks": 5,
+   "ours_checks": 4,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 8092,
-    "output_tokens": 1480
-   }
+    "input_tokens": 7646,
+    "output_tokens": 1211
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_18_52_00_000_010323-trim-1258-crop-360p1.mp4",
@@ -4046,20 +4052,21 @@
     "output": 700
    },
    "ours": {
-    "category": "not_sky",
-    "confidence": "medium",
-    "reason": "Image 2 shows daylight trees, not night sky. Scattered dots in image 1 match leaves moving, with very low straightness 0.23.",
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Very curvy scattered dots lasting under a second over trees with gaps in detection fits a close small insect, not a straight meteor or plane.",
     "next_step": "none",
-    "key_clue": "daytime trees, not night sky",
-    "also": "insect",
+    "key_clue": "curvy scattered short track",
+    "also": "bird",
     "source": "meta"
    },
-   "ours_checks": 3,
+   "ours_checks": 4,
    "ours_tokens": {
-    "calls": 3,
-    "input_tokens": 7549,
-    "output_tokens": 1389
-   }
+    "calls": 4,
+    "input_tokens": 10589,
+    "output_tokens": 1823
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_18_52_01_000_010358-trim-0538-crop-360p1.mp4",
@@ -4147,18 +4154,19 @@
    "ours": {
     "category": "bird",
     "confidence": "low",
-    "reason": "Small messy blob stays in one area with very low straightness and feathery wing-like texture, not a fast straight meteor or steady satellite.",
-    "next_step": "watch_video",
-    "key_clue": "flappy feathery blob in place",
+    "reason": "Very curved short path with feathery close-up blob filling frame, not a straight meteor or satellite.",
+    "next_step": "none",
+    "key_clue": "curved feathery close blob",
     "also": "insect",
     "source": "meta"
    },
    "ours_checks": 3,
    "ours_tokens": {
     "calls": 2,
-    "input_tokens": 4997,
-    "output_tokens": 1093
-   }
+    "input_tokens": 4996,
+    "output_tokens": 986
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_19_00_00_000_010359-trim-0531-crop-360p1.mp4",
@@ -4180,18 +4188,19 @@
    "ours": {
     "category": "bird",
     "confidence": "medium",
-    "reason": "Very curved path with low straightness and large blurry white shape changing between frames, seen continuously for under a second near camera.",
+    "reason": "Large blurry changing shape close to camera with low straightness 0.32 and wavy motion, not a straight fast meteor.",
     "next_step": "none",
-    "key_clue": "curved blurry large shape",
+    "key_clue": "large blurry flapping shape, curved path",
     "also": "insect",
     "source": "meta"
    },
    "ours_checks": 3,
    "ours_tokens": {
-    "calls": 3,
-    "input_tokens": 7531,
-    "output_tokens": 889
-   }
+    "calls": 2,
+    "input_tokens": 5052,
+    "output_tokens": 666
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_19_06_00_000_010357-trim-0007-crop-360p1.mp4",
@@ -4376,20 +4385,21 @@
     "output": 764
    },
    "ours": {
-    "category": "insect",
-    "confidence": "low",
-    "reason": "Huge blurry white shape filling frame corner and barely changing, with very low straightness. Looks like a very close out-of-focus insect, not a sky object.",
+    "category": "bird",
+    "confidence": "medium",
+    "reason": "Large blurry white shape close to camera with curved irregular path and strongly varying brightness suggests flapping wings.",
     "next_step": "none",
-    "key_clue": "large blurry close shape",
-    "also": "bird",
+    "key_clue": "large blurry nearby shape, low straightness",
+    "also": "insect",
     "source": "meta"
    },
    "ours_checks": 4,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 7967,
-    "output_tokens": 1518
-   }
+    "input_tokens": 7969,
+    "output_tokens": 1167
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_19_42_01_000_010359-trim-0759-crop-360p1.mp4",
@@ -4409,20 +4419,21 @@
     "output": 727
    },
    "ours": {
-    "category": "insect",
+    "category": "bird",
     "confidence": "low",
-    "reason": "Very curved path with low straightness and low seen ratio, small speck moving along bright edge in video.",
+    "reason": "Very large blurry white mass close to camera with curved short path and low straightness, not a distant sky streak.",
     "next_step": "none",
-    "key_clue": "wavy intermittent path on bright edge",
-    "also": "bird",
+    "key_clue": "huge blurry near-camera mass",
+    "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 5,
+   "ours_checks": 4,
    "ours_tokens": {
-    "calls": 4,
-    "input_tokens": 10908,
-    "output_tokens": 1958
-   }
+    "calls": 3,
+    "input_tokens": 8049,
+    "output_tokens": 1517
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_19_52_01_000_010358-trim-0154-crop-360p1.mp4",
@@ -4609,18 +4620,19 @@
    "ours": {
     "category": "bird",
     "confidence": "low",
-    "reason": "Very low straightness (0.03) with curved fragmented path visible for 3.6s near trees, not straight like plane or meteor.",
+    "reason": "Very low straightness (0.23) and scattered short 0.44s path over trees, with dark flapping shape in frames. Not straight steady meteor or plane.",
     "next_step": "none",
-    "key_clue": "curved non-straight silhouette motion",
+    "key_clue": "curved scattered path near trees",
     "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 4,
+   "ours_checks": 3,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 8080,
-    "output_tokens": 989
-   }
+    "input_tokens": 7535,
+    "output_tokens": 1051
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_20_28_00_000_010360-trim-0138-crop-360p1.mp4",
@@ -4642,18 +4654,19 @@
    "ours": {
     "category": "insect",
     "confidence": "low",
-    "reason": "Large blurry white object fills the frame and barely moves between frames, with curved crescent track in stack. Close, out-of-focus and wavy, typical of insect near lens.",
-    "next_step": "none",
-    "key_clue": "huge blurry close object with curved track",
+    "reason": "Very large blurry white blob near camera that barely moves, with curved intermittent crescents in stack. Not straight steady like satellite or fast like meteor.",
+    "next_step": "ask_human",
+    "key_clue": "big blurry close blob with curved gaps",
     "also": "bird",
     "source": "meta"
    },
-   "ours_checks": 3,
+   "ours_checks": 4,
    "ours_tokens": {
-    "calls": 2,
-    "input_tokens": 5026,
-    "output_tokens": 1169
-   }
+    "calls": 3,
+    "input_tokens": 7917,
+    "output_tokens": 1667
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_29_20_37_00_000_010320-trim-0837-crop-360p1.mp4",
@@ -4971,19 +4984,20 @@
    },
    "ours": {
     "category": "insect",
-    "confidence": "low",
-    "reason": "Large blurry close shape with curved path and low seen ratio, not a straight distant point. Matches a near-camera insect or bird, not meteor or plane.",
+    "confidence": "medium",
+    "reason": "Image 2 shows a large blurry close object, not a sky point. Low seen ratio and wiggly short path fit a near-camera insect.",
     "next_step": "none",
-    "key_clue": "big blurry nearby blob, curved",
+    "key_clue": "large blurry close shape",
     "also": "bird",
     "source": "meta"
    },
    "ours_checks": 4,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 7929,
-    "output_tokens": 1386
-   }
+    "input_tokens": 7901,
+    "output_tokens": 1200
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_04_30_21_15_00_000_010359-trim-0815-crop-360p1.mp4",
@@ -5003,20 +5017,21 @@
     "output": 627
    },
    "ours": {
-    "category": "insect",
+    "category": "bird",
     "confidence": "low",
-    "reason": "Very low straightness with fast short curved motion and large blurry out-of-focus shape near camera.",
-    "next_step": "none",
-    "key_clue": "large blurry curved close shape",
-    "also": "bird",
+    "reason": "Very fast (0.44s) but curved path (straightness 0.59) with large blurry white blob close to camera, not straight like meteor.",
+    "next_step": "watch_video",
+    "key_clue": "curved blurry close blob",
+    "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 4,
+   "ours_checks": 3,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 7906,
-    "output_tokens": 1361
-   }
+    "input_tokens": 7456,
+    "output_tokens": 1068
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_01_18_53_00_000_010078-trim-1396-crop-360p1.mp4",
@@ -5203,18 +5218,19 @@
    "ours": {
     "category": "bird",
     "confidence": "low",
-    "reason": "Large blurry white shape fills much of frame with very low straightness and short 0.4s visibility, so close bird/insect not distant sky object.",
-    "next_step": "none",
-    "key_clue": "huge blurry near-camera blob",
+    "reason": "Path is curved with low straightness and the object looks large and blurry close to camera. Numbers and images disagree with meteor or plane.",
+    "next_step": "watch_video",
+    "key_clue": "curved blurry large path",
     "also": "insect",
     "source": "meta"
    },
    "ours_checks": 3,
    "ours_tokens": {
-    "calls": 3,
-    "input_tokens": 7515,
-    "output_tokens": 1068
-   }
+    "calls": 2,
+    "input_tokens": 5022,
+    "output_tokens": 775
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_01_21_40_00_000_010359-trim-1274-crop-360p1.mp4",
@@ -5234,20 +5250,21 @@
     "output": 1078
    },
    "ours": {
-    "category": "insect",
+    "category": "bird",
     "confidence": "low",
-    "reason": "Very fast (0.32s) blurry streak at edge with low straightness (0.18) and wavy brightness, like a close flyby.",
+    "reason": "Large blurry white shape at edge for 0.36s with low straightness 0.47 and changing shape suggests close bird flapping, not straight meteor.",
     "next_step": "none",
-    "key_clue": "short fast curved blurry path",
-    "also": "bird",
+    "key_clue": "curved blurry close shape",
+    "also": "insect",
     "source": "meta"
    },
    "ours_checks": 4,
    "ours_tokens": {
-    "calls": 2,
-    "input_tokens": 5060,
-    "output_tokens": 987
-   }
+    "calls": 3,
+    "input_tokens": 7775,
+    "output_tokens": 1135
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_01_21_45_01_000_010353-trim-0953-crop-360p1.mp4",
@@ -5268,19 +5285,20 @@
    },
    "ours": {
     "category": "insect",
-    "confidence": "medium",
-    "reason": "Very curved looping path with low straightness and large blurry close-up shape that barely moves between frames, typical of a near-camera insect.",
+    "confidence": "low",
+    "reason": "Very curved path with low straightness and large blurry close shape that barely moves, typical of a near-camera insect.",
     "next_step": "none",
-    "key_clue": "looping blurry close-range track",
+    "key_clue": "curved blurry large near-camera path",
     "also": "bird",
     "source": "meta"
    },
    "ours_checks": 3,
    "ours_tokens": {
     "calls": 2,
-    "input_tokens": 5027,
-    "output_tokens": 944
-   }
+    "input_tokens": 5026,
+    "output_tokens": 963
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_01_22_08_00_000_010359-trim-0876-crop-360p1.mp4",
@@ -5366,20 +5384,21 @@
     "output": 936
    },
    "ours": {
-    "category": "cloud",
-    "confidence": "low",
-    "reason": "Frames show a large bright curved edge staying almost still, not a moving point, with very low straightness. Image 1 streak is just the edge shifting slightly.",
+    "category": "bird",
+    "confidence": "medium",
+    "reason": "Short curved blurry disturbance at the Moon's limb for ~1.3s with low straightness (0.49) and low seen ratio, not a straight steady meteor or satellite.",
     "next_step": "none",
-    "key_clue": "broad stationary bright edge in frames",
-    "also": null,
+    "key_clue": "blurry curved bump on Moon limb",
+    "also": "insect",
     "source": "meta"
    },
    "ours_checks": 4,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 7893,
-    "output_tokens": 1952
-   }
+    "input_tokens": 7733,
+    "output_tokens": 1319
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_01_22_59_00_000_010073-trim-0840-crop-360p1.mp4",
@@ -5565,19 +5584,20 @@
    },
    "ours": {
     "category": "bird",
-    "confidence": "low",
-    "reason": "Curved fluttering shape passing the Moon with very low straightness and intermittent detection, not a straight meteor or plane.",
-    "next_step": "watch_video",
-    "key_clue": "curved flapping path by Moon",
+    "confidence": "medium",
+    "reason": "Short curved path with blurry changing shape near the bright Moon, not straight like meteor or plane.",
+    "next_step": "none",
+    "key_clue": "curved blurry shape near Moon",
     "also": "insect",
     "source": "meta"
    },
    "ours_checks": 3,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 7581,
-    "output_tokens": 1200
-   }
+    "input_tokens": 7543,
+    "output_tokens": 1059
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_02_01_37_01_000_010073-trim-1274-crop-360p1.mp4",
@@ -5632,18 +5652,19 @@
    "ours": {
     "category": "bird",
     "confidence": "low",
-    "reason": "Large blurry white shape grows as it nears camera, with curved path and low straightness. Motion over 2s is slow and irregular, not a straight meteor or satellite.",
+    "reason": "Large white blurry shape near bottom changes slowly and path is not straight. Numbers are weak with low seen ratio, so image shape decides.",
     "next_step": "none",
-    "key_clue": "large near-camera blurry shape, curved path",
-    "also": "insect",
+    "key_clue": "big blurry white shape, curved path",
+    "also": "cloud",
     "source": "meta"
    },
    "ours_checks": 4,
    "ours_tokens": {
-    "calls": 3,
-    "input_tokens": 7923,
-    "output_tokens": 1333
-   }
+    "calls": 2,
+    "input_tokens": 5131,
+    "output_tokens": 1024
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_02_01_55_00_000_010361-trim-0102-crop-360p1.mp4",
@@ -5696,20 +5717,21 @@
     "output": 582
    },
    "ours": {
-    "category": "cloud",
-    "confidence": "medium",
-    "reason": "Stack shows broad diffuse streak not a point line, straightness very low, and middle frame shows cloudy sky over trees.",
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Short curved blurry track near trees with low straightness and flapping brightness changes. Close large white shape matches a nearby bird more than a distant meteor or plane.",
     "next_step": "none",
-    "key_clue": "diffuse bright cloud edge, not a point",
-    "also": null,
+    "key_clue": "curved blurry short track",
+    "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 3,
+   "ours_checks": 4,
    "ours_tokens": {
-    "calls": 2,
-    "input_tokens": 5047,
-    "output_tokens": 846
-   }
+    "calls": 3,
+    "input_tokens": 8003,
+    "output_tokens": 1214
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_02_02_36_01_000_010073-trim-1108-crop-360p1.mp4",
@@ -5729,20 +5751,21 @@
     "output": 1068
    },
    "ours": {
-    "category": "bird",
+    "category": "cloud",
     "confidence": "low",
-    "reason": "Large blurry white shape close to camera with very curved short track and low seen ratio, not straight like plane or satellite.",
+    "reason": "Large soft white shape fills frame 2 with little change across frames, not a point meteor or plane. Curved short track matches slow drifting cloud edge.",
     "next_step": "none",
-    "key_clue": "big blurry shape, straightness 0.08",
-    "also": "insect",
+    "key_clue": "diffuse steady glow, almost static",
+    "also": "bird",
     "source": "meta"
    },
    "ours_checks": 4,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 8105,
-    "output_tokens": 1489
-   }
+    "input_tokens": 8021,
+    "output_tokens": 1511
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_02_02_59_00_000_010362-trim-0421-crop-360p1.mp4",
@@ -5828,20 +5851,21 @@
     "output": 405
    },
    "ours": {
-    "category": "flash",
-    "confidence": "medium",
-    "reason": "Stacked view is a diffuse flickering patch with very low straightness, not a straight track. Middle frame shows bright clouds lit on the left, like lightning.",
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Large blurry white blob changing shape over 1.4s, slow curved path with low straightness. Not straight fast meteor or steady satellite.",
     "next_step": "none",
-    "key_clue": "diffuse flickering patch lighting clouds",
-    "also": "cloud",
+    "key_clue": "big blurry shape-changing blob",
+    "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 3,
+   "ours_checks": 4,
    "ours_tokens": {
-    "calls": 2,
-    "input_tokens": 4938,
-    "output_tokens": 1046
-   }
+    "calls": 3,
+    "input_tokens": 7923,
+    "output_tokens": 1310
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_03_01_21_01_000_010359-trim-0388-crop-360p1.mp4",
@@ -5962,18 +5986,19 @@
    "ours": {
     "category": "bird",
     "confidence": "low",
-    "reason": "Very low straightness and low seen ratio with slow curved blob near trees, but object is barely visible in frames.",
-    "next_step": "ask_human",
-    "key_clue": "non-straight intermittent path",
+    "reason": "Short 0.9s blob with low straightness 0.35 and low seen ratio 0.3, not straight like meteor/plane. Seen low over trees, looks like near-camera animal.",
+    "next_step": "watch_video",
+    "key_clue": "curved short blob near trees",
     "also": "insect",
     "source": "meta"
    },
    "ours_checks": 4,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 7938,
-    "output_tokens": 1051
-   }
+    "input_tokens": 7670,
+    "output_tokens": 1091
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_03_21_45_01_000_010323-trim-0506-crop-360p1.mp4",
@@ -6390,19 +6415,20 @@
    },
    "ours": {
     "category": "bird",
-    "confidence": "low",
-    "reason": "Very curved path (straightness 0.02) with gaps in detection, and blurry large white shape near image edge looks like a close bird/insect, not a straight meteor or plane.",
+    "confidence": "medium",
+    "reason": "Very curved path with low straightness 0.15 and intermittent detection over 1.7s, with small dark shape changing between frames.",
     "next_step": "none",
-    "key_clue": "very curved blurry edge path",
+    "key_clue": "curved wobbly short track",
     "also": "insect",
     "source": "meta"
    },
-   "ours_checks": 5,
+   "ours_checks": 3,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 8157,
-    "output_tokens": 1611
-   }
+    "input_tokens": 7582,
+    "output_tokens": 1049
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_05_23_14_01_000_010351-trim-0000-crop-360p1.mp4",
@@ -6423,19 +6449,20 @@
    },
    "ours": {
     "category": "bird",
-    "confidence": "medium",
-    "reason": "Large blurry white shape close to camera with curved path and low straightness 0.32, not a fast straight meteor.",
-    "next_step": "none",
-    "key_clue": "big blurry nearby shape, curved path",
+    "confidence": "low",
+    "reason": "Very low straightness with curved path and large blurry white shape near camera in image 2, not a straight fast meteor or plane.",
+    "next_step": "watch_video",
+    "key_clue": "curved blurry large near-camera shape",
     "also": "insect",
     "source": "meta"
    },
    "ours_checks": 3,
    "ours_tokens": {
     "calls": 2,
-    "input_tokens": 4982,
-    "output_tokens": 832
-   }
+    "input_tokens": 4967,
+    "output_tokens": 1226
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_06_20_36_00_000_010346-trim-0918-crop-360p1.mp4",
@@ -6489,19 +6516,20 @@
    },
    "ours": {
     "category": "cloud",
-    "confidence": "medium",
-    "reason": "Large soft diffuse patch with no point or line, seen in normal frame as overcast sky. Low straightness fits drifting cloud edge.",
+    "confidence": "low",
+    "reason": "Image 2 shows overcast clouds and lights, stacked image shows only diffuse patch with no sharp point or line. Numbers suggest motion but frames show slow cloudy blur.",
     "next_step": "none",
-    "key_clue": "large soft diffuse patch",
+    "key_clue": "diffuse cloudy patch, no point",
     "also": null,
     "source": "meta"
    },
-   "ours_checks": 3,
+   "ours_checks": 4,
    "ours_tokens": {
     "calls": 3,
-    "input_tokens": 7512,
-    "output_tokens": 844
-   }
+    "input_tokens": 7682,
+    "output_tokens": 1110
+   },
+   "redone": true
   },
   {
    "file": "non_meteor__2021_05_07_00_44_01_000_010121-trim-0857-crop-360p1.mp4",

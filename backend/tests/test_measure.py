@@ -56,6 +56,15 @@ def test_far_jump_starts_new_track():
     assert len(longest_track(pts, max_jump=5)) == 3
 
 
+def test_satellite_train_is_not_joined_into_one_path():
+    # two satellites on the same line, the second starts back where the first started
+    first = [{"frame": f, "x": 10 + 5 * f, "y": 200 - 5 * f} for f in range(1, 21)]
+    second = [{"frame": f, "x": 10 + 5 * (f - 20), "y": 200 - 5 * (f - 20)} for f in range(21, 36)]
+    path = longest_track(first + second, max_jump=200, min_step=20)
+    assert [p["frame"] for p in path] == list(range(1, 21))
+    assert straightness(path) == 1.0
+
+
 def test_whole_frame_flash(tmp_path):
     path = tmp_path / "flash.avi"
     writer = cv2.VideoWriter(str(path), cv2.VideoWriter_fourcc(*"MJPG"), 25, (200, 100))

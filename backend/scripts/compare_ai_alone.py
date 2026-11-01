@@ -92,6 +92,9 @@ def main():
     parser.add_argument("--run-ours", action="store_true", help="also run our agent (costs tokens)")
     parser.add_argument("--folder", default=os.getenv("SAMPLES_DIR", "data/sample"), help="folder with the clips")
     parser.add_argument("--name", default=None, help="results file name, e.g. NightSkyUCP_results")
+    parser.add_argument("--redo-ours", nargs=2, metavar=("BEFORE", "AFTER"),
+                        help="after a measure change: run only our agent again on clips whose measurements changed "
+                             "(two measure_snapshot.py files). The 'AI alone' answers are kept.")
     parser.add_argument("--max-cost", type=float, default=6.0, help="stop when this run has cost more than this many dollars")
     args = parser.parse_args()
 
@@ -109,13 +112,39 @@ def main():
     rows = [r for r in rows if r["alone"]["category"] != "error"]  # failed clips run again
     done = {r["file"] for r in rows}
     todo = [p for p in clips if str(p.relative_to(samples)) not in done]
-    print(f"{len(clips)} clip(s): {len(done)} already done, {len(todo)} to run. AI alone sees: {args.how}\n")
+    if not args.redo_ours:
+        print(f"{len(clips)} clip(s): {len(done)} already done, {len(todo)} to run. AI alone sees: {args.how}\n")
 
     def cost(t):
         return t["input"] / 1e6 * 1.25 + t["output"] / 1e6 * 4.25  # muse-spark-1.3 prices per 1M tokens
 
     def save():
         file.write_text(json.dumps({"how": args.how, "folder": str(samples), "rows": rows}, indent=1))
+
+    if args.redo_ours:
+        before, after = (json.loads(Path(f).read_text()) for f in args.redo_ours)
+        changed = {k for k in after if before.get(k) != after[k]}
+        redo = [r for r in rows if r["file"] in changed and not r.get("redone")]
+        print(f"{len(changed)} clip(s) measured differently, {len(redo)} to run again (ours only)\n")
+        total = {"input": 0, "output": 0}
+        for row in redo:
+            if cost(total) > args.max_cost:
+                print(f"\nSTOPPED: this run cost more than ${args.max_cost}. Run again to continue.")
+                break
+            path = samples / row["file"]
+            old = row["ours"]["category"] if row.get("ours") else "-"
+            answer = investigate(path, measure(path), mode="meta")
+            row["ours"] = answer["verdict"].model_dump()
+            row["ours_checks"] = len(answer["steps"])
+            row["ours_tokens"] = answer.get("usage")
+            row["redone"] = True  # so a second run (after a stop) skips it
+            u = answer.get("usage") or {}
+            total["input"] += u.get("input_tokens", 0)
+            total["output"] += u.get("output_tokens", 0)
+            save()
+            print(f"{row['file'][:55]:55}  expert: {str(row['expert']):10}  ours: {old:9} -> {row['ours']['category']}")
+        print(f"\ntokens used in this run: {total}  (about ${cost(total):.2f})")
+        return
 
     total = {"input": 0, "output": 0}
     for path in todo:
