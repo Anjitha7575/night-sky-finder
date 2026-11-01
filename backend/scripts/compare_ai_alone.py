@@ -1,13 +1,15 @@
 """Compare: Muse Spark ALONE (just looks at the clip) vs our agent (measurements + tools).
 
-Run from backend/:
-  python scripts/compare_ai_alone.py --limit 1 --how video    # try 1 clip first
-  python scripts/compare_ai_alone.py --how frames             # all clips, 8 frames each
-  python scripts/compare_ai_alone.py --how frames --run-ours  # also run our agent where no saved answer exists
+Big test, run from backend/:
+  python scripts/compare_ai_alone.py --folder data/nightskyucp_test --name NightSkyUCP_results --run-ours --limit 10
+  python scripts/compare_ai_alone.py --folder data/nightskyucp_test --name NightSkyUCP_results --run-ours
 
-"AI alone" gets no numbers and no tools. "Ours" comes from data/answers.json (saved when you
-click a clip in the UI with AI_MODE=meta), or is run now with --run-ours.
-Results are printed and saved to results/compare_<time>.json.
+- Saves to results/<name>.json after EVERY clip, and skips clips already in that file,
+  so stopping and re-running never pays twice.
+- Stops by itself when this run's cost passes --max-cost (default $6).
+
+"AI alone" gets no numbers and no tools. "Ours" (our agent) runs only with --run-ours.
+Results are printed and saved to results/<name>.json.
 """
 import argparse
 import base64
@@ -39,12 +41,14 @@ Reply with JSON only:
 {"category": "...", "confidence": "high|medium|low", "reason": "1-2 short sentences", "next_step": "none|watch_video|ask_human"}"""
 
 
-def expert_label(name):
-    if name.startswith("meteor__"):
-        return "meteor"
-    if name.startswith("non_meteor__"):
-        return "not meteor"
-    return None  # no expert label for this clip
+def expert_label(path):
+    """Known answer from the file name prefix (meteor__ / non_meteor__) or the folder name (meteor/ / non_meteor/)."""
+    for part in (path.name.split("__")[0], path.parent.name):
+        if part == "meteor":
+            return "meteor"
+        if part == "non_meteor":
+            return "not meteor"
+    return None  # no known answer for this clip
 
 
 def frames_input(path, count=8, side=768):
@@ -74,6 +78,7 @@ def ai_alone(client, path, how):
         instructions=ALONE_GUIDE,
         input=video_input(path) if use_video else frames_input(path),
         reasoning={"effort": os.getenv("META_EFFORT", "low")},
+        store=False,  # big videos can't be saved on Meta's side; we don't need them saved
     )
     verdict = parse_reply(resp.output_text or "", "meta")
     tokens = {"input": resp.usage.input_tokens, "output": resp.usage.output_tokens}
@@ -84,27 +89,41 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--how", choices=["video", "frames"], default="frames")
     parser.add_argument("--limit", type=int, default=0, help="only the first N clips (0 = all)")
-    parser.add_argument("--run-ours", action="store_true", help="run our agent when no saved answer exists (costs tokens)")
+    parser.add_argument("--run-ours", action="store_true", help="also run our agent (costs tokens)")
+    parser.add_argument("--folder", default=os.getenv("SAMPLES_DIR", "data/sample"), help="folder with the clips")
+    parser.add_argument("--name", default=None, help="results file name, e.g. NightSkyUCP_results")
+    parser.add_argument("--max-cost", type=float, default=6.0, help="stop when this run has cost more than this many dollars")
     args = parser.parse_args()
 
     from openai import OpenAI
     client = OpenAI(base_url="https://api.meta.ai/v1", api_key=os.getenv("META_API_KEY"))
 
-    samples = Path(os.getenv("SAMPLES_DIR", "data/sample"))
+    samples = Path(args.folder)
     clips = sorted(p for p in samples.rglob("*") if p.suffix.lower() in VIDEO_TYPES)
     if args.limit:
         clips = clips[:args.limit]
-    saved = {}
-    answers_file = Path(os.getenv("ANSWERS_FILE", "data/answers.json"))
-    if answers_file.exists():
-        saved = json.loads(answers_file.read_text())
+    out = Path("results")
+    out.mkdir(exist_ok=True)
+    file = out / f"{args.name or 'compare_' + args.how + '_' + time.strftime('%Y%m%d_%H%M%S')}.json"
+    rows = json.loads(file.read_text())["rows"] if file.exists() else []
+    rows = [r for r in rows if r["alone"]["category"] != "error"]  # failed clips run again
+    done = {r["file"] for r in rows}
+    todo = [p for p in clips if str(p.relative_to(samples)) not in done]
+    print(f"{len(clips)} clip(s): {len(done)} already done, {len(todo)} to run. AI alone sees: {args.how}\n")
 
-    print(f"{len(clips)} clip(s), AI alone sees: {args.how}\n")
-    rows = []
+    def cost(t):
+        return t["input"] / 1e6 * 1.25 + t["output"] / 1e6 * 4.25  # muse-spark-1.3 prices per 1M tokens
+
+    def save():
+        file.write_text(json.dumps({"how": args.how, "folder": str(samples), "rows": rows}, indent=1))
+
     total = {"input": 0, "output": 0}
-    for path in clips:
+    for path in todo:
+        if cost(total) > args.max_cost:
+            print(f"\nSTOPPED: this run cost more than ${args.max_cost}. Run again to continue.")
+            break
         name = str(path.relative_to(samples))
-        row = {"file": name, "expert": expert_label(path.name)}
+        row = {"file": name, "expert": expert_label(path)}
         try:
             verdict, tokens, sent = ai_alone(client, path, args.how)
             row["alone"] = verdict.model_dump()
@@ -115,8 +134,8 @@ def main():
         except Exception as e:  # e.g. Meta does not accept the video format
             row["alone"] = {"category": "error", "reason": str(e)[:300]}
 
-        ours = saved.get(f"meta:{name}")
-        if ours is None and args.run_ours:
+        ours = None
+        if args.run_ours:
             answer = investigate(path, measure(path), mode="meta")
             ours = {"verdict": answer["verdict"].model_dump(), "steps": answer["steps"], "usage": answer.get("usage")}
             u = answer.get("usage") or {}
@@ -124,7 +143,9 @@ def main():
             total["output"] += u.get("output_tokens", 0)
         row["ours"] = ours["verdict"] if ours else None
         row["ours_checks"] = len(ours["steps"]) if ours else None
+        row["ours_tokens"] = ours.get("usage") if ours else None
         rows.append(row)
+        save()  # after every clip, so nothing is lost or paid twice
 
         a = row["alone"]["category"]
         o = row["ours"]["category"] if row["ours"] else "-"
@@ -132,14 +153,8 @@ def main():
         if a == "error":
             print("   alone error:", row["alone"]["reason"])
 
-    cost = total["input"] / 1e6 * 1.25 + total["output"] / 1e6 * 4.25  # muse-spark-1.3 prices per 1M tokens
-    print(f"\ntokens used now: {total}  (about ${cost:.2f})")
-
-    out = Path("results")
-    out.mkdir(exist_ok=True)
-    file = out / f"compare_{args.how}_{time.strftime('%Y%m%d_%H%M%S')}.json"
-    file.write_text(json.dumps({"how": args.how, "tokens": total, "rows": rows}, indent=1))
-    print("saved:", file)
+    print(f"\ntokens used in this run: {total}  (about ${cost(total):.2f})")
+    print(f"saved: {file}  ({len(rows)} clips in total)")
 
 
 if __name__ == "__main__":

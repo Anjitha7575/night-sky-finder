@@ -11,6 +11,8 @@
   --plane: #a9b8ff;
   --cloud: #9aa1b5;
   --flash: #c08bff;
+  --aurora: #ff8fd1;
+  --reentry: #ffd24d;
   --unsure: #ffaa7a;
   --good: #5fe08f;
   --bad: #ffaa7a;
@@ -313,7 +315,7 @@ background-size: 60%;
 .rbar__seg--wrong { background: #ff7a7a; }
 .rlegend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 11px; color: var(--soft); padding: 0 10px; }
 .rlegend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
-.fact { display: grid; grid-template-columns: 70px 1fr; gap: 12px; align-items: center; padding: 10px 12px; border-radius: 8px; background: var(--glass-2); border: 1px solid var(--line); }
+.fact { display: grid; grid-template-columns: 96px 1fr; gap: 12px; align-items: center; padding: 10px 12px; border-radius: 8px; background: var(--glass-2); border: 1px solid var(--line); }
 .fact b { font-family: "Space Grotesk Variable", sans-serif; font-size: 24px; color: #c9b8ff; text-align: center; }
 .fact span { font-size: 12px; color: var(--soft); }
 .note { padding: 10px 12px; border-radius: 8px; border: 1px dashed var(--line); font-size: 11.5px; color: var(--soft); }
@@ -331,3 +333,18 @@ background-size: 60%;
 .ans__mark--unsure { color: #8c93a8; }
 .app[hidden] { display: none; }
 .app--results { grid-template-rows: minmax(0, 1fr) auto; }
+
+/* verdict: meteor yes/no first, type second */
+.verdict__name--yes { color: var(--meteor); }
+.verdict__name--maybe { color: #c9e86b; }
+.verdict__name--no { color: var(--text); }
+.verdict__name--unsure { color: var(--unsure); }
+.verdict__type { display: block; font-size: 14px; font-weight: 600; color: var(--accent); margin-top: 2px; }
+
+/* results: group tabs + table filter */
+.rgroups { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 2px; align-items: center; }
+.rgroups button, .rfilter button { border: 1px solid var(--line); background: var(--glass-2); color: var(--soft); border-radius: 999px; padding: 4px 12px; font-size: 11px; cursor: pointer; }
+.rgroups button[aria-selected="true"], .rfilter button[aria-pressed="true"] { background: #2f6fe8; border-color: #2f6fe8; color: #fff; }
+.rgroups__soon { font-size: 11px; color: var(--muted); border: 1px dashed var(--line); border-radius: 999px; padding: 4px 12px; }
+.rfilter { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: flex-end; }
+.rfilter .hint { margin: 0 0 0 6px; }

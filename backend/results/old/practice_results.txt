@@ -1,0 +1,388 @@
+=== data/practice/2025_11_02_19_41_00_000_012544_trim350_wm.mp4
+measured: {'speed_pct_per_sec': 16.5, 'straightness': 0.89, 'visible_sec': 0.56, 'blink': {'seen_ratio': 0.86, 'blinking': False}, 'note': 'whole-sky flash in 2 frame(s)'}
+
+took 14.1 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Check if blob is meteor head with tail or bird/insect shape.
+  found: Close-up of the path area (132x77 pixels), all frames where the object was seen stacked.
+
+step 3: Checked frames over time  (frames_over_time)
+  why:   See motion and change over time to distinguish meteor vs bird.
+  found: 4 moments from left to right, at 0.00s, 0.20s, 0.36s, 0.52s after first seen.
+
+step 4: Checked brightness  (brightness_curve)
+  why:   Check if brightening then fading like meteor or flashing.
+  found: Brightness over 12 sightings: changes a lot, brightest near the end (min 111, max 216 of 255).
+
+verdict: {
+ "category": "meteor",
+ "confidence": "medium",
+ "reason": "Very bright round glow lasting 0.56s with whole-sky flash in 2 frames and brightness rising to peak near end. Matches a bright fireball flaring.",
+ "next_step": "none",
+ "key_clue": "very bright flare with sky flash",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6237, 'output_tokens': 1023}
+=== data/practice/2025_11_06_20_16_01_000_010123_trim275_wm.mp4
+measured: {'speed_pct_per_sec': 2.7, 'straightness': 0.72, 'visible_sec': 0.68, 'blink': {'seen_ratio': 0.35, 'blinking': True}, 'note': None}
+
+took 17.7 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   See if path is dotted blinking or meteor streak
+  found: Close-up of the path area (65x53 pixels), all frames where the object was seen stacked.
+
+step 3: Checked frames over time  (frames_over_time)
+  why:   Check shape and movement over time
+  found: 4 moments from left to right, at 0.00s, 0.12s, 0.44s, 0.64s after first seen.
+
+step 4: Checked brightness  (brightness_curve)
+  why:   Check if blinking or steady or flare
+  found: Brightness over 6 sightings: changes a lot, brightest in the middle (min 122, max 184 of 255).
+
+verdict: {
+ "category": "bird",
+ "confidence": "low",
+ "reason": "Short 0.68s path is not straight (0.72) with gaps (seen 0.35) and variable brightness, unlike steady satellite or straight meteor.",
+ "next_step": "watch_video",
+ "key_clue": "curved short path with gaps",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6293, 'output_tokens': 1598}
+=== data/practice/2026_02_12_00_41_01_000_010075_trim750_wm.mp4
+measured: {'speed_pct_per_sec': 7.2, 'straightness': 0.85, 'visible_sec': 12.72, 'blink': {'seen_ratio': 0.91, 'blinking': False}, 'note': 'the whole sky got brighter in 6 frame(s): a very bright flash, for example a fireball lighting up the sky (those frames are left out of the image)'}
+
+took 6.6 s
+
+step 1: First look  (first_look)
+
+verdict: {
+ "category": "meteor",
+ "confidence": "high",
+ "reason": "Bright head with widening smoky tail that brightens then fades, plus whole sky lit up for 6 frames. That flash and tail are classic fireball behavior.",
+ "next_step": "none",
+ "key_clue": "sky flash plus bright tail",
+ "source": "meta"
+}
+usage: {'calls': 1, 'input_tokens': 1842, 'output_tokens': 727}
+=== data/practice/2026_02_12_00_41_01_000_010360_trim750_wm.mp4
+measured: {'speed_pct_per_sec': 11.8, 'straightness': 0.61, 'visible_sec': 10.92, 'blink': {'seen_ratio': 0.97, 'blinking': False}, 'note': 'the whole sky got brighter in 48 frame(s): a very bright flash, for example a fireball lighting up the sky (those frames are left out of the image)'}
+
+took 11.8 s
+
+step 1: First look  (first_look)
+
+step 2: Checked brightness  (brightness_curve)
+  why:   Check for bright flare typical of fireball vs steady satellite.
+  found: Brightness over 88 sightings: changes a lot, brightest near the start (min 155, max 244 of 255). Warning: it reaches almost the maximum (255), so the object may be too bright to measure; a flat curve here does not prove steady brightness.
+
+step 3: Checked frames over time  (frames_over_time)
+  why:   See head with tail or fragmentation.
+  found: 4 moments from left to right, at 0.00s, 3.84s, 7.32s, 10.80s after first seen.
+
+step 4: Zoomed in  (zoom_in)
+  why:   Look closer at fragmented path in image.
+  found: Close-up of the path area (999x261 pixels), all frames where the object was seen stacked.
+
+verdict: {
+ "category": "meteor",
+ "confidence": "medium",
+ "reason": "Whole sky brightened for 48 frames and frames show a very bright flaring head lighting clouds, with a diffuse trail in zoom. Long 10.9s duration and low straightness fit a very bright fireball behind clouds.",
+ "next_step": "none",
+ "key_clue": "sky-wide flash with bright flaring head",
+ "source": "meta"
+}
+usage: {'calls': 2, 'input_tokens': 4214, 'output_tokens': 1301}
+=== data/practice/2026_02_25_18_06_01_000_010097_trim800_wm.mp4
+measured: {'speed_pct_per_sec': 11.1, 'straightness': 1.0, 'visible_sec': 1.6, 'blink': {'seen_ratio': 1.0, 'blinking': False}, 'note': None}
+
+took 12.7 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Check if line is dotted meteor vs steady satellite and tail
+  found: Close-up of the path area (230x122 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   Distinguish meteor flare from steady satellite brightness
+  found: Brightness over 20 sightings: changes a lot, brightest near the end (min 123, max 213 of 255).
+
+verdict: {
+ "category": "meteor",
+ "confidence": "high",
+ "reason": "Straight 1.6s path seen in every frame with bright flare near the end. Zoom shows fast-moving dotted streak typical of a meteor jumping between frames.",
+ "next_step": "none",
+ "key_clue": "fast dotted streak with end flare",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 5994, 'output_tokens': 1000}
+=== data/practice/2026_03_05_20_47_01_000_010094_trim650_wm.mp4
+measured: {'speed_pct_per_sec': 26.7, 'straightness': 0.24, 'visible_sec': 0.48, 'blink': {'seen_ratio': 1.0, 'blinking': False}, 'note': None}
+
+took 14.8 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Check if dotted line is straight meteor vs blinking plane
+  found: Close-up of the path area (58x118 pixels), all frames where the object was seen stacked.
+
+step 3: Checked frames over time  (frames_over_time)
+  why:   See motion and shape change over time
+  found: 4 moments from left to right, at 0.00s, 0.12s, 0.28s, 0.44s after first seen.
+
+step 4: Checked brightness  (brightness_curve)
+  why:   Check if brightens then fades like meteor
+  found: Brightness over 12 sightings: changes a lot, brightest near the start (min 118, max 232 of 255).
+
+verdict: {
+ "category": "meteor",
+ "confidence": "medium",
+ "reason": "Short 0.48s dotted straight track seen every frame with bright start then fade matches fast meteor, though measured straightness 0.24 is low.",
+ "next_step": "none",
+ "key_clue": "evenly spaced dots fading in 0.5s",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6187, 'output_tokens': 1567}
+=== data/practice/2026_03_05_20_47_01_000_010622_trim650_wm.mp4
+measured: {'speed_pct_per_sec': 3.0, 'straightness': 0.96, 'visible_sec': 2.8, 'blink': {'seen_ratio': 0.96, 'blinking': False}, 'note': None}
+
+took 17.2 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Check if path is steady line or has tail or blinking gaps.
+  found: Close-up of the path area (86x133 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   See if brightness is steady, blinking, or flaring.
+  found: Brightness over 67 sightings: changes a lot, brightest near the end (min 196, max 234 of 255).
+
+step 4: Checked frames over time  (frames_over_time)
+  why:   Check for glowing head with tail versus steady point.
+  found: 4 moments from left to right, at 0.00s, 0.92s, 1.84s, 2.76s after first seen.
+
+verdict: {
+ "category": "satellite",
+ "confidence": "medium",
+ "reason": "Slow straight 2.8s path seen in almost every frame with no blinking gaps or tail, brightening smoothly to the end. Image and numbers agree on steady satellite-like motion, not fast meteor fade.",
+ "next_step": "none",
+ "key_clue": "slow steady brightening point",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6408, 'output_tokens': 1587}
+=== data/practice/2026_03_08_17_55_00_000_010077_trim0_wm.mp4
+measured: {'speed_pct_per_sec': 1.8, 'straightness': 1.0, 'visible_sec': 1.52, 'blink': {'seen_ratio': 0.32, 'blinking': True}, 'note': 'faint object against a bright sky: found with a lower threshold'}
+
+took 13.8 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   See shape of path to tell meteor vs satellite.
+  found: Close-up of the path area (77x57 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   Check if steady, blinking, or flaring.
+  found: Brightness over 6 sightings: almost steady (min 185, max 190 of 255).
+
+step 4: Checked frames over time  (frames_over_time)
+  why:   See movement and shape across frames.
+  found: 4 moments from left to right, at 0.00s, 0.24s, 0.72s, 1.44s after first seen.
+
+verdict: {
+ "category": "satellite",
+ "confidence": "medium",
+ "reason": "Slow straight short streak with steady brightness fits a faint satellite; low seen ratio is explained as measurement gaps, not blinking.",
+ "next_step": "none",
+ "key_clue": "slow straight steady streak",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6347, 'output_tokens': 948}
+=== data/practice/2026_03_08_17_55_00_000_010763_trim0_wm.mp4
+measured: {'speed_pct_per_sec': 3.6, 'straightness': 0.82, 'visible_sec': 12.64, 'blink': {'seen_ratio': 0.61, 'blinking': False}, 'note': None}
+
+took 13.7 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   See if path is dotted blinking or continuous.
+  found: Close-up of the path area (481x92 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   Check for blinking vs steady brightness.
+  found: Brightness over 97 sightings: changes a lot, brightest near the start (min 162, max 234 of 255).
+
+step 4: Checked frames over time  (frames_over_time)
+  why:   Confirm blinking lights and slow movement of plane.
+  found: 4 moments from left to right, at 0.00s, 3.12s, 10.00s, 12.56s after first seen.
+
+verdict: {
+ "category": "plane",
+ "confidence": "high",
+ "reason": "Slow straight track visible 12.6s with gaps and highly variable brightness. Blinking dotted path matches a plane, not a meteor or satellite.",
+ "next_step": "none",
+ "key_clue": "long blinking dotted path",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6234, 'output_tokens': 1144}
+=== data/practice/2026_03_23_18_27_01_000_012661_trim1225_wm.mp4
+measured: {'speed_pct_per_sec': 6.2, 'straightness': 0.89, 'visible_sec': 1.72, 'blink': {'seen_ratio': 1.0, 'blinking': False}, 'note': None}
+
+took 9.4 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Check if object has head with tail vs steady point.
+  found: Close-up of the path area (118x131 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   See if brightness flares then fades like meteor.
+  found: Brightness over 43 sightings: changes a lot, brightest near the end (min 178, max 231 of 255).
+
+verdict: {
+ "category": "meteor",
+ "confidence": "high",
+ "reason": "Thick bright streak shows a glowing head with a tapered tail. Seen continuously for 1.7s on a straight path.",
+ "next_step": "none",
+ "key_clue": "glowing head with tail",
+ "source": "meta"
+}
+usage: {'calls': 2, 'input_tokens': 3999, 'output_tokens': 756}
+=== data/practice/AMS16_20190927_172916_2.mp4
+measured: {'speed_pct_per_sec': 9.9, 'straightness': 0.8, 'visible_sec': 2.8, 'blink': {'seen_ratio': 1.0, 'blinking': False}, 'note': 'whole-sky flash in 1 frame(s)'}
+
+took 16.9 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Confirm glowing head with tail vs steady point.
+  found: Close-up of the path area (285x138 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   Check for meteor flare vs steady satellite.
+  found: Brightness over 35 sightings: changes a lot, brightest in the middle (min 158, max 214 of 255).
+
+verdict: {
+ "category": "meteor",
+ "confidence": "high",
+ "reason": "Very bright streak with head and tail flared in brightness and caused a whole-sky flash, typical of a fireball despite 2.8 s duration.",
+ "next_step": "none",
+ "key_clue": "bright tail with sky flash",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6030, 'output_tokens': 1264}
+=== data/practice/AMS16_20251111_011607_3.mp4
+measured: {'speed_pct_per_sec': 18.9, 'straightness': 0.82, 'visible_sec': 1.12, 'blink': {'seen_ratio': 1.0, 'blinking': False}, 'note': 'the whole sky got brighter in 17 frame(s): a very bright flash, for example a fireball lighting up the sky (those frames are left out of the image)'}
+
+took 8.3 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Check if bright head with tail and fragmentation
+  found: Close-up of the path area (236x137 pixels), all frames where the object was seen stacked.
+
+verdict: {
+ "category": "meteor",
+ "confidence": "high",
+ "reason": "Very bright fireball head lit up the whole sky with a thin trail, seen every frame for about 1s.",
+ "next_step": "none",
+ "key_clue": "sky-wide flash with glowing head and tail",
+ "source": "meta"
+}
+usage: {'calls': 2, 'input_tokens': 3883, 'output_tokens': 754}
+=== data/practice/AMS34_20230226_195947_2.mp4
+measured: {'speed_pct_per_sec': 7.3, 'straightness': 0.07, 'visible_sec': 5.56, 'blink': {'seen_ratio': 0.45, 'blinking': True}, 'note': None}
+
+took 15.5 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Check if trail is dotted blinking or continuous with head-tail
+  found: Close-up of the path area (156x155 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   See if brightness blinks like plane or flares like fireball
+  found: Brightness over 63 sightings: changes a lot, brightest near the end (min 87, max 226 of 255).
+
+step 4: Checked frames over time  (frames_over_time)
+  why:   See if object flares and fragments like fireball or blinks like plane
+  found: 4 moments from left to right, at 0.00s, 1.04s, 1.88s, 5.52s after first seen.
+
+verdict: {
+ "category": "meteor",
+ "confidence": "high",
+ "reason": "Very bright head with tail flares and lights sky with splitting pieces. Numbers say low straightness and low seen ratio but image shows straight fireball track.",
+ "next_step": "none",
+ "key_clue": "bright flaring head with tail and fragments",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6540, 'output_tokens': 1473}
+=== data/practice/AMS55_20251111_011607_1.mp4
+measured: {'speed_pct_per_sec': 16.7, 'straightness': 0.72, 'visible_sec': 1.2, 'blink': {'seen_ratio': 1.0, 'blinking': False}, 'note': 'the whole sky got brighter in 14 frame(s): a very bright flash, for example a fireball lighting up the sky (those frames are left out of the image)'}
+
+took 9.9 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   Check if blob is fragmenting fireball with tail.
+  found: Close-up of the path area (110x232 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   Confirm bright flare matching fireball flash.
+  found: Brightness over 30 sightings: changes a lot, brightest near the end (min 142, max 205 of 255).
+
+verdict: {
+ "category": "meteor",
+ "confidence": "high",
+ "reason": "Very bright head with tail that fragmented and lit up the whole sky for 14 frames. Short 1.2s duration with steady detection matches a fireball.",
+ "next_step": "none",
+ "key_clue": "sky-wide flash with fragmenting bright head",
+ "source": "meta"
+}
+usage: {'calls': 2, 'input_tokens': 4036, 'output_tokens': 996}
+=== data/practice/AMS56_20230626_204510_3.mp4
+measured: {'speed_pct_per_sec': 24.2, 'straightness': 0.02, 'visible_sec': 3.24, 'blink': {'seen_ratio': 0.35, 'blinking': True}, 'note': 'whole-sky flash in 4 frame(s)'}
+
+took 12.9 s
+
+step 1: First look  (first_look)
+
+step 2: Zoomed in  (zoom_in)
+  why:   See what the small path looks like close up.
+  found: Close-up of the path area (158x155 pixels), all frames where the object was seen stacked.
+
+step 3: Checked brightness  (brightness_curve)
+  why:   Check if brightness shows a sky-wide flash.
+  found: Brightness over 28 sightings: changes a lot, brightest in the middle (min 105, max 208 of 255).
+
+step 4: Checked where in the sky  (where_in_sky)
+  why:   Check if detection is near horizon or ground lights.
+  found: The object is 150% of the way from the centre to the edge: near the edge of the circle. On an all-sky camera that is low near the horizon, where objects look smaller and slower than they really are.
+
+step 5: Watched the full clip  (watch_video)
+  why:   Confirm whole-sky lighting up briefly.
+  found: The full clip as 8 evenly spaced frames, left to right then the second row.
+
+verdict: {
+ "category": "flash",
+ "confidence": "medium",
+ "reason": "Video frames show the whole cloudy sky brightening at once, and the note reports a whole-sky flash in 4 frames.",
+ "next_step": "none",
+ "key_clue": "whole sky lights up at once",
+ "source": "meta"
+}
+usage: {'calls': 3, 'input_tokens': 6682, 'output_tokens': 1091}

@@ -207,6 +207,17 @@ def combined_image(frames, skip=(), out_side=512):
     return cv2.resize(stack, None, fx=scale, fy=scale, interpolation=cv2.INTER_NEAREST)
 
 
+def scene_image(frames, out_side=512):
+    """One normal frame from the middle of the clip: what the camera actually saw."""
+    if not frames:
+        return None
+    img = frames[len(frames) // 2]
+    h, w = img.shape
+    scale = out_side / max(h, w)
+    interp = cv2.INTER_CUBIC if scale > 1 else cv2.INTER_AREA
+    return cv2.resize(img, None, fx=scale, fy=scale, interpolation=interp)
+
+
 def preview_image(frames, flash_frames=(), out_side=512):
     if not frames:
         return None
@@ -241,6 +252,7 @@ def measure(path):
             "note": "single image: movement unknown",
             "image": combined_image(frames),
             "preview": preview_image(frames),
+            "scene": scene_image(frames),
         })
         return result
 
@@ -288,5 +300,6 @@ def measure(path):
         "note": "; ".join(notes) or None,
         "image": combined_image(frames, skip=set(flash_frames) | set(glow)),
         "preview": preview_image(frames, flash_frames),
+        "scene": scene_image(frames),
     })
     return result

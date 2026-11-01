@@ -39,7 +39,7 @@ _measured = {}
 
 
 def measured_payload(result, name):
-    out = {k: v for k, v in result.items() if k not in ("image", "preview", "points")}
+    out = {k: v for k, v in result.items() if k not in ("image", "preview", "points", "scene")}
     out["file"] = name
     return {
         "file": name,
@@ -53,6 +53,7 @@ def analyze(path, name):
     result = measure(path)
     answer = investigate(path, result)
     result.pop("points", None)
+    result.pop("scene", None)
     image_b64 = to_b64(result.pop("image", None))
     preview_b64 = to_b64(result.pop("preview", None))
     result["file"] = name

@@ -62,3 +62,22 @@ def test_photo_prompt_has_no_speed():
 def test_faint_note_explains_gaps():
     text = describe(fake_result(note="faint object against a bright sky: found with a lower threshold"))
     assert "not from blinking" in text
+
+
+def test_new_categories_are_accepted():
+    for cat in ("aurora", "reentry"):
+        v = parse_reply('{"category": "%s", "confidence": "medium", "reason": "x", "next_step": "none"}' % cat, "meta")
+        assert v.category == cat
+
+
+def test_prompt_also_sends_the_normal_view():
+    items = build_input(fake_result(scene=np.zeros((54, 96), dtype=np.uint8)))
+    images = [p for p in items[0]["content"] if p["type"] == "input_image"]
+    assert len(images) == 2
+
+
+def test_second_guess():
+    v = parse_reply('{"category": "plane", "also": "satellite", "confidence": "medium", "reason": "x", "next_step": "none"}', "meta")
+    assert v.also == "satellite"
+    v = parse_reply('{"category": "plane", "also": "ufo", "confidence": "medium", "reason": "x", "next_step": "none"}', "meta")
+    assert v.category == "plane" and v.also is None  # bad second guess is dropped, answer kept

@@ -55,6 +55,14 @@ function Investigation({ steps }) {
   );
 }
 
+// the question owners care about first: is it a meteor?
+const METEOR_WORDS = { yes: "Meteor", maybe: "Maybe a meteor", no: "Not a meteor", unsure: "Not sure" };
+function isMeteor(v) {
+  if (v.category === "unsure") return "unsure";
+  if (v.category === "meteor") return v.confidence === "low" ? "maybe" : "yes";
+  return v.also === "meteor" ? "maybe" : "no";
+}
+
 function measuredLine(m) {
   const parts = [];
   if (m.speed_pct_per_sec != null) parts.push(`${m.speed_pct_per_sec}% screen/s`);
@@ -108,9 +116,16 @@ export default function EventPanel({ item, index, aiMode, onRetry }) {
           <div className="event__verdict event__verdict--wide">
             <span className="verdict__icon"><Streak /></span>
             <div>
-              <b className="verdict__name">
-                {v.category === "unsure" ? "Not sure" : v.confidence === "low" ? `Maybe ${cat.label}` : `Likely ${cat.label}`}
-              </b>
+              <b className={`verdict__name verdict__name--${isMeteor(v)}`}>{METEOR_WORDS[isMeteor(v)]}</b>
+              {v.category !== "meteor" && v.category !== "unsure" && (
+                <span className="verdict__type">
+                  {v.confidence === "low" ? "Maybe" : "Likely"} {cat.label.toLowerCase()}
+                  {v.also && v.also !== "unsure" && <> · or {categoryOf(v.also).label.toLowerCase()}</>}
+                </span>
+              )}
+              {v.category === "meteor" && v.also && v.also !== "unsure" && (
+                <span className="verdict__type">or {categoryOf(v.also).label.toLowerCase()}</span>
+              )}
               <Confidence level={v.confidence} />
               <span className="verdict__meta">
                 Decided after {steps.length} {steps.length === 1 ? "look" : "checks"}

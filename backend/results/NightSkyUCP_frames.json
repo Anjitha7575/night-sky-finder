@@ -1,0 +1,4206 @@
+{
+ "how": "frames",
+ "folder": "data/nightskyucp_test",
+ "rows": [
+  {
+   "file": "meteor__2019_12_15_05_14_14_000_010004-trim1072-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint point persists over several frames moving steadily, not a brief streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 529
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_02_08_09_17_32_000_010003-trim993-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "small bright spot moves quickly downward across frames with streak-like elongation.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 717
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_05_05_08_51_41_000_010003-trim-0348-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Small point moves down-right, brightens to a short streak then quickly fades.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 674
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_05_12_06_16_38_000_010006-trim-0098-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Small point brightens then shows brief streak before vanishing in a few frames, typical of a fast meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 655
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_07_20_02_14_39_000_010006-trim-0199-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "medium",
+    "reason": "small point moves steadily across frames with varying brightness suggesting blinking lights.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 863
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_07_30_08_50_31_000_010005-trim-0531-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Small white point moves downward over several frames then fades, with slight elongation suggesting fast motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 737
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_08_01_08_52_38_000_010006-trim-0824-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Point stays stationary while brightening then fading over few frames, no trail or motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 466
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_08_09_06_34_40_000_010006-trim-1018-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "A point right of a steady star brightens for 2-3 frames then vanishes with no streak or motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 848
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_08_09_08_59_14_000_010001-trim-1129-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "low",
+    "reason": "A bright spot appears intermittently while drifting slowly relative to a steady background point, like an aircraft strobe.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 758
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_08_09_08_59_19_000_010002-trim-1023-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very dark frames with only a faint brief dot, no clear trail or shape to distinguish meteor from noise.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 859
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_08_17_02_13_25_000_010002-trim-0024-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Faint point appears in only some frames with no clear trail or steady motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 713
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_08_24_06_59_25_000_010002-trim-0487-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Point brightens quickly over few frames then shows short streak before vanishing.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 388
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_09_13_08_02_31_000_010005-trim-0609-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "small point drifts slowly right and brightens then fades, no streak or blinking",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 528
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_09_13_08_31_22_000_010003-trim-0225-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "medium",
+    "reason": "Dim point moves steadily across frames with one very bright flash in middle, typical of aircraft strobe.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 543
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_09_17_03_34_20_000_010005-trim-0109-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Steady point moves slowly across many frames with co-moving faint dots in a line, like a satellite train, not a single-frame meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 796
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_10_03_03_00_20_000_010001-trim-0532-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small steady white point visible for ~5 frames moving slowly downward across dark sky, no trail or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 569
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_11_03_04_22_00_000_010005-trim-0157-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Small point appears, brightens briefly with slight motion, then vanishes.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 426
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_11_04_08_41_00_000_010005-trim-0810-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Bright spots reappear in same left and right positions instead of moving steadily, like stars fading through thin cloud.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 1240
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_11_29_03_08_01_000_010002-trim-1421-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost black with only a faint brief dot in one frame, too dim to tell meteor from distant flash.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 774
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_12_03_10_18_01_000_010002-trim-1092-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Brief point brightens into short vertical streak then fades within a few frames.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 436
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2020_12_03_10_39_01_000_010001-trim-0336-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Small stationary point brightens then fades with no trail or motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 211,
+    "output": 770
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_14_00_12_01_000_010076-trim-0638-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Images are nearly black with no distinct moving track visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 638
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_14_02_31_01_000_010075-trim-0642-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost black with only very faint possible spots, no clear track visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 544
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_14_02_45_00_000_010074-trim-0735-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small steady white point moving slowly straight down across frames with no streak or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 509
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_21_04_17_00_000_010351-trim-0734-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Brief bright streak moves downward and fades within a few frames.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 454
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_21_04_42_00_000_010349-trim-1096-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint point moves slowly over several frames with no streak or blink, consistent with satellite.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 865
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_22_02_36_01_000_010318-trim-0700-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Steady point light persists across frames with minimal motion, no trail or blinking.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 983
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_22_02_46_01_000_010097-trim-0118-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no clear moving object discernible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 516
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_22_03_10_01_000_010352-trim-0815-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "medium",
+    "reason": "Bright points appear/disappear between frames while shifting position, matching flashing aircraft lights.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 789
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_23_04_45_01_000_010077-trim-0000-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Two brief isolated white points separated by dark frames, not continuous streak, suggests flashing orbital object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 716
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_24_17_46_01_000_010097-trim-0355-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames appear uniformly dark with no visible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 488
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_25_04_41_00_000_010355-trim-0670-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Two dim points stay nearly fixed with no streak or clear motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 875
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_02_28_23_15_01_000_010351-trim-0031-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint small dot drifts slowly in dark area right of bright glare across frames, no streak or blinking.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 647
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_08_02_21_00_000_010074-trim-0781-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "A small steady point of light moves slowly downward across dark frames with no streak or flashing.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 420
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_12_02_14_00_000_010354-trim-1101-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Single-frame point brightening with no trail or motion across frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 815
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_24_22_45_00_000_010317-trim-0767-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small point light persists over several frames with slow drift and no streak or blinking, typical of a satellite.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 751
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_25_03_27_01_000_010074-trim-0092-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no distinct moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 504
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_26_20_36_00_000_010078-trim-0008-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Faint steady point moves slowly across 3 frames with no streak or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 655
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_26_21_26_01_000_010073-trim-1160-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Faint point brightens then elongates into a short diagonal streak before fading.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 413
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_29_19_07_00_000_010319-trim-0917-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "low",
+    "reason": "dim point drifts relative to fixed star and blinks in/out across frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 1728
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_30_01_08_00_000_010351-trim-0487-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Point moves, brightens to peak then fades, leaving a faint persistent train.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 381
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_30_01_21_00_000_010315-trim-1094-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small white point drifts steadily down across frames then fades, with no streak or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 470
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_30_20_24_00_000_010076-trim-0244-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames appear almost entirely dark with no discernible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 462
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_30_20_47_01_000_010078-trim-0774-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no clear moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 660
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_30_20_49_01_000_010079-trim-1326-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Bright head moves across frame leaving a lingering fading trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 373
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_30_20_54_01_000_010079-trim-0848-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Small white point drifts steadily against black sky with no streak or blink.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 916
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_31_20_52_01_000_010079-trim-0918-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "small steady white point moves slowly downward over many frames relative to fixed stars, no trail or flashing",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 561
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_31_21_29_01_000_010355-trim-0182-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Line of faint white points moving together past a fixed star, persisting across all frames, not a single-frame streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 991
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_03_31_22_12_01_000_010354-trim-0000-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Point source stays in place while brightening then fading with no trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 644
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_01_02_02_00_000_010355-trim-0659-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Very faint point-like source appears to shift slowly against static stars with no streak or flashing.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1587,
+    "output": 1225
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_01_22_46_01_000_010351-trim-0939-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with only a very faint point in middle frames, too dim to tell motion or type.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 740
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_02_00_17_01_000_010351-trim-0071-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Steady small white point drifts slowly linearly across dark sky with no streak or flashing.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 373
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_02_00_44_00_000_010073-trim-0972-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "frames are nearly all black with no clear streak or moving point visible",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 757
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_05_00_12_01_000_010355-trim-0901-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small steady point moves slowly across dark sky over several frames with no blinking or streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 400
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_05_21_30_01_000_010320-trim-0234-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Single-frame faint streak against static stars, too brief for satellite or plane.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 668
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_06_00_27_00_000_010078-trim-1422-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no discernible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 611
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_06_01_28_01_000_010354-trim-1065-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Faint point appears in only 2 of 8 frames with small shift. Too brief to distinguish satellite glint from noise or distant flash.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 1161
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_08_23_40_01_000_010315-trim-0422-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "faint point on right edge across frames with slight drift, no streak or blink",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 455
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_08_23_54_00_000_010349-trim-0687-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Very faint small point drifts slowly across dark sky with no streak or flashing.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 542
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_09_00_14_00_000_010079-trim-0757-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Steady white point drifts slowly across frames with constant brightness, too slow for meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 740
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_09_00_42_00_000_010355-trim-0226-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "small point moves steadily across multiple frames without streak or flashing",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 649
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_09_00_42_01_000_010352-trim-0199-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small point light drifts steadily down-right over 6+ frames vs fixed star, with constant brightness.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 1211
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_09_00_43_00_000_010355-trim-0701-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "medium",
+    "reason": "Two close steady lights drift slowly together and fade, like distant aircraft lights.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 518
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_09_22_47_00_000_010320-trim-0481-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with only faint points, no clear streak or motion visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 750
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_12_23_03_00_000_010091-trim-0875-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Isolated bright point in one frame with dark frames before/after, no streak or steady track.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 1124
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_13_19_28_00_000_010314-trim-0469-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Bright head moves steadily down left edge leaving a straight luminous trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 2539,
+    "output": 458
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_14_00_51_00_000_010318-trim-0689-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small steady point persists across multiple frames moving slowly linearly.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 520
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_14_00_51_00_000_010319-trim-0683-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Small white point appears for ~3 frames with little motion then vanishes; no streak or steady track.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 795
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_14_00_55_00_000_010320-trim-0488-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "A second point brightens for a few frames beside a steady star then fades, with no trail or clear steady motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 845
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_23_00_37_00_000_010075-trim-0584-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Faint point appears mid-clip, briefly brightens then fades with no streak or clear motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 914
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_23_01_03_01_000_010320-trim-0000-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "medium",
+    "reason": "Slow point moves left to center with flashing brightness variation while background star stays fixed.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 917
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_23_02_14_01_000_010315-trim-0453-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small white point moves steadily down across dark sky over 4 frames, no streak or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 743
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_23_02_27_01_000_010076-trim-0750-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "A faint point appears for ~2 frames below the steady star with no trail or motion then vanishes.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 879
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_23_23_20_00_000_010075-trim-1390-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "low",
+    "reason": "Dim light on left edge persists over frames with blinking double-point look, like distant aircraft lights.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 756
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_23_23_39_00_000_010073-trim-0680-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief bright point appears center in frames 3-6 with slight vertical smear then vanishes, consistent with faint short meteor.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 1281
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_24_02_46_00_000_010320-trim-0011-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint point drifts slowly down while briefly brightening then fading; too slow and long-lived for meteor.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 944
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_24_21_02_01_000_010078-trim-1289-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Faint point crosses dark field quickly and fades with brief elongation, not a steady slow track.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 582
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_24_23_51_01_000_010079-trim-1342-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Slow drifting point over several frames with varying brightness, too slow for meteor and no wing shape.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 1108
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_26_02_13_00_000_010095-trim-0525-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Faint point drifts steadily downward over several frames with no flashing or long trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 693
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_27_21_14_01_000_010078-trim-1034-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "small steady white point moves slowly downward across frames with no streak or blink.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1043,
+    "output": 449
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_04_27_22_32_00_000_010320-trim-0066-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Faint point appears in only two middle frames with slight shift then vanishes, consistent with brief faint meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 773
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_02_20_13_01_000_010315-trim-0354-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Steady point of light moves slowly across dark sky over several frames with no streak or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 495
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_02_20_58_00_000_010318-trim-0688-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "A faint point appears for ~3 frames and moves steadily upward relative to two static stars, with no streak or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 611
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_02_20_58_01_000_010316-trim-1186-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Steady small white point drifting slowly over multiple frames, no flashing or long streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 575
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_02_21_20_01_000_010078-trim-0363-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Faint point appears for ~2 frames then fades, consistent with a very dim short meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 663
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_02_22_34_01_000_010317-trim-0992-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Brief point of light appears for two frames then vanishes with no trail or motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 565
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_02_22_35_01_000_010320-trim-0085-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Very faint point drifts slowly downward over several frames, too slow for meteor streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1043,
+    "output": 608
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_03_00_32_00_000_010317-trim-0886-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Single-frame bright elongated streak appears then vanishes. No steady motion across frames or blinking lights.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 1111
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_03_21_36_01_000_010314-trim-0004-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Faint steady white point moves slowly linearly down-right across frames relative to stationary star, no flashing or fast streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 407
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_04_01_52_01_000_010075-trim-1226-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Faint stationary point appears mid-frame for ~3-4 frames then vanishes with no trail or clear motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 639
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_04_02_20_01_000_010079-trim-0767-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small point moves slowly and steadily up-right over several frames then fades, with no long trail or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 695
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_07_21_09_00_000_010076-trim-0396-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small steady white point drifts slowly and fades over several frames, no streak or blink.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 523
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_07_22_59_00_000_010320-trim-0000-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "very faint point drifts slowly downward over multiple frames, too slow for meteor",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 507
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_07_23_38_01_000_010352-trim-0767-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost entirely black with no clear streak or motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 670
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_07_23_44_00_000_010314-trim-0276-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small steady point drifts slowly downward over several frames with no trail or flashing.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 607
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_07_23_50_01_000_010349-trim-0553-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "brief point-like brightening for ~3 frames with little motion, no streak or extended shape",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 590
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_08_00_12_01_000_010354-trim-0143-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are very dark with only faint static stars, no clear moving streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 578
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_05_08_00_33_00_000_010073-trim-1112-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "small steady white point drifts slowly down over 4 frames then fades, no streak or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 460
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_06_01_20_49_00_000_010320-trim-0890-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Faint point moves slowly across frames with no flashing or fast burst, typical of satellite.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 515
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "meteor__2021_06_01_21_05_00_000_010320-trim-0574-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames show only dark sky with faint static points, no clear moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 474
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_23_20_20_01_000_010318-trim-0602-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "low",
+    "reason": "Two steady white points then a fading point with no streak suggests distant aircraft lights, not meteor.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 1041
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_23_21_07_01_000_010319-trim-0913-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Small dim dot persists across all 8 frames drifting steadily, no fast streak or blinking.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 163,
+    "output": 951
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_23_21_17_01_000_010319-trim-0707-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Fast bright point with diffuse tail crosses sky and fades in a few frames.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 793
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_26_23_30_00_000_010319-trim-0771-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small dim white point persisting and drifting slowly across dark sky with no streak or obvious blink.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 560
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_27_02_28_01_000_010320-trim-0321-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "bright head moves steadily down-right leaving a faint lingering trail behind it.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 924
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_27_23_29_01_000_010320-trim-0145-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "steady dim white point drifting slowly past fixed stars, no blinking or streak",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 267,
+    "output": 806
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_27_23_32_00_000_010320-trim-0654-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "small dim white point moves steadily up-left across frames relative to fixed star",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 975
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_28_00_58_01_000_010319-trim-0899-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "medium",
+    "reason": "Lower light moves steadily down-right with strong blinks while upper star drifts slowly, typical of aircraft strobe.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 1050
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_28_20_49_01_000_010353-trim-1146-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "One frame shows brief large diffuse brightening then vanishes, with no moving point source.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 517
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_28_20_53_00_000_010353-trim-0598-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Diffuse irregular bright area slowly expands with cloudy texture, not a point or streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 474
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_28_21_12_00_000_010351-trim-0321-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Sudden bright streak appears then lingers as a vertical persistent train.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 456
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_28_21_14_01_000_010353-trim-0647-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Static tree-like silhouette with no clear moving object across frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 667
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_28_21_46_01_000_010351-trim-0098-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large diffuse white blur on left changes size and vanishes/reappears between frames, like close out-of-focus web or insect, not a sky streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 713
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_28_22_08_01_000_010351-trim-0272-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Diffuse shapeless glow with no streak or point source, nearly static across frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 677
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_28_22_13_01_000_010351-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "All 8 frames look nearly identical with only diffuse blur and no clear moving track.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 595
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_00_01_01_000_010077-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Single frame shows sudden bright glow from bottom then fades to dark with no clear moving track.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 807
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_01_32_00_000_010344-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible in stills, only static tent and dark sky.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 424
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_02_29_00_000_010349-trim-0268-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Diffuse bright area spreads and morphs without a distinct moving point or streak, like illuminated clouds.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 293
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_02_29_00_000_010349-trim-0959-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Diffuse gray patches drift slowly with no point source or streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 685
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_03_42_01_000_010323-trim-0070-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Faint small dark speck appears briefly above the treeline, unlike meteor or satellite streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 751
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_03_49_01_000_010323-trim-0828-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No clear moving object visible in the 8 frames, only static trees against flat grey sky.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 813
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_48_00_000_010359-trim-1381-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry bright shape intruding from edge suggests very close out-of-focus object on lens.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 662
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_52_00_000_010323-trim-1258-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames show only static grey sky and trees with no clear moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 466
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_52_01_000_010358-trim-0538-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Diffuse gray overcast with no sharp streak or point mover, only slow broad brightness changes.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 937
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_55_00_000_010337-trim-0329-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No distinct streak, light, or animal visible; only overcast sky that is essentially static across frames.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 2539,
+    "output": 738
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_59_00_000_010359-trim-1376-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Extremely blurry gray frames with no stars or clear streak, only large diffuse shapes with slight edge motion.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 1041
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_00_00_000_010359-trim-0531-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry out-of-focus shape crosses quickly near lens with bright reflection, not a distant sky track.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 758
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_06_00_000_010357-trim-0007-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames show only static grey sky and tree silhouette with no clear moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 595
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_14_01_000_010359-trim-0039-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "medium",
+    "reason": "Small bright spot grows into large translucent out-of-focus blob with changing wing-like edges, typical of close insect not distant meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 974
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_32_01_000_010326-trim-1240-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "bright point moves steadily down-right with short trailing tail in frames 6-7",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1043,
+    "output": 1015
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_33_01_000_010360-trim-1240-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Diffuse translucent blurry shape blooming near camera is typical of close IR-lit insect, not a distant linear meteor or satellite.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 721
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_34_01_000_010359-trim-0184-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Sudden huge diffuse translucent diamond shape fills view, typical of very close out-of-focus insect or web on lens, not a distant sky object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 1014
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_41_01_000_010360-trim-0660-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Large bright diffuse area on right persists and deforms slowly, no fast-moving streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 887
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_42_01_000_010359-trim-0759-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "medium",
+    "reason": "Small edge protrusions grow over frames 1-6 then a large blurry dark body crosses the bright area, typical of a close crawl across the lens.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 912
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_52_01_000_010358-trim-0154-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Diffuse dark shapes drift slowly with no distinct point or streak, consistent with clouds.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 375
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_53_00_000_010359-trim-0192-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are very dark with only a faint diffuse change at lower right, no clear track.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 687
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_05_00_000_010359-trim-0930-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "All 8 frames look identical dark with a static bright edge, no moving object or streak visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 625
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_06_01_000_010358-trim-1167-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large diffuse bright shape grows up from bottom with lace-like texture, looks like close-range bug or web on lens, not distant sky streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 1111
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_07_01_000_010323-trim-0237-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames look almost identical with no clear streak or moving light visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 521
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_15_01_000_010323-trim-0918-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object or streak is visible in the stills.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 586
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_28_00_000_010360-trim-0138-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "not_sky",
+    "confidence": "low",
+    "reason": "All 8 frames identical with large overexposed close object blocking view; no moving sky object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 784
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_37_00_000_010320-trim-0837-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint steady point drifts slowly relative to fixed star then fades, like a distant satellite.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 723
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_21_18_01_000_010340-trim-1302-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "plane",
+    "confidence": "low",
+    "reason": "Faint point appears intermittently at shifting positions, suggesting a distant flashing light moving slowly.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 710
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_22_09_01_000_010073-trim-1129-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are very dark with a large static diffuse glow and only a faint flickering point, no clear trail.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 740
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_22_11_00_000_010347-trim-0136-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "faint point moves downward then brightens sharply with short trail in final frames",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 609
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_29_22_51_00_000_010362-trim-0529-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very dark frames with only a small flickering bright streak on right edge, no clear motion or shape.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 706
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_30_00_38_00_000_010357-trim-1283-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Dark overcast sky with static tree silhouette, no distinct streak or point mover visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 463
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_30_00_39_01_000_010359-trim-1349-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large bright blurry oval stays almost static and grows, typical of close out-of-focus insect in IR, not a fast sky streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 1387
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_30_00_49_01_000_010358-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct meteor, satellite or plane streak; only diffuse foreground shapes shift between frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 895
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_30_20_36_01_000_010358-trim-1288-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Diffuse wispy brightness drifts slowly with no distinct point track.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 447
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_30_20_58_01_000_010358-trim-0590-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Diffuse bright edge expands and merges rather than moving as a point; looks like illuminated cloud edge drifting.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 424
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_04_30_21_15_00_000_010359-trim-0815-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry translucent near-field blobs drifting across frame, not distant sky motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 551
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_18_53_00_000_010078-trim-1396-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "All frames show dense overcast clouds with no stars or distinct streak. No meteor, satellite or plane signature visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1043,
+    "output": 849
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_19_07_00_000_010349-trim-1351-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly identical overcast sky with no clear moving streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 583
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_20_41_00_000_010343-trim-1115-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Faint diffuse horizontal band appears and foreground roof brightens in last frames, like thin cloud lit up.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 770
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_20_46_01_000_010349-trim-0030-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Diffuse bright patch drifts slowly, no streak or point source.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 441
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_20_47_01_000_010073-trim-0399-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large bright translucent filamentary mass near lens persists across frames, looks like spider web/bug not sky motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 958
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_21_03_00_000_010353-trim-0479-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large diffuse out-of-focus bright shape fills frame and moves down out of view, not a distant point streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1587,
+    "output": 749
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_21_40_00_000_010359-trim-1274-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Bright diffuse white shape slowly enters from right edge, too blurry and partial to tell bird from insect.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1043,
+    "output": 859
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_21_45_01_000_010353-trim-0953-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Small faint spot upper-right fades with no clear trail; images too dark and blurry to classify.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 464
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_22_08_00_000_010359-trim-0876-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large diffuse blur fills early frames then clears abruptly to sky, like a close object leaving the lens.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 567
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_22_19_00_000_010362-trim-1254-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are uniform gray with no stars or clear track, only faint edge brightness.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1043,
+    "output": 637
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_22_49_00_000_010351-trim-0053-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Bright moon-like crescent is progressively obscured, consistent with slow cloud passing over the moon.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 391
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_22_59_00_000_010073-trim-0840-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No clear moving dot or streak; view dominated by static bright overexposed foreground.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 749
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_23_01_01_000_010073-trim-0382-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Faint point moves slowly and steadily across dark sky with no trail or flashing.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 655
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_23_21_01_000_010359-trim-0948-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black and blurred with no clear streak or lights visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 732
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_01_23_22_00_000_010342-trim-0945-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Stationary translucent column brightens then fades in place above houses, not traversing like meteor/satellite/plane, looks like lit smoke/cloud.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 938
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_00_01_00_000_010344-trim-0175-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are near-identical with no clear moving streak or object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 631
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_00_02_01_000_010359-trim-1257-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very dark frames with only a faint point elongating above foreground, too indistinct to identify.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 697
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_01_37_01_000_010073-trim-1274-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Sudden diffuse bright burst that fades over frames with no tracked moving point, consistent with lightning illuminating clouds.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 689
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_01_55_00_000_010344-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Bright blurry white shape rises from bottom and grows huge, indicating very close out-of-focus object, not distant sky motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 899
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_01_55_00_000_010361-trim-0102-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "All frames are diffuse gray with slow left-edge cloudy variation and no distinct mover.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 691
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_02_29_00_000_010357-trim-1162-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No distinct meteor, satellite, plane, bird or insect mover; only overcast sky texture changing slowly with static tree.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 629
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_02_36_01_000_010073-trim-1108-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Diffuse white glow slowly brightens and spreads with no distinct point mover, like lit fog/cloud.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 808
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_02_59_00_000_010362-trim-0421-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very blurry gray frames with no starfield or distinct moving point, only diffuse bright shape on right edge.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 654
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_03_00_00_000_010359-trim-1104-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly uniform dark gray with no clear streak, point, or shape moving.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 634
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_02_19_50_01_000_010349-trim-1118-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Diffuse light on left grows and illuminates clouds, no distinct moving body seen.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 492
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_03_01_21_01_000_010359-trim-0388-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "not_sky",
+    "confidence": "medium",
+    "reason": "No sky/stars visible, only large bright foreground occlusion with leaf-like edge shifting.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 531
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_03_19_51_00_000_010323-trim-0880-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No clear streak or moving shape; sky looks static with only a very faint dot in later frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 804
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_03_19_51_00_000_010351-trim-0412-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Sudden diffuse brightening low over horizon for 2-3 frames then fades, with no distinct streak or moving body.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 446
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_03_20_28_00_000_010323-trim-0911-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving streak or object visible across frames, only static cloudy sky and trees.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 403
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_03_21_45_01_000_010323-trim-0506-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No distinct meteor, satellite or plane streak; only overcast sky with subtle drift between frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 646
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_03_22_38_00_000_010323-trim-0082-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No sharp moving point visible; only diffuse sky brightness varies slightly.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 582
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_04_18_55_01_000_010096-trim-0437-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "All frames show only diffuse gray mottling with no distinct moving object, consistent with clouds.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 431
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_04_19_40_01_000_010323-trim-0517-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Gray overcast sky with slowly shifting dark cloud mass above tree, no streak or point mover.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 439
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_04_20_11_00_000_010323-trim-0356-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Only diffuse overcast sky with static tree, no distinct streak or point object visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 553
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_04_20_57_00_000_010079-trim-1103-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Very faint point drifts slowly downward across many frames with no streak or blink.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 499
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_04_21_38_01_000_010349-trim-1408-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No streak or point source, only faint diffuse wisps shifting slowly.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 766
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_04_23_48_00_000_010125-trim-0081-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Single middle frame shows brief diffuse brightening above horizon lights with no streak or point source, consistent with distant lightning.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 693
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_05_00_03_00_000_010350-trim-0335-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short streak lengthens then fades, leaving a lingering drifting train that splits apart.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 670
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_05_00_41_00_000_010355-trim-0726-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Brief bright blurry blob at bottom-right edge for 2 frames, suggests very close fast object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 881
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_05_02_52_00_000_010352-trim-0388-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Too dark and blurry with only diffuse glow and large out-of-focus shape, no clear streak.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 803
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_05_02_56_00_000_010335-trim-0631-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "No point or streak object; only slow diffuse cloudy brightness drifting across sky.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 768
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_05_03_06_01_000_010073-trim-0951-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Only a faint single-frame speck is visible, no clear streak or track in stills.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 675,
+    "output": 881
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_05_23_14_01_000_010351-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Small faint flicker hovering just above bright foreground, no clear meteor streak or aircraft lights.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 507,
+    "output": 1111
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_06_20_36_00_000_010346-trim-0918-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are very dark with no distinct moving object visible; faint changes look like noise or cloud.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 501
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_06_21_12_01_000_010654-trim-1386-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Overcast sky with slow diffuse brightening on left, no distinct moving point or streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 1043,
+    "output": 529
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_07_00_44_01_000_010121-trim-0857-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Bright illuminated clouds fill lower frame with no distinct moving streak, only slight brightness variation.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 500
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_09_19_00_00_000_010651-trim-0943-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames show only trees and gray sky with no clear dot, streak, or shape moving.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 403,
+    "output": 585
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  },
+  {
+   "file": "non_meteor__2021_05_09_19_22_00_000_010654-trim-1050-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No streak or point light; only faint diffuse sky brightness with trees static, consistent with slow cloud drift.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "frames",
+   "alone_tokens": {
+    "input": 371,
+    "output": 599
+   },
+   "ours": null,
+   "ours_checks": null,
+   "ours_tokens": null
+  }
+ ]
+}

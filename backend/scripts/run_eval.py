@@ -25,6 +25,7 @@ for i, f in enumerate(files, 1):
     v = classify(m)
     m.pop("image", None)
     m.pop("preview", None)
+    m.pop("scene", None)
     rows.append({"file": f.name, "label": label, **v.model_dump(), "measured": m})
     mark = "ok " if (v.category == "meteor") == (label == "meteor") else "XX "
     print(f"{i:3}/{len(files)} {mark} {label:10} -> {v.category:9} {v.confidence}")

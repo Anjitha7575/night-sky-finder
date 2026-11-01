@@ -1,0 +1,6606 @@
+{
+ "how": "video",
+ "folder": "data/nightskyucp_test",
+ "rows": [
+  {
+   "file": "meteor__2019_12_15_05_14_14_000_010004-trim1072-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with no distinct moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 208,
+    "output": 452
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight track seen 0.2s in every frame as evenly spaced dots, classic fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.2s dotted trail",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2321,
+    "output_tokens": 309
+   }
+  },
+  {
+   "file": "meteor__2020_02_08_09_17_32_000_010003-trim993-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frame is essentially black with no visible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 144,
+    "output": 450
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight track lasting 0.6s with evenly spaced dots seen every frame matches a meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.6s dotted path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 393
+   }
+  },
+  {
+   "file": "meteor__2020_05_05_08_51_41_000_010003-trim-0348-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint steady point drifts slowly across dark sky with no flash or long trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 791
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight motion lasting 0.56s with high seen ratio, shown as evenly spaced dots. Matches fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.56s dotted path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 346
+   }
+  },
+  {
+   "file": "meteor__2020_05_12_06_16_38_000_010006-trim-0098-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief faint point visible for 1-2 frames then gone, consistent with faint meteor but too dim to confirm motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 192,
+    "output": 801
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight track seen for only 0.2s in every frame. Image 1 shows a short dotted line from jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.2s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 507
+   }
+  },
+  {
+   "file": "meteor__2020_07_20_02_14_39_000_010006-trim-0199-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only very faint points, no clear motion visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 192,
+    "output": 509
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Only one frame of a point-like dot with no clear path, and measurements are unreliable.",
+    "next_step": "ask_human",
+    "key_clue": "seen in single frame only",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10645,
+    "output_tokens": 1503
+   }
+  },
+  {
+   "file": "meteor__2020_07_30_08_50_31_000_010005-trim-0531-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Point becomes brief vertical streak then fades to point in under half a second, typical fast meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 240,
+    "output": 536
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight streak lasting 0.36s, seen in every frame with brighten-then-fade look.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.36s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 346
+   }
+  },
+  {
+   "file": "meteor__2020_08_01_08_52_38_000_010006-trim-0824-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Stationary point briefly brightens then fades in ~0.2s with no across-sky motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 208,
+    "output": 603
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight track lasting 0.24s, seen in every frame as evenly spaced dots. Matches fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.24s dotted track",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 313
+   }
+  },
+  {
+   "file": "meteor__2020_08_09_06_34_40_000_010006-trim-1018-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only a faint brief dot, no clear trail or motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 176,
+    "output": 505
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short straight streak seen for only 0.08s with high speed, typical of a fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast short straight streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5071,
+    "output_tokens": 1046
+   }
+  },
+  {
+   "file": "meteor__2020_08_09_08_59_14_000_010001-trim-1129-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No viewable clip provided to assess motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 192,
+    "output": 407
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight streak crossing over 0.2s and seen in every frame. Matches fast meteor dots in stacked image.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.2s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 309
+   }
+  },
+  {
+   "file": "meteor__2020_08_09_08_59_19_000_010002-trim-1023-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No visible moving object discernible from provided frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 208,
+    "output": 316
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight motion lasting only 0.2s and seen in every frame. Dotted row matches a fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.2s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 525
+   }
+  },
+  {
+   "file": "meteor__2020_08_17_02_13_25_000_010002-trim-0024-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with no clear moving object visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 192,
+    "output": 588
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Clip is only 0.32 s with a tiny straight dotted segment in the stack. That fits a faint fast meteor jumping a few pixels between frames.",
+    "next_step": "ask_human",
+    "key_clue": "tiny straight dotted track in 0.3s",
+    "also": "satellite",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10166,
+    "output_tokens": 1782
+   }
+  },
+  {
+   "file": "meteor__2020_08_24_06_59_25_000_010002-trim-0487-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Brief fast point with slight streak lasting <0.5s, typical of meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 401
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Short 0.4s straight streak seen in almost every frame with fast motion, typical of a meteor.",
+    "next_step": "none",
+    "key_clue": "0.4s straight fast streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 451
+   }
+  },
+  {
+   "file": "meteor__2020_09_13_08_02_31_000_010005-trim-0609-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Very brief faint streak/point in 1-2 frames then gone, consistent with short fast meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 192,
+    "output": 647
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast perfectly straight streak seen 0.12s in every frame, matching a meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.12s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 293
+   }
+  },
+  {
+   "file": "meteor__2020_09_13_08_31_22_000_010003-trim-0225-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief light appears for 1-2 frames then vanishes with no continued track.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 192,
+    "output": 678
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight dotted track seen 0.12s in every frame, typical fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.12s dotted streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 324
+   }
+  },
+  {
+   "file": "meteor__2020_09_17_03_34_20_000_010005-trim-0109-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frame is nearly black with only faint specks, no clear moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 144,
+    "output": 338
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight track covering large distance in 1.0s with evenly spaced dots and high seen ratio, typical of fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast dotted straight 1s track",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 420
+   }
+  },
+  {
+   "file": "meteor__2020_10_03_03_00_20_000_010001-trim-0532-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Small stationary point light visible for ~0.3s then gone, no streak or motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 224,
+    "output": 645
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak visible only 0.32s with brightness peaking in middle. Seen in every frame with no blinking.",
+    "next_step": "none",
+    "key_clue": "fast 0.3s straight brighten-fade",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4954,
+    "output_tokens": 657
+   }
+  },
+  {
+   "file": "meteor__2020_11_03_04_22_00_000_010005-trim-0157-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief small streak appears for only ~3 frames then vanishes, too fast and short-lived for satellite or plane.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 208,
+    "output": 607
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight motion covering most of image in 0.2s, seen in every frame. Dotted look is from fast jump between frames.",
+    "next_step": "none",
+    "key_clue": "0.2s fast straight streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 365
+   }
+  },
+  {
+   "file": "meteor__2020_11_04_08_41_00_000_010005-trim-0810-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frame is completely black with no visible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 144,
+    "output": 462
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak lasting 0.68s with even dots and high seen ratio, typical fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.68s dotted path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 275
+   }
+  },
+  {
+   "file": "meteor__2020_11_29_03_08_01_000_010002-trim-1421-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with no clear moving object visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 208,
+    "output": 504
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Short straight dotted streak at top edge in stacked image lasting under 0.5s. Code found no object and video frames are too faint to confirm blinking or fade.",
+    "next_step": "ask_human",
+    "key_clue": "very short dotted straight path",
+    "also": "plane",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7594,
+    "output_tokens": 1362
+   }
+  },
+  {
+   "file": "meteor__2020_12_03_10_18_01_000_010002-trim-1092-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short fast vertical streak in dark sky lasting ~0.3s then gone.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 430
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight path seen 0.32s in every frame, with dotted jumps typical of a fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.32s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 304
+   }
+  },
+  {
+   "file": "meteor__2020_12_03_10_39_01_000_010001-trim-0336-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost completely dark with no clear moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 192,
+    "output": 495
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Short straight streak in stacked image lasting ~0.3s fits fast meteor, but very low resolution and failed detection make shape unclear.",
+    "next_step": "ask_human",
+    "key_clue": "short straight streak",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10130,
+    "output_tokens": 1282
+   }
+  },
+  {
+   "file": "meteor__2021_02_14_00_12_01_000_010076-trim-0638-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No visible moving object in provided frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 168,
+    "output": 522
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very short low-res clip with no tracked motion; images show only static grey sky and a tiny noise-like dot.",
+    "next_step": "ask_human",
+    "key_clue": "no moving object found",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4823,
+    "output_tokens": 923
+   }
+  },
+  {
+   "file": "meteor__2021_02_14_02_31_01_000_010075-trim-0642-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No visible moving object can be discerned from the provided frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 188,
+    "output": 404
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight dotted track seen every frame for 0.24s, typical of a fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight dotted path 0.24s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 280
+   }
+  },
+  {
+   "file": "meteor__2021_02_14_02_45_00_000_010074-trim-0735-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short bright streak moves fast downward and fades in under a second.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 358,
+    "output": 477
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak visible 0.56s in every frame with dotted dashes from frame-to-frame jumps.",
+    "next_step": "none",
+    "key_clue": "fast straight <1s dotted path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 377
+   }
+  },
+  {
+   "file": "meteor__2021_02_21_04_17_00_000_010351-trim-0734-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Brief diagonal streak appears and fades within ~0.2s against dark sky, typical of a faint meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 388
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight streak seen for only 0.16s with steady track in stacked image. Speed and duration match a meteor, not a slow plane or satellite.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.16s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 358
+   }
+  },
+  {
+   "file": "meteor__2021_02_21_04_42_00_000_010349-trim-1096-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is almost completely black with only a tiny faint point visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 415
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Short straight streak in stacked image within 0.36s clip matches fast meteor, though code found no object.",
+    "next_step": "none",
+    "key_clue": "short straight streak in <0.5s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10148,
+    "output_tokens": 962
+   }
+  },
+  {
+   "file": "meteor__2021_02_22_02_36_01_000_010318-trim-0700-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Single faint point with no trail or clear motion in dark frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 236,
+    "output": 630
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Code found no moving object and all frames look static with only faint stars. No path, flash, or sky glow is visible.",
+    "next_step": "none",
+    "key_clue": "static stars only, no motion",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10149,
+    "output_tokens": 1050
+   }
+  },
+  {
+   "file": "meteor__2021_02_22_02_46_01_000_010097-trim-0118-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No visible object or motion detectable in provided frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 188,
+    "output": 418
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Stacked image shows a short straight line of spaced dots seen for under half a second, like a fast faint meteor jumping between frames. Numbers are missing so rely on the image.",
+    "next_step": "none",
+    "key_clue": "short straight dotted streak in 0.5s clip",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7602,
+    "output_tokens": 1053
+   }
+  },
+  {
+   "file": "meteor__2021_02_22_03_10_01_000_010352-trim-0815-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Single-frame brief bright spot in center of dark star field, looks like faint short streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 236,
+    "output": 582
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No motion found by code and images show only dark sky with a few faint static points.",
+    "next_step": "ask_human",
+    "key_clue": "no moving object detected",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7326,
+    "output_tokens": 938
+   }
+  },
+  {
+   "file": "meteor__2021_02_23_04_45_01_000_010077-trim-0000-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Very faint steady point drifting slowly down dark sky, no streak or blink.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 289,
+    "output": 729
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Very short 0.12s vertical row of dots, straight and fast, matches fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "short straight dotted trail",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8035,
+    "output_tokens": 1211
+   }
+  },
+  {
+   "file": "meteor__2021_02_24_17_46_01_000_010097-trim-0355-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames appear completely dark with no visible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 168,
+    "output": 557
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Short straight bright streak in a 0.36s clip fits a fast meteor, but images are very low resolution and code found no object.",
+    "next_step": "ask_human",
+    "key_clue": "short streak in very short clip",
+    "also": "satellite",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7506,
+    "output_tokens": 984
+   }
+  },
+  {
+   "file": "meteor__2021_02_25_04_41_00_000_010355-trim-0670-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no discernible moving object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 434
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Code found no moving object and 8-frame clip is very dark with only a few faint edge dots, no clear path or motion.",
+    "next_step": "ask_human",
+    "key_clue": "no detected motion, only noise dots",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7499,
+    "output_tokens": 1094
+   }
+  },
+  {
+   "file": "meteor__2021_02_28_23_15_01_000_010351-trim-0031-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frame shows overexposed bright source with lens spikes, no clear moving object track visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 667
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "All 8 video frames look static with a bright blown-out light on the left and no moving point, and code found no moving object.",
+    "next_step": "ask_human",
+    "key_clue": "no motion in video frames",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4912,
+    "output_tokens": 725
+   }
+  },
+  {
+   "file": "meteor__2021_03_08_02_21_00_000_010074-trim-0781-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost entirely dark with only faint specks, no distinct moving track visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 266,
+    "output": 538
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak seen 0.36s at 65% diagonal per second, dotted from frame-to-frame jumps but seen in most frames.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.36s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 493
+   }
+  },
+  {
+   "file": "meteor__2021_03_12_02_14_00_000_010354-trim-1101-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Still frame is nearly black with only faint static points, no motion visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 164,
+    "output": 413
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short straight streak seen in every frame for only 0.24s, typical of a fast faint meteor.",
+    "next_step": "none",
+    "key_clue": "brief 0.24s straight streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2321,
+    "output_tokens": 384
+   }
+  },
+  {
+   "file": "meteor__2021_03_24_22_45_00_000_010317-trim-0767-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no distinct moving object discernible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 719
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Very short 0.24s straight streak that brightens then fades, typical of a faint fast meteor.",
+    "next_step": "none",
+    "key_clue": "0.24s straight path peaking in middle",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4759,
+    "output_tokens": 807
+   }
+  },
+  {
+   "file": "meteor__2021_03_25_03_27_01_000_010074-trim-0092-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames appear dark with no discernible moving object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 208,
+    "output": 611
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight track seen for only 0.28s. Dotted look is from fast motion, not blinking per the note.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.28s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2321,
+    "output_tokens": 537
+   }
+  },
+  {
+   "file": "meteor__2021_03_26_20_36_00_000_010078-trim-0008-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No visible object in provided frames, all appear black.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 158,
+    "output": 448
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very tiny bright spot on right in 0.28s clip with no tracked motion; image 2 hints at faint trail but too low-res to confirm meteor.",
+    "next_step": "ask_human",
+    "key_clue": "tiny dot only, no motion tracked",
+    "also": "meteor",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7597,
+    "output_tokens": 1465
+   }
+  },
+  {
+   "file": "meteor__2021_03_26_21_26_01_000_010073-trim-1160-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Provided frame is completely dark with no visible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 151,
+    "output": 409
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short 0.96s straight streak that brightens then fades, typical fast meteor; low seen ratio is from jumping between frames.",
+    "next_step": "none",
+    "key_clue": "sub-second straight fading streak",
+    "also": "plane",
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4758,
+    "output_tokens": 823
+   }
+  },
+  {
+   "file": "meteor__2021_03_29_19_07_00_000_010319-trim-0917-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint white point drifts slowly steady against dark sky while other point stays fixed, no blink or streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 834
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Single point seen in one frame only, numbers unreliable. Too brief to tell meteor from noise or glitch.",
+    "next_step": "watch_video",
+    "key_clue": "only one frame point",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7412,
+    "output_tokens": 755
+   }
+  },
+  {
+   "file": "meteor__2021_03_30_01_08_00_000_010351-trim-0487-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frame shows only dark sky with faint stars and no distinct moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 181,
+    "output": 377
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Straight 1s streak with bright head and tail in last frame, brightens then fades like meteor.",
+    "next_step": "none",
+    "key_clue": "head with tail",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5000,
+    "output_tokens": 969
+   }
+  },
+  {
+   "file": "meteor__2021_03_30_01_21_00_000_010315-trim-1094-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief faint point with short streak that appears and fades in <0.3s, consistent with faint meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 623
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast perfectly straight motion seen only 0.2s with evenly spaced dots from frame-to-frame jumps.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.2s dotted streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 299
+   }
+  },
+  {
+   "file": "meteor__2021_03_30_20_24_00_000_010076-trim-0244-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames appear black with no visible moving object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 158,
+    "output": 361
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Single-frame tiny point with no clear path in very low resolution clip. Too brief to tell meteor from noise or flare.",
+    "next_step": "ask_human",
+    "key_clue": "seen in one frame only",
+    "also": "meteor",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7560,
+    "output_tokens": 1374
+   }
+  },
+  {
+   "file": "meteor__2021_03_30_20_47_01_000_010078-trim-0774-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "All frames appear completely black with no visible moving object.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 208,
+    "output": 462
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Short clip under one second with a straight vertical streak that brightens then fades. Code found no object due to very low resolution, so image shape is the main clue.",
+    "next_step": "none",
+    "key_clue": "straight short vertical streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7609,
+    "output_tokens": 1142
+   }
+  },
+  {
+   "file": "meteor__2021_03_30_20_49_01_000_010079-trim-1326-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Fast point moving across dark sky forming a long thin streak with no blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 197,
+    "output": 592
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Head with growing tail that brightens mid-flight looks like a fireball, though seen ratio 0.43 is lower than typical for meteor and suggests gaps.",
+    "next_step": "none",
+    "key_clue": "glowing head with tail in single frame",
+    "also": "plane",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5143,
+    "output_tokens": 1026
+   }
+  },
+  {
+   "file": "meteor__2021_03_30_20_54_01_000_010079-trim-0848-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief faint point moving in dark sky in sub-second clip, possibly faint meteor but too dim to confirm.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 228,
+    "output": 830
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak seen for 0.56s with dotted jumps between frames. High speed and high seen ratio match a fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast dotted straight streak under 1s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 356
+   }
+  },
+  {
+   "file": "meteor__2021_03_31_20_52_01_000_010079-trim-0918-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Fast point moving vertically and fading in <1s with motion streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 358,
+    "output": 631
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak visible only 0.6s and seen in most frames as dotted jumps. Speed and duration match meteor, not slow plane or satellite.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.6s dotted streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 355
+   }
+  },
+  {
+   "file": "meteor__2021_03_31_21_29_01_000_010355-trim-0182-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "small dim steady point moving slowly linear, no flash or streak",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 558
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight streak seen 0.24s as evenly spaced dots, typical fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight dotted streak in 0.24s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5040,
+    "output_tokens": 759
+   }
+  },
+  {
+   "file": "meteor__2021_03_31_22_12_01_000_010354-trim-0000-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "faint point moves slightly left and fades in under half a second.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 344,
+    "output": 541
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very short 0.24s straight streak seen in every frame, typical fast meteor.",
+    "next_step": "none",
+    "key_clue": "0.24s straight streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 284
+   }
+  },
+  {
+   "file": "meteor__2021_04_01_02_02_00_000_010355-trim-0659-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frame shows dark sky with faint stars and no distinct moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 1444,
+    "output": 303
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight track visible only 0.36s with brightness brightest at start then fading. Dotted row matches fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.36s fading streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4757,
+    "output_tokens": 971
+   }
+  },
+  {
+   "file": "meteor__2021_04_01_22_46_01_000_010351-trim-0939-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Very dark frames with only a faint point visible; slow drift suggests satellite.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 586
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No moving object found by code and images show only dark sky with a faint stationary dot, no clear path.",
+    "next_step": "ask_human",
+    "key_clue": "no clear motion",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7581,
+    "output_tokens": 804
+   }
+  },
+  {
+   "file": "meteor__2021_04_02_00_17_01_000_010351-trim-0071-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Brief faint point appears for ~0.4s then fades with no clear trail or steady motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 416,
+    "output": 817
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short straight streak seen only 0.44s with brightening toward end, consistent with brief meteor rather than long steady satellite pass.",
+    "next_step": "none",
+    "key_clue": "short straight path in under half a second",
+    "also": "satellite",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5031,
+    "output_tokens": 829
+   }
+  },
+  {
+   "file": "meteor__2021_04_02_00_44_00_000_010073-trim-0972-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "All frames appear completely black with no visible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 218,
+    "output": 469
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight streak lasting only 0.32s and seen in most frames. Image 1 shows a short dotted line typical of a fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.3s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 450
+   }
+  },
+  {
+   "file": "meteor__2021_04_05_00_12_01_000_010355-trim-0901-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "faint point-like object drifts slowly with no streak or blinking",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 552,
+    "output": 546
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short straight streak seen <0.5s with high speed and brightness brightest at start then fading.",
+    "next_step": "none",
+    "key_clue": "0.44s straight fast streak fading",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4843,
+    "output_tokens": 755
+   }
+  },
+  {
+   "file": "meteor__2021_04_05_21_30_01_000_010320-trim-0234-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames show only dark sky with faint stars, no distinct moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 328,
+    "output": 463
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Only a tiny faint central blob in stack, no tracked motion and normal frame shows just stars.",
+    "next_step": "ask_human",
+    "key_clue": "faint unresolved blob only",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 9950,
+    "output_tokens": 933
+   }
+  },
+  {
+   "file": "meteor__2021_04_06_00_27_00_000_010078-trim-1422-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No visible moving object in provided clip frames.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 158,
+    "output": 334
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Very fast vertical motion lasting ~0.12s with point-like appearance, typical of a short meteor.",
+    "next_step": "none",
+    "key_clue": "fast short vertical streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5028,
+    "output_tokens": 673
+   }
+  },
+  {
+   "file": "meteor__2021_04_06_01_28_01_000_010354-trim-1065-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Brief single-frame linear streak against dark starry background, typical of a faint meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 508
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Tiny point seen in only one frame with no clear path or motion. Numbers unreliable so cannot tell meteor from noise.",
+    "next_step": "ask_human",
+    "key_clue": "single-frame point only",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10382,
+    "output_tokens": 1100
+   }
+  },
+  {
+   "file": "meteor__2021_04_08_23_40_01_000_010315-trim-0422-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no distinct moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 296
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is almost completely dark with no clear moving path and code found no object.",
+    "next_step": "ask_human",
+    "key_clue": "no detectable motion",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 9969,
+    "output_tokens": 918
+   }
+  },
+  {
+   "file": "meteor__2021_04_08_23_54_00_000_010349-trim-0687-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no clear moving object visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 393,
+    "output": 583
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No moving object found by code and images show only dark sky with faint static dots. Too few frames to identify any motion.",
+    "next_step": "none",
+    "key_clue": "no trackable motion, only faint static dots",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 9965,
+    "output_tokens": 968
+   }
+  },
+  {
+   "file": "meteor__2021_04_09_00_14_00_000_010079-trim-0757-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No clip content visible to classify.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 138,
+    "output": 348
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight path covering distance in 0.68s, seen in almost every frame with no blinking gaps.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.68s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 382
+   }
+  },
+  {
+   "file": "meteor__2021_04_09_00_42_00_000_010355-trim-0226-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint steady point drifts slowly across dark sky with no blink or streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 344,
+    "output": 542
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight track seen 0.32s in every frame, spaced dots from jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight dotted line 0.32s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 318
+   }
+  },
+  {
+   "file": "meteor__2021_04_09_00_42_01_000_010352-trim-0199-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint point drifts slowly past fixed stars with no streak or blink, like a satellite.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 393,
+    "output": 450
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight track seen 0.2s with evenly spaced dots from frame-to-frame jumps, typical of fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast dotted straight streak 0.2s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 389
+   }
+  },
+  {
+   "file": "meteor__2021_04_09_00_43_00_000_010355-trim-0701-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only very faint points and no clear streak or shape in 0.24s.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 640
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Fast straight short streak seen in every frame for 0.12s with no blinking gaps.",
+    "next_step": "none",
+    "key_clue": "0.12s straight streak, seen ratio 1.0",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4942,
+    "output_tokens": 844
+   }
+  },
+  {
+   "file": "meteor__2021_04_09_22_47_00_000_010320-trim-0481-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is very dark with only faint static points, no clear moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 361
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Tiny bright streak seen for only 0.04s in one frame, numbers unreliable. Looks like a very short faint meteor rather than a plane or satellite.",
+    "next_step": "ask_human",
+    "key_clue": "single-frame tiny streak",
+    "also": "unsure",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7785,
+    "output_tokens": 1132
+   }
+  },
+  {
+   "file": "meteor__2021_04_12_23_03_00_000_010091-trim-0875-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Provided frames appear completely dark with no visible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 198,
+    "output": 446
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight 0.32s streak that brightens then fades in the middle, typical of a meteor.",
+    "next_step": "none",
+    "key_clue": "fast short brighten-then-fade streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4929,
+    "output_tokens": 959
+   }
+  },
+  {
+   "file": "meteor__2021_04_13_19_28_00_000_010314-trim-0469-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Slow steady point descending at far left edge over several seconds, no flashing.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 1168,
+    "output": 350
+   },
+   "ours": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Straight slow path visible 4.2s in almost every frame with steady point-like appearance, matching satellite not blinking plane.",
+    "next_step": "none",
+    "key_clue": "slow straight continuous track high seen ratio",
+    "also": "plane",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7695,
+    "output_tokens": 1181
+   }
+  },
+  {
+   "file": "meteor__2021_04_14_00_51_00_000_010318-trim-0689-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only a tiny faint dot for ~0.4s, no clear trail or shape.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 344,
+    "output": 577
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak seen 0.28s in every frame, classic short meteor.",
+    "next_step": "none",
+    "key_clue": "0.28s straight fast streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2321,
+    "output_tokens": 336
+   }
+  },
+  {
+   "file": "meteor__2021_04_14_00_51_00_000_010319-trim-0683-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only a faint brief point, no clear motion or shape.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 236,
+    "output": 441
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Tiny faint dot seen in only ~2 frames with almost no motion. Too little shape or brightness change to tell meteor from noise.",
+    "next_step": "ask_human",
+    "key_clue": "only two faint frames",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7952,
+    "output_tokens": 1282
+   }
+  },
+  {
+   "file": "meteor__2021_04_14_00_55_00_000_010320-trim-0488-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only faint points, no clear moving object visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 545
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Code found no moving object and images show only faint static points. No clear path, flash, or sky glow is visible.",
+    "next_step": "ask_human",
+    "key_clue": "no motion detected",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4824,
+    "output_tokens": 987
+   }
+  },
+  {
+   "file": "meteor__2021_04_23_00_37_00_000_010075-trim-0584-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only a faint point for 1-2 frames, no clear streak or motion visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 328,
+    "output": 678
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short straight path of evenly spaced dots seen very briefly and fast, typical of a fast faint meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight dotted short trail",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2292,
+    "output_tokens": 557
+   }
+  },
+  {
+   "file": "meteor__2021_04_23_01_03_01_000_010320-trim-0000-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Faint point brightens briefly in same spot then vanishes with no clear trail or motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 528
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak lasting 0.28s, seen every frame as evenly spaced dots. Matches fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast evenly spaced dotted streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 410
+   }
+  },
+  {
+   "file": "meteor__2021_04_23_02_14_01_000_010315-trim-0453-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Faint brief white streak visible in dark sky for 1-2 frames.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 393,
+    "output": 518
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight streak seen only 0.24s in every frame, shown as dotted line from frame-to-frame jumps.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.24s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 476
+   }
+  },
+  {
+   "file": "meteor__2021_04_23_02_27_01_000_010076-trim-0750-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Very faint short dot appears below star and fades within ~0.2s, consistent with brief dim meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 606
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Tiny short streak seen in only 1-2 frames, like a fast faint meteor. Numbers unreliable due to so few frames.",
+    "next_step": "watch_video",
+    "key_clue": "tiny streak in one frame",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7547,
+    "output_tokens": 1258
+   }
+  },
+  {
+   "file": "meteor__2021_04_23_23_20_00_000_010075-trim-1390-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no clear moving object visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 406
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very short 9-frame clip shows only a tiny dot at left edge with no measurable motion. Code found no moving object.",
+    "next_step": "ask_human",
+    "key_clue": "tiny edge dot only, no motion",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7504,
+    "output_tokens": 898
+   }
+  },
+  {
+   "file": "meteor__2021_04_23_23_39_00_000_010073-trim-0680-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Brief faint vertical streak appears in center for 2-3 frames then vanishes while stars stay static.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 499,
+    "output": 385
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Very short 0.32s perfectly straight fast streak brightening slightly, typical meteor. Low seen ratio suggests gaps but faintness likely caused missed detections.",
+    "next_step": "none",
+    "key_clue": "0.32s fast straight path",
+    "also": "plane",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4928,
+    "output_tokens": 1055
+   }
+  },
+  {
+   "file": "meteor__2021_04_24_02_46_00_000_010320-trim-0011-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost completely black with no clear moving object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 625
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Short straight dotted streak in stacked image suggests a fast meteor jumping between frames. Too few frames and no code measurements, so not certain.",
+    "next_step": "none",
+    "key_clue": "short straight dotted path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10229,
+    "output_tokens": 1128
+   }
+  },
+  {
+   "file": "meteor__2021_04_24_21_02_01_000_010078-trim-1289-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Single dark frame shows no moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 181,
+    "output": 471
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Short 0.5s vertical dotted streak that brightens then fades, typical of a fast faint meteor. Low straightness is likely noise on a very short faint track.",
+    "next_step": "none",
+    "key_clue": "short dotted straight streak in 0.5s",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7775,
+    "output_tokens": 1228
+   }
+  },
+  {
+   "file": "meteor__2021_04_24_23_51_01_000_010079-trim-1342-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief faint white streak appears for ~1 frame and disappears, consistent with a very faint short meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 368,
+    "output": 550
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight motion seen only 0.28s as evenly spaced dots. Note says gaps are from bright-sky measuring, not blinking.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.28s dotted path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2321,
+    "output_tokens": 363
+   }
+  },
+  {
+   "file": "meteor__2021_04_26_02_13_00_000_010095-trim-0525-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Only a dark frame with faint points is visible, no clear moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 241
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight track seen for 0.2s in every frame, appearing as evenly spaced dots in the stack. That matches a fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast dotted straight track 0.2s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 504
+   }
+  },
+  {
+   "file": "meteor__2021_04_27_21_14_01_000_010078-trim-1034-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No clip visible to review.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 248,
+    "output": 244
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Short 0.76s straight streak seen in most frames with brightness peaking in middle then fading.",
+    "next_step": "none",
+    "key_clue": "sub-second straight flare-fade streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4760,
+    "output_tokens": 712
+   }
+  },
+  {
+   "file": "meteor__2021_04_27_22_32_00_000_010320-trim-0066-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost entirely black with no clear moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 236,
+    "output": 464
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Point seen in only 1-2 frames for 0.04s, too brief to tell motion or brightness change.",
+    "next_step": "watch_video",
+    "key_clue": "seen in fewer than 3 frames",
+    "also": "meteor",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10108,
+    "output_tokens": 1466
+   }
+  },
+  {
+   "file": "meteor__2021_05_02_20_13_01_000_010315-trim-0354-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frame is nearly black with no discernible moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 181,
+    "output": 530
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Straight streak seen only 0.72s with brightening then fading and high seen ratio, typical of a meteor.",
+    "next_step": "none",
+    "key_clue": "short straight streak with fade",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4952,
+    "output_tokens": 726
+   }
+  },
+  {
+   "file": "meteor__2021_05_02_20_58_00_000_010318-trim-0688-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint point drifts upward between frames while other points stay fixed.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 665
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Object appears as a single tiny dot in only 1-2 frames, with unreliable measurements. Too brief to distinguish a very short meteor from noise or a star flicker.",
+    "next_step": "ask_human",
+    "key_clue": "seen in single frame only",
+    "also": "meteor",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7804,
+    "output_tokens": 929
+   }
+  },
+  {
+   "file": "meteor__2021_05_02_20_58_01_000_010316-trim-1186-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Brief bright point with short trail that appears and fades in <0.5s, typical of a small meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 380,
+    "output": 455
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Short straight streak visible only 0.36s with brightening then sharp fade, seen in every frame.",
+    "next_step": "none",
+    "key_clue": "sub-second brighten-fade streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4751,
+    "output_tokens": 824
+   }
+  },
+  {
+   "file": "meteor__2021_05_02_21_20_01_000_010078-trim-0363-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames appear almost entirely dark with no clear streak or motion visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 380,
+    "output": 723
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Short straight streak seen in only 1-2 frames, like a fast faint meteor. Numbers unreliable and images very faint, so unsure.",
+    "next_step": "ask_human",
+    "key_clue": "brief straight streak",
+    "also": "unsure",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7801,
+    "output_tokens": 1225
+   }
+  },
+  {
+   "file": "meteor__2021_05_02_22_34_01_000_010317-trim-0992-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no clear moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 446,
+    "output": 439
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Object seen in only 1-2 frames as a tiny point, numbers unreliable. Too brief to tell meteor from noise or glint.",
+    "next_step": "watch_video",
+    "key_clue": "seen in fewer than 3 frames",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10245,
+    "output_tokens": 1078
+   }
+  },
+  {
+   "file": "meteor__2021_05_02_22_35_01_000_010320-trim-0085-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No clear moving object visible, only faint static stars in dark sky.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 1328,
+    "output": 450
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "medium",
+    "reason": "Perfectly straight dotted track with gaps and low seen ratio (0.44) indicates blinking lights, not a steady meteor.",
+    "next_step": "none",
+    "key_clue": "dotted straight track with gaps",
+    "also": "meteor",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10321,
+    "output_tokens": 1791
+   }
+  },
+  {
+   "file": "meteor__2021_05_03_00_32_00_000_010317-trim-0886-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frame is too dark to identify any moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 570
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short straight dotted track seen for under half a second, with a point source in the single frame. No blinking gaps or slow drift, matches fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "short straight dotted path in <0.5s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7367,
+    "output_tokens": 960
+   }
+  },
+  {
+   "file": "meteor__2021_05_03_21_36_01_000_010314-trim-0004-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only very faint points, no clear motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 368,
+    "output": 469
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Code found no moving object and images are nearly black with only a few faint dots. No clear path or motion to classify.",
+    "next_step": "ask_human",
+    "key_clue": "no confirmed moving object",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7602,
+    "output_tokens": 844
+   }
+  },
+  {
+   "file": "meteor__2021_05_04_01_52_01_000_010075-trim-1226-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Central faint point shifts quickly in dark sky with momentary elongation.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 393,
+    "output": 636
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight track seen for only 0.24s with dots spaced between frames. Matches fast meteor jumping more than its size per frame.",
+    "next_step": "none",
+    "key_clue": "0.24s straight dotted track",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 346
+   }
+  },
+  {
+   "file": "meteor__2021_05_04_02_20_01_000_010079-trim-0767-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Brief linear streak appears for ~3 frames then vanishes while faint star stays fixed.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 446,
+    "output": 626
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak seen 0.28s in every frame as evenly spaced dots, typical of a fast meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.28s dotted path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 400
+   }
+  },
+  {
+   "file": "meteor__2021_05_07_21_09_00_000_010076-trim-0396-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief faint point brightens with slight elongation then fades quickly.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 524,
+    "output": 597
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short perfectly straight streak seen 0.36s with brightness peaking in middle, typical of meteor brighten-fade. Low seen ratio suggests blinking but duration too short for plane.",
+    "next_step": "none",
+    "key_clue": "subsecond straight streak with mid-peak brightness",
+    "also": "plane",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5168,
+    "output_tokens": 1141
+   }
+  },
+  {
+   "file": "meteor__2021_05_07_22_59_00_000_010320-trim-0000-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Faint short streak appears centrally for <1s then fades, typical of a dim meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 658,
+    "output": 596
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Very fast straight short streak visible only 0.32s with dotted jumps between frames. Brightness rises and varies, not steady or blinking.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.3s streak",
+    "also": "satellite",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5021,
+    "output_tokens": 955
+   }
+  },
+  {
+   "file": "meteor__2021_05_07_23_38_01_000_010352-trim-0767-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No visible motion or object discernible in provided frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 318
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short 0.2s perfectly straight streak seen in every frame with fast motion, typical of a faint meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.2s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4869,
+    "output_tokens": 586
+   }
+  },
+  {
+   "file": "meteor__2021_05_07_23_44_00_000_010314-trim-0276-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Brief faint streak appears and fades quickly in dark sky.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 499,
+    "output": 528
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak seen 0.36s in every frame with no blinking.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.36s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 276
+   }
+  },
+  {
+   "file": "meteor__2021_05_07_23_50_01_000_010349-trim-0553-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Tiny point shifts slightly then vanishes within ~0.16s. Too brief for satellite or plane track.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 236,
+    "output": 761
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Very fast straight streak seen for only 0.12s in every frame, appearing as spaced dots. Matches fast meteor jumping between frames.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.12s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 605
+   }
+  },
+  {
+   "file": "meteor__2021_05_08_00_12_01_000_010354-trim-0143-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible in stills, only dark sky with faint stars.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 646,
+    "output": 528
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Fast straight track visible only 0.4s with evenly spaced dots typical of a fast meteor; gaps are measurement noise per note.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.4s dotted path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4843,
+    "output_tokens": 724
+   }
+  },
+  {
+   "file": "meteor__2021_05_08_00_33_00_000_010073-trim-1112-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Faint point briefly visible for ~0.2s with slight elongation then vanishes, like a faint short meteor.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 558
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Short 0.2s perfectly straight streak with brighten-then-fade light curve, seen in every frame.",
+    "next_step": "none",
+    "key_clue": "fast straight flare in 0.2s",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4758,
+    "output_tokens": 532
+   }
+  },
+  {
+   "file": "meteor__2021_06_01_20_49_00_000_010320-trim-0890-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Single dark still with faint points, no motion visible to classify.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 181,
+    "output": 343
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "high",
+    "reason": "Fast straight streak lasting 0.52s at 24.5% diagonal per second, seen in most frames. Typical short meteor.",
+    "next_step": "none",
+    "key_clue": "fast 0.5s straight streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 475
+   }
+  },
+  {
+   "file": "meteor__2021_06_01_21_05_00_000_010320-trim-0574-crop-360p.mp4",
+   "expert": "meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames show only dark sky with faint points, no clear moving track.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 408,
+    "output": 488
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Code found no moving object and stacked image shows only a tiny stationary dot while frames show only faint stars.",
+    "next_step": "ask_human",
+    "key_clue": "no moving object detected",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7509,
+    "output_tokens": 845
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_23_20_20_01_000_010318-trim-0602-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No clear moving object discernible from available frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 168,
+    "output": 440
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight dotted path with gaps and very low seen ratio 0.08 shows blinking lights over 2.5s.",
+    "next_step": "none",
+    "key_clue": "dotted blinking straight path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 354
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_23_21_07_01_000_010319-trim-0913-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No discernible moving object visible in provided frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 178,
+    "output": 360
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight path over 5 seconds with dotted gaps and very low seen ratio 0.08 shows blinking lights.",
+    "next_step": "none",
+    "key_clue": "dotted straight track with blinking gaps",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 390
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_23_21_17_01_000_010319-trim-0707-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint slow-moving point against stars over several seconds, no bright streak or blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 220,
+    "output": 674
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Straight 1s track with brightness peaking in the middle fits a faint meteor. Low seen ratio is noted as measurement gaps on bright sky, not blinking.",
+    "next_step": "none",
+    "key_clue": "1s straight path brightest in middle",
+    "also": "satellite",
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4842,
+    "output_tokens": 1054
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_26_23_30_00_000_010319-trim-0771-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint steady white point moving slowly across dark sky with no blink or streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 220,
+    "output": 386
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight path seen 3.5s as a few spaced dots with very low seen ratio 0.06, matching blinking plane lights.",
+    "next_step": "none",
+    "key_clue": "dotted blinking path, low seen ratio",
+    "also": "satellite",
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 419
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_27_02_28_01_000_010320-trim-0321-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Slow steady dot moving over seconds against fixed stars, no flash or trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 220,
+    "output": 624
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight path with spaced blinking dots and very low seen ratio 0.05 over 3.8s matches blinking plane lights, not steady satellite or fast meteor.",
+    "next_step": "none",
+    "key_clue": "dotted blinking straight path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 432
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_27_23_29_01_000_010320-trim-0145-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "dim steady point drifts slowly upward with no blink or trail.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 220,
+    "output": 701
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight dotted path seen only 12% of frames over 3.3s shows blinking lights, not steady satellite or fast meteor.",
+    "next_step": "none",
+    "key_clue": "dotted blinking straight track",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 273
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_27_23_32_00_000_010320-trim-0654-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Faint point drifts steadily upward past fixed stars with constant brightness and no blinking.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 794,
+    "output": 355
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Slow straight track seen 7s with low seen ratio and strong spiky brightness changes, zoom shows dotted blinking lights.",
+    "next_step": "none",
+    "key_clue": "dotted blinking track",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4923,
+    "output_tokens": 680
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_28_00_58_01_000_010319-trim-0899-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with only faint points, no clear motion or shape.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 542
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight dotted path with gaps seen for 3.8s and very low seen ratio 0.12 shows blinking lights.",
+    "next_step": "none",
+    "key_clue": "dotted blinking path low seen ratio",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 386
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_28_20_49_01_000_010353-trim-1146-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No fast point mover visible; only slow diffuse brightness changes in overcast sky with one steady light.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 569
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Very low straightness (0.29) with fast short flight (0.32s) does not match straight meteor or plane. Curved blurry motion near camera fits insect or bird.",
+    "next_step": "ask_human",
+    "key_clue": "very curved short path",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 6,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 11423,
+    "output_tokens": 2355
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_28_20_53_00_000_010353-trim-0598-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Diffuse yellowish glow spreads at horizon, no point source or streak, looks like low clouds lit from below.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 480
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Large soft white edge fills bottom of frames and slowly morphs, not a small point. Low straightness and blotchy stacked path match drifting cloud edge.",
+    "next_step": "none",
+    "key_clue": "large soft morphing edge not a point",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5022,
+    "output_tokens": 769
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_28_21_12_00_000_010351-trim-0321-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Sudden diffuse vertical brightening appears above rooftop and lingers, not tracking across sky like meteor/satellite/plane.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 1034
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "medium",
+    "reason": "Very low straightness (0.13) with curved blurry shape that changes form between frames like flapping wings, visible only 0.2s. Not straight like meteor.",
+    "next_step": "none",
+    "key_clue": "curved flapping blurry shape",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7744,
+    "output_tokens": 883
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_28_21_14_01_000_010353-trim-0647-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry pale shape fills frame and shifts slowly, typical of close out-of-focus insect on lens.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 970
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Short 0.2s curved streak with low straightness 0.62, not straight like meteor/plane/satellite. Faint speck moving against bright sky.",
+    "next_step": "none",
+    "key_clue": "curved short path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10835,
+    "output_tokens": 1698
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_28_21_46_01_000_010351-trim-0098-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "not_sky",
+    "confidence": "low",
+    "reason": "Large diffuse translucent sheet billowing in from edge, looks like close foreground web/debris, not a distant sky track.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 930
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Large soft diffuse patch with no point or line, changing slowly in brightness. Low straightness and very low seen ratio fit cloud noise, not a moving object.",
+    "next_step": "none",
+    "key_clue": "large soft diffuse patch",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7485,
+    "output_tokens": 736
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_28_22_08_01_000_010351-trim-0272-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Large diffuse pale blob, not a sharp point or streak like meteor/satellite.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 976
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Path is very curved with low straightness and the frame shows a large blurry bright shape close to the camera.",
+    "next_step": "ask_human",
+    "key_clue": "very curved path with big blurry shape",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8211,
+    "output_tokens": 1583
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_28_22_13_01_000_010351-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is extremely dark and blurry with only a diffuse bright blob, no clear trail or motion visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 234,
+    "output": 662
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "All frames look identical with a static bright glow and no moving point, matching a slow cloud or glare, not a meteor or plane.",
+    "next_step": "ask_human",
+    "key_clue": "identical static glow in all frames",
+    "also": "unsure",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8036,
+    "output_tokens": 1408
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_00_01_01_000_010077-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; frames show only dark noise.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 234,
+    "output": 538
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "low",
+    "reason": "Very fast and straight, seen in every frame for only 0.2s. Images are very faint but numbers fit a short meteor.",
+    "next_step": "none",
+    "key_clue": "fast straight 0.2s streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10279,
+    "output_tokens": 1198
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_01_32_00_000_010344-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; only static lit canopy under dark sky.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 287,
+    "output": 524
+   },
+   "ours": {
+    "category": "not_sky",
+    "confidence": "medium",
+    "reason": "Image 2 shows bright tent-like roofs, not stars or sky. Stacked image only shows edges of same static structures.",
+    "next_step": "none",
+    "key_clue": "bright ground structures not sky",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10317,
+    "output_tokens": 1505
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_02_29_00_000_010349-trim-0268-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry glowing shape very close to lens changing shape fast, typical of night insect.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 328,
+    "output": 665
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Short 0.64s curved track with low straightness 0.58, blurry dark blob moving against bright clouds in image 2, not a straight meteor streak.",
+    "next_step": "watch_video",
+    "key_clue": "curved blurry motion against clouds",
+    "also": "cloud",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8114,
+    "output_tokens": 1690
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_02_29_00_000_010349-trim-0959-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very dark grainy frames with only diffuse glow on left edge, no clear point or streak trajectory.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 853
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very fast 0.24s blurry patch against bright sky with curved path (straightness 0.71), not a straight meteor streak.",
+    "next_step": "none",
+    "key_clue": "curved fast blurry patch in daylight",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7940,
+    "output_tokens": 1353
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_03_42_01_000_010323-trim-0070-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; only static trees under dim sky.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 576
+   },
+   "ours": {
+    "category": "not_sky",
+    "confidence": "high",
+    "reason": "Image 2 shows daylight with trees and bright grey sky, not a night sky. The faint scattered motion is against that daytime background.",
+    "next_step": "none",
+    "key_clue": "daytime trees in image 2",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7615,
+    "output_tokens": 931
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_03_49_01_000_010323-trim-0828-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Still frames show only trees and flat grey sky with no distinct moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 516
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Scattered non-straight cluster in daylight by trees with low straightness 0.49, matches small animal moving, not a straight meteor or plane.",
+    "next_step": "none",
+    "key_clue": "curved scattered path by trees in daylight",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5061,
+    "output_tokens": 984
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_48_00_000_010359-trim-1381-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry pale shape at frame edge against featureless blue, suggests very close out-of-focus object not a distant sky streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 1074
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry white shape filling edge of frame, very curved track with low straightness, not a straight sky object.",
+    "next_step": "ask_human",
+    "key_clue": "big blurry near-camera shape",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8092,
+    "output_tokens": 1480
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_52_00_000_010323-trim-1258-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible in dusk sky frames.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 700
+   },
+   "ours": {
+    "category": "not_sky",
+    "confidence": "medium",
+    "reason": "Image 2 shows daylight trees, not night sky. Scattered dots in image 1 match leaves moving, with very low straightness 0.23.",
+    "next_step": "none",
+    "key_clue": "daytime trees, not night sky",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7549,
+    "output_tokens": 1389
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_52_01_000_010358-trim-0538-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very blurry twilight frame with diffuse pale streaks and ground lights, no distinct moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 328,
+    "output": 783
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "high",
+    "reason": "Image 2 and video show grey overcast filling the sky with no moving point, code found no moving object.",
+    "next_step": "none",
+    "key_clue": "grey overcast fills sky",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7318,
+    "output_tokens": 840
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_55_00_000_010337-trim-0329-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very faint dark specks appear to move low near treeline, consistent with distant birds.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 1688,
+    "output": 664
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Small dark spot against bright cloudy sky in normal frames, not a bright streak. Fast straight 0.7s flight fits a nearby bird, gaps are measurement noise.",
+    "next_step": "none",
+    "key_clue": "dark silhouette on bright cloudy sky",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7679,
+    "output_tokens": 1619
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_18_59_00_000_010359-trim-1376-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Blurry static frames with no clear mover; diffuse gray with bright edge could be cloud or lens obstruction.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 1022
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Small messy blob stays in one area with very low straightness and feathery wing-like texture, not a fast straight meteor or steady satellite.",
+    "next_step": "watch_video",
+    "key_clue": "flappy feathery blob in place",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4997,
+    "output_tokens": 1093
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_00_00_000_010359-trim-0531-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large diffuse translucent blob near lens changing shape in seconds, not a sharp distant streak.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 829
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "medium",
+    "reason": "Very curved path with low straightness and large blurry white shape changing between frames, seen continuously for under a second near camera.",
+    "next_step": "none",
+    "key_clue": "curved blurry large shape",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7531,
+    "output_tokens": 889
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_06_00_000_010357-trim-0007-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; frames show only static sky, tree and structure.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 462
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Image 2 shows only diffuse grey brightness and a tree with no moving point, and image 1 shows only a soft edge glow. No fast line or blinking dots for meteor, plane or satellite.",
+    "next_step": "watch_video",
+    "key_clue": "diffuse grey sky, no point",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7264,
+    "output_tokens": 1234
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_14_01_000_010359-trim-0039-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "bird",
+    "confidence": "medium",
+    "reason": "Irregular bright shape morphs wing-like over seconds, not linear like meteor or satellite.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 597
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very low straightness (0.39) and short curved path with irregular changing shape fit a close bird. Bright-day sky gaps explain low seen ratio.",
+    "next_step": "none",
+    "key_clue": "curved irregular flapping shape",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10823,
+    "output_tokens": 1486
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_32_01_000_010326-trim-1240-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small steady white point drifts slowly for seconds with no blink or fast streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 1088,
+    "output": 612
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight dotted path seen 5.5s with very low seen ratio 0.09 shows blinking lights. Slow speed fits plane, not meteor.",
+    "next_step": "none",
+    "key_clue": "dotted blinking straight path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 331
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_33_01_000_010360-trim-1240-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Diffuse translucent wispy shape drifts slowly, looks like illuminated smoke/cloud not a solid object.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 1027
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry blob very close to camera by a house for 0.2s, not a straight fast streak. Curved low straightness (0.79) fits nearby insect/bird.",
+    "next_step": "none",
+    "key_clue": "big blurry nearby blob, not straight",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7578,
+    "output_tokens": 1173
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_34_01_000_010359-trim-0184-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "not_sky",
+    "confidence": "low",
+    "reason": "Large translucent diamond-shaped glow looks like lens flare or near-camera reflection, not a distant moving sky object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 803
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "medium",
+    "reason": "Very short 0.2s close large blurry object with low straightness 0.14 and multiple parallel lines, not a straight meteor trail.",
+    "next_step": "none",
+    "key_clue": "large blurry nearby object with curved short path",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4788,
+    "output_tokens": 1112
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_41_01_000_010360-trim-0660-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large pale out-of-focus blob at frame edge with wispy edges, typical of close-range insect illuminated at night.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 764
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Huge blurry white shape filling frame corner and barely changing, with very low straightness. Looks like a very close out-of-focus insect, not a sky object.",
+    "next_step": "none",
+    "key_clue": "large blurry close shape",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7967,
+    "output_tokens": 1518
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_42_01_000_010359-trim-0759-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "medium",
+    "reason": "Large out-of-focus bright blob fills lens with hair-like edge details, typical of close insect crawl, not distant sky motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 727
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Very curved path with low straightness and low seen ratio, small speck moving along bright edge in video.",
+    "next_step": "none",
+    "key_clue": "wavy intermittent path on bright edge",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10908,
+    "output_tokens": 1958
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_52_01_000_010358-trim-0154-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible, only static pale area with dark scalloped borders.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 789
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Image 2 shows large soft dark and bright patches with almost no change over 8 frames, typical of slow clouds. The stacked image shows only tiny fragments and code found no moving object.",
+    "next_step": "none",
+    "key_clue": "large soft patches nearly static",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7504,
+    "output_tokens": 1092
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_19_53_00_000_010359-trim-0192-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is very dark and low resolution with only a faint small speck visible, no clear trail or lights.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 465
+   },
+   "ours": {
+    "category": "not_sky",
+    "confidence": "high",
+    "reason": "No stars or sky motion; frames show only a static bright structure with scalloped edge. Code found no moving object.",
+    "next_step": "none",
+    "key_clue": "static ground structure, no sky",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7416,
+    "output_tokens": 927
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_05_00_000_010359-trim-0930-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Nearly black frame with only static bright edge on right, no clear moving sky object.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 644
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Very large blurry white shape at image edge, slow and curved with low straightness. Steady brightness and tiny movement suggest something very close to lens.",
+    "next_step": "watch_video",
+    "key_clue": "large blurry edge shape, slow curved",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7723,
+    "output_tokens": 1155
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_06_01_000_010358-trim-1167-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry pale irregular shape very close to lens, fluttering, not distant sky motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 569
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "medium",
+    "reason": "Short 0.4s curved path with low straightness and blurry changing shape close to camera, not a straight fast meteor.",
+    "next_step": "none",
+    "key_clue": "curved blurry close shape",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7489,
+    "output_tokens": 871
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_07_01_000_010323-trim-0237-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; only static trees against dim sky.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 524
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very low straightness (0.03) with short 0.5s blurry blob near trees, not a straight meteor or plane. Gaps are noted as measurement noise on bright sky.",
+    "next_step": "none",
+    "key_clue": "curved blurry short path in daylight",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7716,
+    "output_tokens": 840
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_15_01_000_010323-trim-0918-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving light or object visible; only static night sky and trees.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 643
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very low straightness (0.03) with curved fragmented path visible for 3.6s near trees, not straight like plane or meteor.",
+    "next_step": "none",
+    "key_clue": "curved non-straight silhouette motion",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8080,
+    "output_tokens": 989
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_28_00_000_010360-trim-0138-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Overexposed yellow blur is static with no clear sky-object motion.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 718
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry white object fills the frame and barely moves between frames, with curved crescent track in stack. Close, out-of-focus and wavy, typical of insect near lens.",
+    "next_step": "none",
+    "key_clue": "huge blurry close object with curved track",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5026,
+    "output_tokens": 1169
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_20_37_00_000_010320-trim-0837-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Dim steady point drifts slowly past fixed star with no blink or fast streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 900
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "medium",
+    "reason": "Slow short path with low straightness (0.75) and irregular brightness changes, not regular plane blinks or steady satellite.",
+    "next_step": "none",
+    "key_clue": "slightly curved path with erratic brightness",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8173,
+    "output_tokens": 1015
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_21_18_01_000_010340-trim-1302-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "medium",
+    "reason": "Small steady white point drifting slowly across dark sky with no tail or flashing.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 448
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight path with gaps and very low seen ratio shows blinking lights over several seconds.",
+    "next_step": "none",
+    "key_clue": "dotted path with low seen ratio",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 430
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_22_09_01_000_010073-trim-1129-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object; only static diffuse glow against dark background.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 537
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Image 2 and video show a large bright soft cloud mass dominating the frame, while image 1 is only a small wavy flicker on its edge. Low straightness and low seen ratio fit cloud edge noise.",
+    "next_step": "none",
+    "key_clue": "large soft bright patch in frame",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8392,
+    "output_tokens": 1164
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_22_11_00_000_010347-trim-0136-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "low",
+    "reason": "Faint central point stays ~stationary then brightens briefly, with no streak or steady motion.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 808
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight slow path shown as dotted line with gaps, seen in only 12% of frames over 3 seconds, typical of blinking plane lights.",
+    "next_step": "none",
+    "key_clue": "dotted blinking path with low seen ratio",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 446
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_29_22_51_00_000_010362-trim-0529-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost black with only a faint smudge on right edge, no clear trail or shape.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 725
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No tracked motion and only a diffuse glow at the edge in both images, suggesting slow cloud rather than a point object.",
+    "next_step": "ask_human",
+    "key_clue": "diffuse edge glow, no track",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10113,
+    "output_tokens": 1209
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_30_00_38_00_000_010357-trim-1283-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Extremely dark frames show only a tree silhouette with no clear moving object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 621
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Middle frame shows only grey overcast sky with a tree silhouette and no moving point, and code found no moving object.",
+    "next_step": "none",
+    "key_clue": "grey overcast frame, no motion",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2274,
+    "output_tokens": 467
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_30_00_39_01_000_010359-trim-1349-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Large blurry oval light is stationary and out of focus, not matching meteor, satellite or plane motion.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 904
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "medium",
+    "reason": "Large blurry out-of-focus oval near camera in image 2 with short curved path and low straightness. Brightness varies and seen ratio is low, unlike steady satellite or fast straight meteor.",
+    "next_step": "none",
+    "key_clue": "big blurry close oval, curved short path",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7883,
+    "output_tokens": 1376
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_30_00_49_01_000_010358-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Dark static night scene with tent-like foreground, no clear moving streak or object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 287,
+    "output": 642
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very curved short path (straightness 0.44, 0.32s) over bright tent-like foreground, not straight like meteor or plane. Images too faint to tell bird from insect.",
+    "next_step": "ask_human",
+    "key_clue": "curved short path low straightness",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8203,
+    "output_tokens": 1447
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_30_20_36_01_000_010358-trim-1288-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Diffuse pale layers drift slowly over static ground lights, no fast point source or meteor streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 446,
+    "output": 399
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Large blurry soft shape in zoom, short 0.52s duration, and low straightness 0.63 suggest nearby bird rather than straight meteor or plane. Bright sky makes measurement noisy so still unsure.",
+    "next_step": "watch_video",
+    "key_clue": "large blurry shape with curved path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5291,
+    "output_tokens": 1413
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_30_20_58_01_000_010358-trim-0590-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Large diffuse bright area changes shape irregularly, like cloud lit by moon, not a distinct moving object.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 418
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry close shape with curved path and low seen ratio, not a straight distant point. Matches a near-camera insect or bird, not meteor or plane.",
+    "next_step": "none",
+    "key_clue": "big blurry nearby blob, curved",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7929,
+    "output_tokens": 1386
+   }
+  },
+  {
+   "file": "non_meteor__2021_04_30_21_15_00_000_010359-trim-0815-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Extremely dark blurry frames with no clear moving sky object identifiable.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 627
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Very low straightness with fast short curved motion and large blurry out-of-focus shape near camera.",
+    "next_step": "none",
+    "key_clue": "large blurry curved close shape",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7906,
+    "output_tokens": 1361
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_18_53_00_000_010078-trim-1396-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "high",
+    "reason": "Only dark overcast clouds visible with slow drift, no distinct moving object.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 608,
+    "output": 563
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "high",
+    "reason": "Image 2 is filled with soft grey cloud patches, and image 1 shows no clear moving path. Code found no moving object.",
+    "next_step": "none",
+    "key_clue": "cloud-filled frame, no track",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2274,
+    "output_tokens": 333
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_19_07_00_000_010349-trim-1351-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No clear moving point, only static pale wispy shapes in blue twilight sky.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 641
+   },
+   "ours": {
+    "category": "not_sky",
+    "confidence": "medium",
+    "reason": "Middle frame shows ground tents under grey sky with no motion across 8 frames; stacked streaks are noise from 1-frame detection.",
+    "next_step": "none",
+    "key_clue": "static ground tents, no mover",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7628,
+    "output_tokens": 1235
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_20_41_00_000_010343-trim-1115-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "not_sky",
+    "confidence": "medium",
+    "reason": "Bright ground-level flames dominate left foreground, no moving object visible in dark sky.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 459
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry bright shape near camera barely changes position over 0.4s, low straightness 0.52 not a straight meteor track.",
+    "next_step": "none",
+    "key_clue": "big blurry nearby shape, not moving like sky object",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10476,
+    "output_tokens": 1550
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_20_46_01_000_010349-trim-0030-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are almost entirely dark with no distinct moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 517
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Image 2 and video show only large grey soft patches changing slowly, with no clear fast point. The thin line in the stack looks like a moving cloud edge.",
+    "next_step": "none",
+    "key_clue": "grey soft fill in single frame and video",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10129,
+    "output_tokens": 1568
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_20_47_01_000_010073-trim-0399-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Bright wispy foreground could be near-lens web or low fog/cloud, not a clear sky mover.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 1163
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Curved short path with low straightness and low seen ratio looks blurry and close to camera, like a small animal not a sky object.",
+    "next_step": "none",
+    "key_clue": "curved blurry close path",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4998,
+    "output_tokens": 737
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_21_03_00_000_010353-trim-0479-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Large diffuse pale glow with no point source or streak, drifts slightly like illuminated cloud.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 880,
+    "output": 451
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Large blurry white shape fills much of frame with very low straightness and short 0.4s visibility, so close bird/insect not distant sky object.",
+    "next_step": "none",
+    "key_clue": "huge blurry near-camera blob",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7515,
+    "output_tokens": 1068
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_21_40_00_000_010359-trim-1274-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "not_sky",
+    "confidence": "low",
+    "reason": "Large blurry foreground blocks view, no clear sky transient visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 608,
+    "output": 1078
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Very fast (0.32s) blurry streak at edge with low straightness (0.18) and wavy brightness, like a close flyby.",
+    "next_step": "none",
+    "key_clue": "short fast curved blurry path",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5060,
+    "output_tokens": 987
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_21_45_01_000_010353-trim-0953-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Bright stationary glow with flare shows no motion across clip, not matching meteor, satellite or plane.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 609
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "medium",
+    "reason": "Very curved looping path with low straightness and large blurry close-up shape that barely moves between frames, typical of a near-camera insect.",
+    "next_step": "none",
+    "key_clue": "looping blurry close-range track",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5027,
+    "output_tokens": 944
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_22_08_00_000_010359-trim-0876-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is extremely dark and blurry with no distinct moving object visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 518
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Very large blurry close object filling edge of frame, visible only 0.16s. Not a distant straight meteor streak, looks like near-camera bug/bird.",
+    "next_step": "none",
+    "key_clue": "huge blurry near-camera blob",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4992,
+    "output_tokens": 1003
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_22_19_00_000_010362-trim-1254-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Extremely dark blurry frames with no stars or clear moving object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 968,
+    "output": 456
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Blurry extended shape with curved short path and low seen ratio fits nearby animal, not straight steady satellite or fast meteor.",
+    "next_step": "none",
+    "key_clue": "blurry curved intermittent blob",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7820,
+    "output_tokens": 1312
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_22_49_00_000_010351-trim-0053-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Bright diffuse crescent is stationary with hazy glow, no streak or blink; suggests moon behind slow haze.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 936
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Frames show a large bright curved edge staying almost still, not a moving point, with very low straightness. Image 1 streak is just the edge shifting slightly.",
+    "next_step": "none",
+    "key_clue": "broad stationary bright edge in frames",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7893,
+    "output_tokens": 1952
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_22_59_00_000_010073-trim-0840-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Bright out-of-focus foreground shape fills frame with no clear moving sky object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 771
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Middle frame shows a large blurry overexposed shape close to the lens, and the stack shows only a very brief curved trace. Fits a close insect, not a sky object.",
+    "next_step": "ask_human",
+    "key_clue": "large blurry close shape",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7769,
+    "output_tokens": 1394
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_23_01_01_000_010073-trim-0382-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "satellite",
+    "confidence": "low",
+    "reason": "Faint point in dark sky with very slow drift, consistent with distant satellite.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 549
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Code found no moving object and the 8 video frames look static with only a bright foreground shape, no clear path.",
+    "next_step": "ask_human",
+    "key_clue": "static scene no motion",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4822,
+    "output_tokens": 724
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_23_21_01_000_010359-trim-0948-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no distinct moving object visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 576
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Image 2 shows only diffuse dark grey with no stars or moving point, and stacked image is nearly empty. This matches overcast clouds filling the sky.",
+    "next_step": "none",
+    "key_clue": "diffuse grey sky, no point track",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7399,
+    "output_tokens": 860
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_01_23_22_00_000_010342-trim-0945-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very blurry diffuse light shapes over rooftops with no clear meteor or plane motion.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 581
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Tracked shape looks identical in all frames and matches a static structure over rooftops, with no clear moving point.",
+    "next_step": "ask_human",
+    "key_clue": "static vertical shape, no motion",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10719,
+    "output_tokens": 1517
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_00_01_00_000_010344-trim-0175-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; frames look static dark with fixed bright shape at edge.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 637
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "medium",
+    "reason": "Very large blurry shape filling frame and curved path with low straightness 0.35 indicates close bird, not distant point. Slow 1.4s motion with changing wing-like shape in frames.",
+    "next_step": "none",
+    "key_clue": "huge blurry nearby shape",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7583,
+    "output_tokens": 857
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_00_02_01_000_010359-trim-1257-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Only a partial bright edge on dark background with no clear meteor, satellite or plane motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 881
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Curved fluttering shape passing the Moon with very low straightness and intermittent detection, not a straight meteor or plane.",
+    "next_step": "watch_video",
+    "key_clue": "curved flapping path by Moon",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7581,
+    "output_tokens": 1200
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_01_37_01_000_010073-trim-1274-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Sudden bright diffuse white glow spreading in clouds, no distinct moving track.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 362
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Short 0.56s curved path with low straightness 0.3 and large blurry blob. Low seen ratio is noted as measurement gaps on bright sky, not blinking.",
+    "next_step": "none",
+    "key_clue": "very curved short faint path on bright sky",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7987,
+    "output_tokens": 1606
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_01_55_00_000_010344-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very dark frames with only a blurry bright shape at bottom edge, too indistinct to identify.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 308,
+    "output": 470
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Large blurry white shape grows as it nears camera, with curved path and low straightness. Motion over 2s is slow and irregular, not a straight meteor or satellite.",
+    "next_step": "none",
+    "key_clue": "large near-camera blurry shape, curved path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7923,
+    "output_tokens": 1333
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_01_55_00_000_010361-trim-0102-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Only diffuse gray-green haze with no stars or distinct mover, consistent with fog/overcast blocking sky.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 516
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Short 0.44s curved path (straightness 0.67) that is blurry and changes shape against bright sky, typical of a close out-of-focus insect, not a straight meteor or plane.",
+    "next_step": "none",
+    "key_clue": "curved blurry changing shape",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7712,
+    "output_tokens": 1276
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_02_29_00_000_010357-trim-1162-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Cloudy night sky with tree silhouette and bright crescent on right; no clear meteor/satellite/plane motion, only diffuse cloud.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 582
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Stack shows broad diffuse streak not a point line, straightness very low, and middle frame shows cloudy sky over trees.",
+    "next_step": "none",
+    "key_clue": "diffuse bright cloud edge, not a point",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5047,
+    "output_tokens": 846
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_02_36_01_000_010073-trim-1108-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Large blurry white veil near lens, morphing slightly, not a meteor streak or point mover; likely web/insect artifact or lens reflection.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 1068
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Large blurry white shape close to camera with very curved short track and low seen ratio, not straight like plane or satellite.",
+    "next_step": "none",
+    "key_clue": "big blurry shape, straightness 0.08",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8105,
+    "output_tokens": 1489
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_02_59_00_000_010362-trim-0421-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Extremely blurry grey frames with no stars or distinct moving object visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 719
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Path is thick, blurry and not straight with low seen ratio, and middle frames show only diffuse grey shapes not a steady point. Numbers and images disagree with plane or meteor.",
+    "next_step": "watch_video",
+    "key_clue": "blurry curved broken path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7738,
+    "output_tokens": 1475
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_03_00_00_000_010359-trim-1104-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "not_sky",
+    "confidence": "low",
+    "reason": "Frames are dark and obscured with no stars or sky detail, with a blurred object in corner.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 880
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No tracked motion and all frames show uniform grey with no stars or moving point, matching overcast cloud filling the view.",
+    "next_step": "none",
+    "key_clue": "static uniform grey frames",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7492,
+    "output_tokens": 1026
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_02_19_50_01_000_010349-trim-1118-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; only diffuse brightening shifting through clouds on left.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 498,
+    "output": 405
+   },
+   "ours": {
+    "category": "flash",
+    "confidence": "medium",
+    "reason": "Stacked view is a diffuse flickering patch with very low straightness, not a straight track. Middle frame shows bright clouds lit on the left, like lightning.",
+    "next_step": "none",
+    "key_clue": "diffuse flickering patch lighting clouds",
+    "also": "cloud",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4938,
+    "output_tokens": 1046
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_03_01_21_01_000_010359-trim-0388-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Mostly dark frame with static bright leaf-like foreground, no clear moving sky object.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 582
+   },
+   "ours": {
+    "category": "not_sky",
+    "confidence": "high",
+    "reason": "Image shows a large grey spiky-edged shape filling the frame, not stars or sky. Video shows only slight edge wobble of this close object.",
+    "next_step": "none",
+    "key_clue": "large leaf-like shape, no sky",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7961,
+    "output_tokens": 1141
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_03_19_51_00_000_010323-trim-0880-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Static dusk sky with tree silhouettes, no distinct moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 514
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very low straightness (0.34) and short 0.24s faint motion near trees does not look like straight meteor or satellite. Curved scattered path fits a close bird or insect.",
+    "next_step": "none",
+    "key_clue": "very curved short path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10778,
+    "output_tokens": 1555
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_03_19_51_00_000_010351-trim-0412-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Faint static point with heavy noise, no clear trail or motion visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 686
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Code found no moving point object and stacked image is empty. Single frame shows only diffuse grey overcast sky with no point track.",
+    "next_step": "none",
+    "key_clue": "empty stack plus grey diffuse sky",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4816,
+    "output_tokens": 921
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_03_20_28_00_000_010323-trim-0911-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very dark sky with trees and faint clouds, no clear meteor, satellite or plane motion visible.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 498,
+    "output": 805
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very low straightness and low seen ratio with slow curved blob near trees, but object is barely visible in frames.",
+    "next_step": "ask_human",
+    "key_clue": "non-straight intermittent path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7938,
+    "output_tokens": 1051
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_03_21_45_01_000_010323-trim-0506-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames show only static cloudy sky and tree silhouettes with no clear mover.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 721
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Stacked image shows no clear moving point, and middle frame shows only overcast grey sky with clouds above trees.",
+    "next_step": "none",
+    "key_clue": "overcast sky in single frame",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2274,
+    "output_tokens": 368
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_03_22_38_00_000_010323-trim-0082-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; only static tree silhouettes and faint cloud band.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 653
+   },
+   "ours": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Full clip frames look identical with only static trees and a faint cloud band; code found no moving object.",
+    "next_step": "none",
+    "key_clue": "static scene with no mover",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7327,
+    "output_tokens": 1349
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_04_18_55_01_000_010096-trim-0437-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "No distinct moving point; only diffuse gray-blue texture consistent with clouds.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 492
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Middle frame shows only soft grey overcast with no stars or moving point, and code found no moving object.",
+    "next_step": "none",
+    "key_clue": "grey overcast filling frame",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2274,
+    "output_tokens": 495
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_04_19_40_01_000_010323-trim-0517-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Only overcast sky and tree silhouette visible, no distinct moving object.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 746
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Daytime clip shows only tree top and clouds, with short 0.44s curved motion (straightness 0.46) at the tree. Numbers and images disagree on details, so faint near-camera bird or insect is best guess.",
+    "next_step": "none",
+    "key_clue": "curved short motion at tree top in daylight",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8094,
+    "output_tokens": 1628
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_04_20_11_00_000_010323-trim-0356-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Overcast gray sky with tree silhouette, no distinct moving object visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 643
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Image 2 and video show only overcast grey sky with a tree, no moving point. Stacked image is almost blank as expected for slow clouds.",
+    "next_step": "none",
+    "key_clue": "overcast sky fills frames",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7621,
+    "output_tokens": 859
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_04_20_57_00_000_010079-trim-1103-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Clip is nearly black with only very faint points, motion unclear.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 426
+   },
+   "ours": {
+    "category": "plane",
+    "confidence": "high",
+    "reason": "Straight dotted path seen 3s with large gaps and very low seen ratio, typical blinking plane lights.",
+    "next_step": "none",
+    "key_clue": "dotted blinking straight path",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 1,
+   "ours_tokens": {
+    "calls": 1,
+    "input_tokens": 2279,
+    "output_tokens": 454
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_04_21_38_01_000_010349-trim-1408-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Very blurry bright diffuse shape in corner with no clear sky trail.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 248,
+    "output": 802
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Curved blurry large shape near edge seen briefly, not fast straight like meteor or steady straight like satellite. Low straightness and low seen ratio fit a near-camera bird.",
+    "next_step": "watch_video",
+    "key_clue": "curved blurry near-camera path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7966,
+    "output_tokens": 1774
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_04_23_48_00_000_010125-trim-0081-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; only overcast night sky and city lights.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 539
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very curved path with variable brightness and blurry shape near camera. Numbers unreliable on bright sky so image shape decides.",
+    "next_step": "none",
+    "key_clue": "very low straightness with blurry wavy shape",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8019,
+    "output_tokens": 1807
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_05_00_03_00_000_010350-trim-0335-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Slow horizontal bright streak grows longer over ~3s and appears to split in two, like a grazing fireball with persistent train.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 939
+   },
+   "ours": {
+    "category": "meteor",
+    "confidence": "medium",
+    "reason": "Short bright straight streak seen for <0.1s at high speed, with tapered shape in close-up.",
+    "next_step": "none",
+    "key_clue": "fast bright straight streak",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 2,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4801,
+    "output_tokens": 602
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_05_00_41_00_000_010355-trim-0726-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no clear moving object visible.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 363
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Large blurry out-of-focus blob in corner with curved path (straightness 0.39) and short 0.72s visibility suggests a close insect or bird.",
+    "next_step": "none",
+    "key_clue": "large blurry close blob, curved",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7569,
+    "output_tokens": 958
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_05_02_52_00_000_010352-trim-0388-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames are nearly black with no discernible moving object.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 681
+   },
+   "ours": {
+    "category": "insect",
+    "confidence": "low",
+    "reason": "Very low straightness (0.15) and short 0.32s visibility with irregular blob path, typical of a close blurry insect, not a straight meteor or satellite.",
+    "next_step": "none",
+    "key_clue": "curved short blob path",
+    "also": "bird",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 5140,
+    "output_tokens": 1038
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_05_02_56_00_000_010335-trim-0631-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Diffuse overcast dusk sky over panels with no distinct mover visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 340,
+    "output": 710
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Daytime clip near tree with very curved short path and low straightness. Faint small mover fits bird, insect also possible.",
+    "next_step": "none",
+    "key_clue": "very curved short daytime path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8179,
+    "output_tokens": 1287
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_05_03_06_01_000_010073-trim-0951-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Static dusk sky over rooftop with glare on left, no distinct moving object visible.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 424,
+    "output": 643
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Very curved path (straightness 0.02) with gaps in detection, and blurry large white shape near image edge looks like a close bird/insect, not a straight meteor or plane.",
+    "next_step": "none",
+    "key_clue": "very curved blurry edge path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 5,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8157,
+    "output_tokens": 1611
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_05_23_14_01_000_010351-trim-0000-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Single blurry frame shows large diffuse white shape with no clear motion.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 234,
+    "output": 535
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "medium",
+    "reason": "Large blurry white shape close to camera with curved path and low straightness 0.32, not a fast straight meteor.",
+    "next_step": "none",
+    "key_clue": "big blurry nearby shape, curved path",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 2,
+    "input_tokens": 4982,
+    "output_tokens": 832
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_06_20_36_00_000_010346-trim-0918-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No clear streak or moving point visible; frames show only dark sky and static house glow.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 613
+   },
+   "ours": {
+    "category": "not_sky",
+    "confidence": "medium",
+    "reason": "Image 2 shows rooftops and a persistent bright ground light, not night sky. Image 1 blob is just flicker of that ground source.",
+    "next_step": "none",
+    "key_clue": "rooftops and ground light in view",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7579,
+    "output_tokens": 1284
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_06_21_12_01_000_010654-trim-1386-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "cloud",
+    "confidence": "low",
+    "reason": "Diffuse grey overcast sky over city lights with no distinct moving point or streak.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 608,
+    "output": 758
+   },
+   "ours": {
+    "category": "cloud",
+    "confidence": "medium",
+    "reason": "Large soft diffuse patch with no point or line, seen in normal frame as overcast sky. Low straightness fits drifting cloud edge.",
+    "next_step": "none",
+    "key_clue": "large soft diffuse patch",
+    "also": null,
+    "source": "meta"
+   },
+   "ours_checks": 3,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 7512,
+    "output_tokens": 844
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_07_00_44_01_000_010121-trim-0857-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Extremely blurry pink and white blobs with no clear shape or motion.",
+    "next_step": "ask_human",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 484
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Close, blurry winged shape in single frame with multiple short streaks in stack, not a straight meteor line. Numbers unreliable with <3 frames.",
+    "next_step": "ask_human",
+    "key_clue": "blurry winged shape near camera",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8057,
+    "output_tokens": 1117
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_09_19_00_00_000_010651-trim-0943-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "No distinct moving object visible; only static dusk sky over trees.",
+    "next_step": "none",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 288,
+    "output": 561
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Daytime view of trees with faint short track, very low straightness 0.23 means curved path. Brightness varies and object barely visible, like a small bird.",
+    "next_step": "watch_video",
+    "key_clue": "curved faint path in daylight",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 4,
+    "input_tokens": 10569,
+    "output_tokens": 1548
+   }
+  },
+  {
+   "file": "non_meteor__2021_05_09_19_22_00_000_010654-trim-1050-crop-360p1.mp4",
+   "expert": "not meteor",
+   "alone": {
+    "category": "unsure",
+    "confidence": "low",
+    "reason": "Frames show only static twilight sky and tree silhouettes with no clear moving object.",
+    "next_step": "watch_video",
+    "key_clue": "",
+    "also": null,
+    "source": "meta"
+   },
+   "alone_sent": "video",
+   "alone_tokens": {
+    "input": 272,
+    "output": 613
+   },
+   "ours": {
+    "category": "bird",
+    "confidence": "low",
+    "reason": "Scattered non-straight dots over trees for 0.8s, not a straight meteor or plane line. Matches small animal moving among branches.",
+    "next_step": "none",
+    "key_clue": "scattered curved track over trees",
+    "also": "insect",
+    "source": "meta"
+   },
+   "ours_checks": 4,
+   "ours_tokens": {
+    "calls": 3,
+    "input_tokens": 8038,
+    "output_tokens": 1815
+   }
+  }
+ ]
+}

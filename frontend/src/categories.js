@@ -6,11 +6,13 @@ export const CATEGORIES = {
   insect: { label: "Insect", plural: "Insects", color: "var(--cloud)" },
   cloud: { label: "Cloud", plural: "Clouds", color: "var(--cloud)" },
   flash: { label: "Sky flash", short: "Flash", plural: "Sky flashes", color: "var(--flash)" },
+  aurora: { label: "Aurora", plural: "Aurorae", color: "var(--aurora)" },
+  reentry: { label: "Space junk burning up", short: "Re-entry", plural: "Re-entries", color: "var(--reentry)" },
   not_sky: { label: "Not a sky video", short: "Not sky", plural: "Not sky", color: "var(--cloud)" },
   unsure: { label: "Not sure", short: "Unsure", plural: "Not sure", color: "var(--unsure)" },
 };
 
-export const ORDER = ["meteor", "satellite", "plane", "bird", "insect", "cloud", "flash", "not_sky", "unsure"];
+export const ORDER = ["meteor", "satellite", "plane", "bird", "insect", "cloud", "flash", "aurora", "reentry", "not_sky", "unsure"];
 
 export const categoryOf = (key) => CATEGORIES[key] || CATEGORIES.unsure;
 
@@ -44,6 +46,7 @@ export function describeName(name) {
     sortKey = sortKey || "2016";
   }
   else if (/^m\d{8}_\d{6}/.test(rest) || /las cruces/i.test(rest)) place = "Las Cruces, USA";
-  else if (expert) place = "AllSky7 network";
+  else if (expert) place = "NightSkyUCP (AllSky7 camera)";
+  else if (/_wm\.|^AMS\d+_/i.test(rest)) place = "AllSky7 network";
   return { file, expert, when, year, sortKey, place };
 }

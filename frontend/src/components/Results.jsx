@@ -6,20 +6,40 @@ const METHODS = [
   ["video", "Meta's AI, just watching the video", "No measurements, no tools"],
   ["frames", "Meta's AI, looking at 8 photos", "8 still pictures taken from the video"],
 ];
+const COL = { ours: 2, video: 3, frames: 4 }; // positions in each row of results.json
 
-// right / unsure / wrong against the expert label (meteor vs not meteor)
+// right / not sure / wrong against the expert answer (meteor or not a meteor)
 function grade(expert, answer) {
   if (answer === "unsure") return "unsure";
   return (expert === "meteor") === (answer === "meteor") ? "right" : "wrong";
 }
 
-function Bar({ counts, total }) {
+function score(rows, method) {
+  const c = { right: 0, unsure: 0, wrong: 0, total: 0, found: 0, calls: 0, meteors: 0 };
+  rows.forEach((r) => {
+    const expert = r[1];
+    const a = r[COL[method]];
+    if (!expert || !a) return;
+    c.total++;
+    c[grade(expert, a)]++;
+    if (expert === "meteor") c.meteors++;
+    if (a === "meteor") {
+      c.calls++;
+      if (expert === "meteor") c.found++;
+    }
+  });
+  return c;
+}
+
+const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
+
+function Bar({ c }) {
   return (
-    <div className="rbar" role="img" aria-label={`${counts.right} right, ${counts.unsure} unsure, ${counts.wrong} wrong`}>
+    <div className="rbar" role="img" aria-label={`${c.right} right, ${c.unsure} not sure, ${c.wrong} wrong`}>
       {["right", "unsure", "wrong"].map((k) =>
-        counts[k] ? (
-          <span key={k} className={`rbar__seg rbar__seg--${k}`} style={{ flex: counts[k] / total }} title={`${counts[k]} ${k}`}>
-            {counts[k]}
+        c[k] ? (
+          <span key={k} className={`rbar__seg rbar__seg--${k}`} style={{ flex: c[k] }} title={`${c[k]} ${k === "unsure" ? "not sure" : k}`}>
+            {c[k]}
           </span>
         ) : null,
       )}
@@ -28,7 +48,7 @@ function Bar({ counts, total }) {
 }
 
 function Answer({ value, expert }) {
-  if (!value) return <span className="muted">—</span>; // no answer saved for this clip
+  if (!value) return <span className="muted">—</span>;
   const cat = categoryOf(value);
   const g = expert ? grade(expert, value) : null;
   return (
@@ -41,98 +61,127 @@ function Answer({ value, expert }) {
 
 export default function Results() {
   const [data, setData] = useState(null);
+  const [groupId, setGroupId] = useState(null);
+  const [filter, setFilter] = useState("all");
+
   useEffect(() => {
-    fetch("/results.json").then((r) => r.json()).then(setData).catch(() => setData({ rows: [] }));
+    fetch("/results.json")
+      .then((r) => r.json())
+      .then((d) => {
+        setData(d);
+        setGroupId(d.groups?.[0]?.id);
+      })
+      .catch(() => setData({ groups: [] }));
   }, []);
   if (!data) return null;
+  const group = data.groups.find((g) => g.id === groupId);
+  if (!group) return <p className="hint">No results yet. Run scripts/make_results.py.</p>;
 
-  const rows = data.rows.map(([file, expert, video, frames, ours]) => ({ file, expert, video, frames, ours, info: describeName(file) }));
-  const labelled = rows.filter((r) => r.expert);
-  const score = (m) => {
-    const c = { right: 0, unsure: 0, wrong: 0 };
-    labelled.forEach((r) => r[m] && c[grade(r.expert, r[m])]++);
-    return c;
-  };
-  // the New Mexico (SkySentinel) clips: no expert answer, but the camera saves likely meteors
-  const sky = rows.filter((r) => r.info.place === "Las Cruces, USA" && !r.expert);
-  const skyMeteors = (m) => sky.filter((r) => r[m] === "meteor").length;
+  const s = Object.fromEntries(METHODS.map(([k]) => [k, score(group.rows, k)]));
+  const ours = s.ours;
+  const shown = group.rows.filter((r) => filter === "all" || (filter === "meteor" ? r[1] === "meteor" : r[1] !== "meteor"));
 
   return (
     <div className="results">
       <section className="block results__score">
-        <h2 className="cap">Does Night Sky Finder do better than the AI on its own?</h2>
-        <p className="hint">Same Meta AI (Muse Spark), same clips. Each answer is checked against the experts' answer: meteor or not a meteor.</p>
+        <div className="block__head">
+          <div>
+            <h2 className="cap">Does Night Sky Finder do better than the AI on its own?</h2>
+            <p className="hint">Same Meta AI (Muse Spark), same clips. Each answer is checked against the known answer: meteor or not a meteor.</p>
+          </div>
+        </div>
+        <div className="rgroups" role="tablist">
+          {data.groups.map((g) => (
+            <button key={g.id} role="tab" aria-selected={g.id === groupId} onClick={() => setGroupId(g.id)}>
+              {g.title} · {g.rows.length} clips
+            </button>
+          ))}
+          {data.groups.length < 2 && <span className="rgroups__soon">Named by the AllSky7 network · coming next</span>}
+        </div>
         <div className="rchart">
-          {METHODS.map(([key, name, how]) => {
-            const c = score(key);
-            return (
-              <div key={key} className={`rchart__row${key === "ours" ? " rchart__row--ours" : ""}`}>
-                <div className="rchart__name">
-                  <b>{name}</b>
-                  <span>{how}</span>
-                </div>
-                <Bar counts={c} total={labelled.length} />
-                <div className="rchart__num">
-                  <b>{c.right}/{labelled.length}</b> right
-                </div>
+          {METHODS.map(([key, name, how]) => (
+            <div key={key} className={`rchart__row${key === "ours" ? " rchart__row--ours" : ""}`}>
+              <div className="rchart__name">
+                <b>{name}</b>
+                <span>{how}</span>
               </div>
-            );
-          })}
+              <Bar c={s[key]} />
+              <div className="rchart__num">
+                <b>{pct(s[key].right, s[key].total)}%</b> right
+              </div>
+            </div>
+          ))}
           <div className="rlegend">
             <span><i className="rbar__seg--right" />Right</span>
             <span><i className="rbar__seg--unsure" />Not sure</span>
             <span><i className="rbar__seg--wrong" />Wrong</span>
-            <span className="muted">{labelled.length} clips where experts gave the answer</span>
+            <span className="muted">{group.who}</span>
           </div>
         </div>
       </section>
 
       <section className="block results__facts">
         <div className="fact">
-          <b>{skyMeteors("ours")}/{sky.length}</b>
-          <span>Night Sky Finder called these New Mexico clips "meteor". The AI just watching the video: {skyMeteors("video")} of {sky.length}. (No expert answer for these; the camera saves clips it thinks are meteors.)</span>
+          <b>{ours.found}/{ours.meteors}</b>
+          <span>
+            Meteors Night Sky Finder found. The AI on its own: {s.video.found} watching the video, {s.frames.found} looking at photos.
+          </span>
         </div>
         <div className="fact">
-          <b>0</b>
-          <span>Wrong answers from Night Sky Finder on the expert-checked clips. When it can't tell, it says "not sure" instead of guessing.</span>
+          <b>{pct(ours.found, ours.calls)}%</b>
+          <span>When Night Sky Finder says "meteor", it is right ({ours.found} of {ours.calls} times).</span>
         </div>
         <div className="fact">
-          <b>~1¢</b>
-          <span>Cost to check one clip, in about 10 seconds.</span>
+          <b>{pct(ours.wrong, ours.total)}%</b>
+          <span>Wrong answers. When it can't tell, it says "not sure" ({ours.unsure} clips) instead of guessing.</span>
         </div>
+        {group.cost_per_clip && (
+          <div className="fact">
+            <b>~{(group.cost_per_clip * 100).toFixed(1)}¢</b>
+            <span>Cost to check one clip with Meta's AI, in about 10 seconds.</span>
+          </div>
+        )}
         <div className="note">
           <b>Honest notes</b>
-          <p>This is a small test: only {labelled.length} clips have an expert answer. The other clips are shown but not scored.</p>
+          <p>We never tuned our tool on these {group.rows.length} clips. They were picked at random, half meteors, half not.</p>
           <p>Night Sky Finder gives the AI exact numbers, like how long the object was visible. That helps a lot, and it is exactly what our tools are for.</p>
         </div>
       </section>
 
       <section className="block results__table">
         <div className="block__head">
-          <h2 className="cap">All {rows.length} clips</h2>
-          <span className="hint">✓ right · ✗ wrong · ? not sure (marked only where experts gave the answer) · tested {data.tested}</span>
+          <h2 className="cap">All {group.rows.length} clips</h2>
+          <div className="rfilter">
+            {[["all", "All"], ["meteor", "Meteors"], ["not", "Not meteors"]].map(([k, label]) => (
+              <button key={k} aria-pressed={filter === k} onClick={() => setFilter(k)}>{label}</button>
+            ))}
+            <span className="hint">✓ right · ✗ wrong · ? not sure · tested {data.tested}</span>
+          </div>
         </div>
         <div className="rtable">
           <table>
             <thead>
               <tr>
                 <th>Clip</th>
-                <th>Experts' answer</th>
+                <th>Known answer</th>
+                <th>Night Sky Finder</th>
                 <th>AI watching the video</th>
                 <th>AI looking at 8 photos</th>
-                <th>Night Sky Finder</th>
               </tr>
             </thead>
             <tbody>
-              {rows.map((r) => (
-                <tr key={r.file}>
-                  <td>{r.info.place}<span className="muted">{r.info.when ? ` · ${r.info.when}` : r.info.year ? ` · ${r.info.year}` : ""}</span></td>
-                  <td className={r.expert ? "" : "muted"}>{r.expert === "meteor" ? "Meteor" : r.expert ? "Not a meteor" : "—"}</td>
-                  <td><Answer value={r.video} expert={r.expert} /></td>
-                  <td><Answer value={r.frames} expert={r.expert} /></td>
-                  <td><Answer value={r.ours} expert={r.expert} /></td>
-                </tr>
-              ))}
+              {shown.map((r) => {
+                const info = describeName(r[0]);
+                return (
+                  <tr key={r[0]}>
+                    <td>{group.id === "allsky7" ? "AllSky7 network" : info.place}<span className="muted">{info.when ? ` · ${info.when}` : ""}</span></td>
+                    <td>{r[1] === "meteor" ? "Meteor" : r[1] ? "Not a meteor" : "—"}</td>
+                    <td><Answer value={r[2]} expert={r[1]} /></td>
+                    <td><Answer value={r[3]} expert={r[1]} /></td>
+                    <td><Answer value={r[4]} expert={r[1]} /></td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
