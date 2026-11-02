@@ -22,7 +22,9 @@ MAX_MB = 50
 app = FastAPI(title="Night Sky Finder")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    # FRONTEND_URL: the deployed site, e.g. https://night-sky-finder.vercel.app
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"]
+    + [u.strip().rstrip("/") for u in os.getenv("FRONTEND_URL", "").split(",") if u.strip()],
     allow_methods=["*"],
     allow_headers=["*"],
 )
