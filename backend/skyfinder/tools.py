@@ -37,8 +37,8 @@ def zoom_in(path, result):
     frames, _, _ = read_frames(path)
     h, w = frames[0].shape
     x0, y0, x1, y1 = _box(points, w, h)
-    used = [frames[p["frame"]] for p in points]
-    stack = np.max(np.stack(used), axis=0)[y0:y1, x0:x1]
+    used = [frames[p["frame"]][y0:y1, x0:x1] for p in points]  # crop first: less memory
+    stack = np.max(np.stack(used), axis=0)
     return {
         "text": f"Close-up of the path area ({x1 - x0}x{y1 - y0} pixels), all frames where the object was seen stacked.",
         "image": _fit(stack),

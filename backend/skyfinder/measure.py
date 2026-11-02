@@ -55,17 +55,21 @@ def _read_frames(path, max_frames, max_side):
             if not ok:
                 break
             if i % step == 0:
-                frames.append(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
+                frames.append(shrink_frame(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), max_side))
             i += 1
         video.release()
 
-    if frames:
-        h, w = frames[0].shape
-        shrink = max_side / max(h, w)
-        if shrink < 1:
-            frames = [cv2.resize(f, None, fx=shrink, fy=shrink, interpolation=cv2.INTER_AREA) for f in frames]
-
+    frames = [shrink_frame(f, max_side) for f in frames]
     return frames, fps, input_type
+
+
+def shrink_frame(f, max_side):
+    """Shrink each frame as soon as it is read, so a long HD video doesn't fill the memory."""
+    h, w = f.shape
+    shrink = max_side / max(h, w)
+    if shrink < 1:
+        return cv2.resize(f, None, fx=shrink, fy=shrink, interpolation=cv2.INTER_AREA)
+    return f
 
 
 def track(frames, threshold=40, gap=1, flash_share=0.2, min_area=3, edge=0.03, flicker_share=0.1):
@@ -78,21 +82,26 @@ def track(frames, threshold=40, gap=1, flash_share=0.2, min_area=3, edge=0.03, f
     eh, ew = int(h * edge), int(w * edge)
     mask[eh:h - eh, ew:w - ew] = 1
 
-    changes = []
-    for i in range(gap, len(frames)):
+    def change(i):  # recomputed instead of stored: keeps memory low on a small server
         brighter = cv2.subtract(frames[i], frames[i - gap])
-        changes.append((brighter > threshold).astype(np.uint8) * mask)
+        return (brighter > threshold).astype(np.uint8) * mask
 
-    flash = {i for i, c in zip(range(gap, len(frames)), changes) if c.mean() > flash_share}
-    counts = sum(c for i, c in zip(range(gap, len(frames)), changes) if i not in flash)
-    limit = max(3, flicker_share * len(changes))
+    flash = set()
+    counts = np.zeros((h, w), dtype=np.int32)
+    for i in range(gap, len(frames)):
+        c = change(i)
+        if c.mean() > flash_share:
+            flash.add(i)
+        else:
+            counts += c
+    limit = max(3, flicker_share * (len(frames) - gap))
     steady = (counts <= limit).astype(np.uint8)
 
-    for i, changed in zip(range(gap, len(frames)), changes):
+    for i in range(gap, len(frames)):
         if i in flash:
             flash_frames.append(i)
             continue
-        changed = changed * steady
+        changed = change(i) * steady
         n, labels, stats, _ = cv2.connectedComponentsWithStats(changed)
         if n < 2:
             continue
@@ -109,13 +118,20 @@ def track(frames, threshold=40, gap=1, flash_share=0.2, min_area=3, edge=0.03, f
     return points, flash_frames
 
 
+def median_frame(frames, rows=32):
+    """Median of many frames, worked out a strip of rows at a time so it needs little memory."""
+    h = frames[0].shape[0]
+    strips = [np.median(np.stack([f[r:r + rows] for f in frames]), axis=0) for r in range(0, h, rows)]
+    return np.vstack(strips).astype(np.uint8)
+
+
 def sky_glow_frames(frames, threshold=40, share=0.2, samples=60):
     """Frames where a big part of the sky is much brighter than usual, even if it brightened
     slowly (a fireball lighting up the sky). Compared with the clip's normal sky, not the previous frame."""
     if len(frames) < 3:
         return []
     step = max(1, len(frames) // samples)
-    normal_sky = np.median(np.stack(frames[::step]), axis=0).astype(np.uint8)
+    normal_sky = median_frame(frames[::step])
     return [i for i, f in enumerate(frames) if (cv2.subtract(f, normal_sky) > threshold).mean() > share]
 
 
@@ -208,7 +224,7 @@ def combined_image(frames, skip=(), out_side=512):
         stack = frames[0]
     else:
         keep = [f for i, f in enumerate(frames) if i not in skip]
-        background = np.median(np.stack(keep), axis=0).astype(np.uint8)
+        background = median_frame(keep)
         stack = np.zeros_like(background)
         for f in keep:
             stack = np.maximum(stack, cv2.subtract(f, background))
@@ -244,7 +260,9 @@ def preview_image(frames, flash_frames=(), out_side=512):
     if flash_frames:
         img = frames[flash_frames[0]]
     else:
-        img = np.max(np.stack(frames), axis=0)
+        img = frames[0].copy()
+        for f in frames[1:]:
+            np.maximum(img, f, out=img)  # brightest value of each pixel, without copying all frames
     h, w = img.shape
     scale = out_side / max(h, w)
     interp = cv2.INTER_CUBIC if scale > 1 else cv2.INTER_AREA
