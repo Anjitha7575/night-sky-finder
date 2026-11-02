@@ -348,3 +348,18 @@ background: url(/sky-bg.png) left bottom / contain no-repeat;
 .rgroups__soon { font-size: 11px; color: var(--muted); border: 1px dashed var(--line); border-radius: 999px; padding: 4px 12px; }
 .rfilter { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: flex-end; }
 .rfilter .hint { margin: 0 0 0 6px; }
+/* phone: Results tab in one column */
+@media (max-width: 760px) {
+  .results { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
+  .results__score, .results__facts, .results__table { grid-column: 1; }
+  .fact { grid-template-columns: 72px 1fr; }
+  .fact b { font-size: 20px; }
+}
+@media (max-width: 760px) {
+  .results { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
+  .results__score, .results__facts, .results__table { grid-column: 1; }
+  .fact { grid-template-columns: 72px 1fr; }
+  .fact b { font-size: 20px; }
+  .rchart__row { grid-template-columns: minmax(0, 1fr) auto; row-gap: 6px; }
+  .rchart__name { grid-column: 1 / -1; }
+}
