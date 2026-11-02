@@ -256,6 +256,7 @@ background: url(/sky-bg.png) left bottom / contain no-repeat;
 .tl__label { font-size: 11px; font-weight: 600; color: var(--c); }
 
 .foot { color: #b9c3dc; font-size: 9px; text-shadow: 0 1px 4px #000; background-color: #000; }
+.foot a { color: inherit; text-decoration: underline; }
 
 /* smaller laptops: drop the photo column, keep one screen */
 @media (max-width: 1100px) {

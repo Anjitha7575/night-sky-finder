@@ -179,15 +179,12 @@ export default function App() {
           <EventPanel item={current} index={index} aiMode={health?.ai_mode} onRetry={() => current && run(current)} />
         </div>
 
-        {/* <footer className="foot">
-          Videos: NightSkyUCP (CC BY-NC-SA 4.0), IAC all-sky meteors 2016 (CC BY 4.0). Background picture made with ChatGPT.
-          Built for the Meta Global AI Developer Hackathon.
-        </footer> */}
         <footer className="foot">
           Videos: <a href="https://allsky7.net" target="_blank" rel="noreferrer">AllSky7 Fireball Network</a> (© the camera owners, non-commercial use) ·
-          NightSkyUCP (CC BY-NC-SA 4.0) · IAC / STARS4ALL all-sky meteors 2016 (CC BY 4.0) ·
-          <a href="https://goskysentinel.com" target="_blank" rel="noreferrer">SkySentinel</a> (Las Cruces).
-          Background picture made with ChatGPT. Built for the Meta Global AI Developer Hackathon.
+          {" "}<a href="https://doi.org/10.6084/m9.figshare.16451625" target="_blank" rel="noreferrer">NightSkyUCP</a> (Hofmann et al. 2022, CC BY 4.0) ·
+          {" "}IAC / STARS4ALL all-sky meteors 2016 (CC BY 4.0) ·
+          {" "}<a href="https://goskysentinel.com" target="_blank" rel="noreferrer">SkySentinel</a> (Las Cruces).
+          {" "}Background picture made with ChatGPT. Built for the Meta Global AI Developer Hackathon.
         </footer>
       </div>
     </div>
