@@ -1,8 +1,30 @@
 # Limitations
 
-- Speed is measured in pixels per frame, not km/s. Real speed needs camera details (field of view) that the dataset does not give.
-- Test clips are cropped around the object, and crop sizes differ (80x44 to 640x360), so pixel speeds are not fully comparable between clips.
-- In the dataset, clip length alone separates meteors from non-meteors about 98% of the time (reported in the original paper). We do not give clip length to the AI.
-- The dataset has only meteor / non-meteor labels. There is no satellite label, so satellite results cannot be checked against expert labels.
-- Data is from 2019–2021, before the big growth of Starlink satellites.
-- Very slow objects (like clouds) are missed when comparing neighbouring frames, so we also compare frames further apart.
+What Night Sky Finder does not do well yet, so you know when to double-check.
+
+## What we tested
+
+- **Meteor or not:** checked against experts on 200 NightSkyUCP clips (5 experts per clip) and 33 AllSky7 clips (named by the network).
+- **The type (plane, satellite, bird, aurora, ...) is not checked by experts.** The datasets only say "meteor" or "not a meteor", so the type is the AI's best guess.
+- **The AllSky7 test is small and not blind.** Some of those 33 clips were also used while we improved the code.
+
+## Clips it finds hard
+
+- **Fireballs in twilight or daylight.** On a bright sky the streak is faint and looks slow, so it is often called a plane.
+- **Satellite trains** (several satellites one after another on the same path) can be mistaken for space junk burning up.
+- **Red sprites** (flashes above thunderstorms) are not recognised.
+- **Cloudy or moonlit skies.** Moving clouds and moon glare can hide the object or add false movement.
+- **Objects at the very edge of a round (fisheye) camera** are half hidden, so answers there are less sure.
+- **Two objects at the same time.** Our code follows one moving object per frame, so two objects together can get mixed.
+
+## How it works
+
+- **Answers can change between runs on unclear clips.** Every click asks the AI again (nothing is saved), and the AI does not always pick the same answer when a clip is unclear. Clear clips stay stable.
+- **Speed is "% of the screen per second", not km/s.** Real speed needs camera details (lens, position) that the clips don't have.
+- **Long videos are sampled.** We look at up to 300 frames, so in a long video we skip frames. A very short flash in a long video can be missed.
+- **Uploads up to 50 MB.**
+- **Tested on a few camera types** (AllSky7, NightSkyUCP, IAC/STARS4ALL, SkySentinel). Other cameras may behave differently.
+
+## The live demo
+
+- **One clip at a time.** The server is small, so other clicks wait their turn. A clip can take from a few seconds up to about a minute.
