@@ -13,7 +13,9 @@ export default function Player({ item }) {
       </h2>
       <div className="player__screen">
         {isVideo(item.name) ? (
-          <video key={src} src={src} autoPlay loop muted playsInline controls />
+          <video key={src} src={src} autoPlay loop muted playsInline controls
+            controlsList="nodownload noplaybackrate" disablePictureInPicture
+            onContextMenu={(e) => e.preventDefault()} />
         ) : (
           <img key={src} src={src} alt="Sky camera recording" />
         )}

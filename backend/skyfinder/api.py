@@ -1,6 +1,7 @@
 import base64
 import os
 import tempfile
+import threading
 from pathlib import Path
 
 import cv2
@@ -8,6 +9,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, UploadFile
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.concurrency import run_in_threadpool
 
 from skyfinder.agent import investigate
 from skyfinder.classify import classify
@@ -38,6 +40,10 @@ def to_b64(image):
 
 
 _measured = {}
+
+# One clip at a time: the small server has little memory and CPU, and two videos at once
+# can crash it. Other clicks simply wait their turn.
+HEAVY = threading.Lock()
 
 
 def measured_payload(result, name):
@@ -101,33 +107,37 @@ def sample_path(name):
 
 @app.post("/api/samples/analyze")
 def analyze_sample(name: str):
-    return analyze(sample_path(name), name)
+    with HEAVY:
+        return analyze(sample_path(name), name)
 
 
 @app.post("/api/samples/measure")
 def measure_sample(name: str):
-    result = measure(sample_path(name))
-    _measured[name] = result
-    return measured_payload(result, name)
+    with HEAVY:
+        result = measure(sample_path(name))
+        _measured[name] = result
+        return measured_payload(result, name)
 
 
 @app.post("/api/samples/classify")
 def classify_sample(name: str):
-    result = _measured.get(name)
-    if result is None:
-        result = measure(sample_path(name))
-        _measured[name] = result
-    return {"file": name, "verdict": classify(result).model_dump()}
+    with HEAVY:
+        result = _measured.get(name)
+        if result is None:
+            result = measure(sample_path(name))
+            _measured[name] = result
+        return {"file": name, "verdict": classify(result).model_dump()}
 
 
 @app.post("/api/samples/investigate")
 def investigate_sample(name: str):
     path = sample_path(name)
-    result = _measured.get(name)
-    if result is None:
-        result = measure(path)
-        _measured[name] = result
-    answer = investigate(path, result)  # always a fresh AI check; the browser keeps answers until refresh
+    with HEAVY:  # the AI's tools read the video again, so keep the lock until it is done
+        result = _measured.get(name)
+        if result is None:
+            result = measure(path)
+            _measured[name] = result
+        answer = investigate(path, result)  # always a fresh AI check; the browser keeps answers until refresh
     return {
         "file": name,
         "verdict": answer["verdict"].model_dump(),
@@ -152,4 +162,10 @@ async def analyze_upload(file: UploadFile):
     with tempfile.TemporaryDirectory() as tmp:
         path = Path(tmp) / f"upload{ext}"
         path.write_bytes(data)
-        return analyze(path, file.filename)
+        # run in a worker thread, so the server can still answer other requests while waiting
+        return await run_in_threadpool(locked_analyze, path, file.filename)
+
+
+def locked_analyze(path, name):
+    with HEAVY:
+        return analyze(path, name)

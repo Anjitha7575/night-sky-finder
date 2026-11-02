@@ -35,7 +35,6 @@ button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 /* the photo fills the whole screen; the app floats on the right */
 .scene { position: fixed; inset: 0; z-index: -1; 
 background: url(/sky-bg.png) left bottom / contain no-repeat;
-background-size: 60%;
 }
 .scene::after {
   content: "";
@@ -47,7 +46,7 @@ background-size: 60%;
   mask-image: linear-gradient(90deg, transparent 35%, #000 55%);
   -webkit-mask-image: linear-gradient(90deg, transparent 35%, #000 55%);
 }
-.page { height: 100vh; display: grid; grid-template-columns: minmax(0, 33fr) minmax(0, 67fr); grid-template-rows: auto minmax(0, 1fr); }
+.page { height: 100vh; display: grid; grid-template-columns: minmax(0, 28fr) minmax(0, 72fr); grid-template-rows: auto minmax(0, 1fr); }
 .intro { grid-column: 1; grid-row: 2; padding: clamp(14px, 2.4vh, 28px) clamp(16px, 2.2vw, 36px) clamp(10px, 1.6vh, 18px);
   display: flex; flex-direction: column; justify-content: space-between; min-height: 0; }
 /* small "made by" line at the bottom of the left side */
@@ -135,7 +134,7 @@ background-size: 60%;
 .uptile:hover b { color: var(--text); }
 .uptile span { font-size: 10.5px; color: var(--muted); }
 .carousel { position: relative; min-width: 0; }
-.vlist { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 30px) / 4); gap: 10px; overflow-x: auto;
+.vlist { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 30px) / 7); gap: 10px; overflow-x: auto;
   scroll-snap-type: x mandatory; scrollbar-width: none; padding: 2px; }
 .vlist::-webkit-scrollbar { display: none; }
 .vcard { scroll-snap-align: start; }
