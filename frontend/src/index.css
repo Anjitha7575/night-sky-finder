@@ -162,8 +162,8 @@ background-size: 60%;
 .work__left { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: var(--gap); min-height: 0; min-width: 0; }
 .player { display: flex; flex-direction: column; min-height: 0; }
 .player .cap { margin-bottom: 8px; }
-.player__screen { flex: 1; min-height: 0; background: #000; border-radius: 6px; overflow: hidden; display: grid; place-items: center; }
-.player__screen video, .player__screen img { width: 100%; height: 100%; object-fit: contain; }
+.player__screen { flex: 1; min-height: 0; background: #000; border-radius: 6px; overflow: hidden; position: relative; }
+.player__screen video, .player__screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 
 /* AI result (highlighted) */
 .event {
