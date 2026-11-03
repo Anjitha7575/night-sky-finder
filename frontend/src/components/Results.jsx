@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { categoryOf, describeName } from "../categories";
 
 const METHODS = [
-  ["ours", "Night Sky Finder", "Meta's AI + our measuring tools"],
+  ["ours", "Night Sky Finder", "Meta's AI + my measuring tools"],
   ["video", "Meta's AI, just watching the video", "No measurements, no tools"],
   ["frames", "Meta's AI, looking at 8 photos", "8 still pictures taken from the video"],
 ];
@@ -138,13 +138,17 @@ export default function Results() {
         {group.cost_per_clip && (
           <div className="fact">
             <b>~{(group.cost_per_clip * 100).toFixed(1)}¢</b>
-            <span>Cost to check one clip with Meta's AI, in about 10 seconds.</span>
+            <span>Cost to check one clip with Meta's AI.</span>
           </div>
         )}
         <div className="note">
           <b>Honest notes</b>
-          <p>We never tuned our tool on these {group.rows.length} clips. They were picked at random, half meteors, half not.</p>
-          <p>Night Sky Finder gives the AI exact numbers, like how long the object was visible. That helps a lot, and it is exactly what our tools are for.</p>
+          <p>
+            {group.id === "allsky7"
+              ? `Small test: ${group.rows.length} clips, named by the AllSky7 network. Some of them also helped me tune the code, so this is not a blind test.`
+              : `I never tuned the tool on these ${group.rows.length} clips. They were picked at random, half meteors, half not.`}
+          </p>
+          <p>Night Sky Finder gives the AI exact numbers, like how long the object was visible. That helps a lot, and it is exactly what my tools are for.</p>
         </div>
       </section>
 

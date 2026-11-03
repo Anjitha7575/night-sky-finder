@@ -5,8 +5,8 @@
 Sky cameras record anything that moves at night: meteors, but also planes, satellites, birds, insects, clouds, lightning and aurora. One camera can save hundreds of clips a night, and owners check them by hand.
 Night Sky Finder measures each clip with Python, then **Meta's Muse Spark** investigates it like a detective, decides **"meteor or not"**, and explains why in plain words.
 
-- **Live demo:** https://night-sky-finder.vercel.app (the first load can take up to a minute while the server wakes up)
-- **Demo video:** _coming soon_
+- **Live demo:** https://night-sky-finder.vercel.app (each clip takes about 10–40 seconds: the server measures it, then the AI investigates)
+- **Demo video (3 min):** https://youtu.be/VtdyE3CDlPk
 
 Built for the **Meta Global AI Developer Hackathon** (Indie track).
 
@@ -24,7 +24,7 @@ Meteor or not, checked against experts. "Not sure" counts as not right.
 - When Night Sky Finder says "meteor" on the expert set, it is right **76 of 79** times.
 - Cost: about **$0.01 per clip**.
 - Every row is in the **Results** tab of the live demo.
-- The AllSky7 set is small, and some of its clips were also used while we improved the code, so it is not a blind test. See [LIMITATIONS.md](LIMITATIONS.md).
+- The AllSky7 set is small, and some of its clips were also used while I improved the code, so it is not a blind test. See [LIMITATIONS.md](LIMITATIONS.md).
 
 ## How it works
 
@@ -35,7 +35,7 @@ sky clip ──► 1. Python measures ──► 2. Muse Spark investigates ─�
             whole-sky flash
 ```
 
-**1. Our code measures (OpenCV + NumPy)**
+**1. My code measures (OpenCV + NumPy)**
 - Finds what moved between frames and follows the main moving object.
 - Measures speed (% of the screen per second), straightness (1 = perfectly straight), how long it is visible, and whether it blinks.
 - Spots whole-sky flashes (lightning) and the whole sky getting brighter (a fireball lighting up the sky).

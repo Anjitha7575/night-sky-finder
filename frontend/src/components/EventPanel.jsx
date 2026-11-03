@@ -156,7 +156,7 @@ export default function EventPanel({ item, index, aiMode, onRetry }) {
             </>
           )}
 
-          {m && <p className="measured"><b>Measured by our code:</b> {measuredLine(m)}</p>}
+          {m && <p className="measured"><b>Measured by my code:</b> {measuredLine(m)}</p>}
         </>
       )}
     </aside>

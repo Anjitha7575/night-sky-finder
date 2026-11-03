@@ -2,7 +2,7 @@ import { Brain, Camera, Gear } from "./Icons";
 
 const STEPS = [
   [Camera, "A sky camera saves a clip of anything that moves across the night sky."],
-  [Gear, "Our code measures it (speed, straightness, blinking)."],
+  [Gear, "My code measures it (speed, straightness, blinking)."],
   [Brain, "Muse Spark investigates: picks what to check, then decides and explains why."],
 ];
 
