@@ -51,11 +51,13 @@ def _read_frames(path, max_frames, max_side):
             fps = fps / step  # time between kept frames grows, so speeds stay correct
         i = 0
         while len(frames) < max_frames:
-            ok, frame = video.read()
-            if not ok:
-                break
             if i % step == 0:
+                ok, frame = video.read()
+                if not ok:
+                    break
                 frames.append(shrink_frame(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), max_side))
+            elif not video.grab():  # skipped frame: move past it without converting it (faster)
+                break
             i += 1
         video.release()
 
@@ -224,7 +226,7 @@ def combined_image(frames, skip=(), out_side=512):
         stack = frames[0]
     else:
         keep = [f for i, f in enumerate(frames) if i not in skip]
-        background = median_frame(keep)
+        background = median_frame(keep[::max(1, len(keep) // 60)])  # ~60 frames are enough for the still sky
         stack = np.zeros_like(background)
         for f in keep:
             stack = np.maximum(stack, cv2.subtract(f, background))
