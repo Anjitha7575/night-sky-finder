@@ -15,8 +15,8 @@ def read_frames(path, max_frames=300, max_side=1024):
     key = (str(path.resolve()), path.stat().st_mtime, max_frames, max_side)
     if key in _last_read:
         return _last_read[key]
+    _last_read.clear()  # drop the old video BEFORE reading the new one, so two never sit in memory together
     result = _read_frames(path, max_frames, max_side)
-    _last_read.clear()  # keep only one video in memory
     _last_read[key] = result
     return result
 
