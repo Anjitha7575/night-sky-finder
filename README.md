@@ -8,7 +8,22 @@ Night Sky Finder measures each clip with Python, then **Meta's Muse Spark** inve
 - **Live demo:** https://night-sky-finder.vercel.app (each clip takes about 10–40 seconds: the server measures it, then the AI investigates)
 - **Demo video (3 min):** https://youtu.be/VtdyE3CDlPk
 
-Built for the **Meta Global AI Developer Hackathon** (Indie track).
+Built for the **Meta Global AI Developer Hackathon** (Indie track), by Anjitha D.
+
+## Built during the hackathon
+
+- **Everything in this repo was written during the event** (Oct 26 – Nov 4, 2026). The first commit is from Oct 27, 2026; see the commit history.
+- **No code existed before the event.** The only outside code is open-source libraries, used as normal dependencies:
+  - Backend: FastAPI, Uvicorn, OpenCV, NumPy, Pydantic, python-dotenv, and the OpenAI Python SDK (used only as an HTTP client for Meta's API). Full list: `backend/requirements.txt`.
+  - Frontend: React, Vite, and the Inter and Space Grotesk fonts. Full list: `frontend/package.json`.
+
+## Meta models used
+
+| Model | Where it runs | What it does here |
+|---|---|---|
+| **Muse Spark 1.3** (`muse-spark-1.3`) | **Meta Model API** (`https://api.meta.ai/v1`, Responses API with tool calling) | Looks at the measurements and 2 pictures of each clip, chooses up to 3 checks with the 5 tools, then answers "meteor or not", the type, a confidence level and the reason. Also used on its own (watching the video, or 8 frames) as the baseline in the tests. |
+
+No other Meta models are used. Nothing runs on Baseten or on my own GPUs: the measuring is plain Python (OpenCV) on a small server, and all AI calls go to the Meta Model API.
 
 ![Night Sky Finder](docs/screenshot.png)
 
@@ -73,13 +88,11 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-Create a `.env` file in the main project folder:
+Copy `.env.example` to `.env` in the main project folder, and put your Meta Model API key in it:
+```bash
+cp .env.example .env
 ```
-META_API_KEY=your-key
-META_MODEL=muse-spark-1.3
-AI_MODE=meta
-```
-(`AI_MODE=mock` runs simple rules instead of the AI, with no key needed.)
+Never commit `.env` (it is in `.gitignore`). To try it **without any key or account**, set `AI_MODE=mock`: simple rules answer instead of the AI.
 ```bash
 uvicorn skyfinder.api:app --reload
 ```
@@ -92,9 +105,10 @@ npm run dev
 ```
 Open http://localhost:5173. To use another backend, set `VITE_API_URL`.
 
-**Tests**
+**Tests** (no key needed)
 ```bash
 cd backend
+pip install pytest
 python -m pytest -q
 ```
 
@@ -105,6 +119,15 @@ python scripts/compare_ai_alone.py --folder data/nightskyucp_test --name NightSk
 python scripts/compare_ai_alone.py --folder data/nightskyucp_test --name NightSkyUCP_frames --how frames
 python scripts/make_results.py
 ```
+
+## Recorded runs (to check the work without re-running it)
+
+Every AI answer from the tests is saved, so the results can be checked without an API key:
+- `backend/results/NightSkyUCP_results.json`: the 200 expert-checked clips, with the expert label, Night Sky Finder's full answer (type, confidence, reason, number of checks, tokens) and Muse Spark's answer when it watched the video alone.
+- `backend/results/NightSkyUCP_frames.json`: Muse Spark's answers when it saw 8 frames.
+- `backend/results/AllSky7_results.json` and `AllSky7_frames.json`: the same for the 33 AllSky7 clips.
+- `frontend/public/results.json`: the summary shown in the Results tab.
+- `docs/sample_run.json`: one full live investigation (measurements, every tool the AI chose and why, and the final answer).
 
 ## Project layout
 
@@ -140,9 +163,11 @@ frontend/         React (Vite) app: Live demo and Results tabs
 - **IAC / STARS4ALL all-sky meteors 2016** (Teide, Tenerife), licence CC BY 4.0.
 - **SkySentinel** network, Las Cruces, USA: [goskysentinel.com](https://goskysentinel.com).
 
-**Other**
-- AI: Meta Muse Spark (`muse-spark-1.3`) through the Meta Model API.
-- Background picture made with ChatGPT.
+**Other (non-Meta parts)**
+- Website background picture and the "tired sky watcher" picture in the video: made with ChatGPT.
+- Demo video narration: the macOS built-in voice "Zoe (Premium)".
+- Demo video music: "Warm Memories" by Keys of Moon (chosic.com).
+- OpenAI Python SDK: only used as the HTTP client to call the Meta Model API (no OpenAI models are used).
 
 ## More
 
