@@ -363,3 +363,8 @@ background: url(/sky-bg.png) left bottom / contain no-repeat;
   .rchart__row { grid-template-columns: minmax(0, 1fr) auto; row-gap: 6px; }
   .rchart__name { grid-column: 1 / -1; }
 }
+  /* short or narrow screens: cards keep a normal size and shape */
+  @media (max-width: 760px), (max-height: 620px) {
+    .vlist { grid-auto-columns: min(75%, 260px); }
+    .vcard__pic { height: auto; aspect-ratio: 16 / 9; }
+  }

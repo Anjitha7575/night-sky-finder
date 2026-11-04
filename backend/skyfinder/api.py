@@ -113,10 +113,34 @@ def analyze_sample(name: str):
 
 @app.post("/api/samples/measure")
 def measure_sample(name: str):
-    with HEAVY:
-        result = measure(sample_path(name))
-        _measured[name] = result
-        return measured_payload(result, name)
+    path = sample_path(name)
+    result = _measured.get(name)
+    if result is None:  # not measured yet (warm-up still running): measure it now
+        with HEAVY:
+            result = _measured.get(name) or measure(path)
+            _measured[name] = result
+    return measured_payload(result, name)
+
+
+def warm_up():
+    """Measure every demo clip once in the background, so clicks skip straight to the AI step.
+    The measurements are the same as before; only the waiting moves to server start."""
+    for name in list_samples():
+        if name in _measured:
+            continue
+        try:
+            with HEAVY:  # one clip at a time; a user click can slip in between clips
+                if name not in _measured:
+                    _measured[name] = measure(sample_path(name))
+        except Exception as e:  # a broken file must not stop the others
+            print("warm-up skipped", name, e)
+    print(f"warm-up done: {len(_measured)} clip(s) measured")
+
+
+@app.on_event("startup")
+def start_warm_up():
+    if os.getenv("WARM_UP", "1") == "1":
+        threading.Thread(target=warm_up, daemon=True).start()
 
 
 @app.post("/api/samples/classify")
