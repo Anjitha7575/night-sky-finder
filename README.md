@@ -6,7 +6,7 @@ Sky cameras record anything that moves at night: meteors, but also planes, satel
 Night Sky Finder measures each clip with Python, then **Meta's Muse Spark** investigates it like a detective, decides **"meteor or not"**, and explains why in plain words.
 
 - **Live demo:** https://night-sky-finder.vercel.app (each clip takes about 10–40 seconds: the server measures it, then the AI investigates)
-- **Demo video (3 min):** https://youtu.be/VtdyE3CDlPk
+- **Demo video (3 min):** https://youtu.be/8PmsMBmNhJw
 
 Built for the **Meta Global AI Developer Hackathon** (Indie track), by Anjitha D.
 
